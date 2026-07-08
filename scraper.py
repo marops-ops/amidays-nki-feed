@@ -24,15 +24,34 @@ Other design notes / known simplifications (see conversation with Robin):
 - Source of truth for id/price/category is the inline GTM dataLayer
   'productDetailView' push on each page (regex + json.loads, no headless
   browser needed -- nki.no is server-rendered by Enonic CMS).
-- custom_label_0 / nki:entity_type comes straight from the page's
-  "Utdanningsniva:" facts field, normalized to: kurs, enkeltemner, yrkesfag,
-  vgo_teori, fagskole. There is no separate "vgo" rollup value -- Robin
-  filters yrkesfag + vgo_teori together in Meta Ads when she wants the full
-  VGO picture.
+- Course IDs on nki.no get renumbered over time (e.g. "Innforing i ledelse"
+  went from CRS-00586 in an older export to PG-0000172 live; many VGO
+  enkeltfag moved from plain CRS-XXXXX to CRS-OFR-XXXXX). We always trust
+  whatever the live dataLayer says at scrape time -- don't expect IDs to
+  match older feed exports item-for-item.
+- Entity type (custom_label_0 / nki:entity_type: kurs, enkeltemner, yrkesfag,
+  vgo_teori, fagskole) is classified with category as the PRIMARY signal for
+  the VGO/yrkesfag domain (CATEGORY_ENTITY_OVERRIDE), falling back to the
+  page's own "Utdanningsniva:" facts field otherwise. This was a real bug fix:
+  pages under /videregaende/enkeltfag/ all show Utdanningsniva "Enkeltfag"
+  whether the subject is academic (studiekompetanse, e.g. Biologi 1) or a
+  single subject within a vocational program (e.g. "Kommunikasjon og
+  samhandling for tannhelsesekretaerfag") -- the page label can't tell those
+  apart, but the category can. There is no separate "vgo" rollup value --
+  Robin filters yrkesfag + vgo_teori together in Meta Ads when she wants the
+  full VGO picture.
 - Category (custom_label_1 / fb_product_category / nki:category /
   g:product_type) is the dataLayer's own category string. Some pages tag a
   course with multiple comma-separated categories -- we take the first as
   primary and log the rest (see _primary_category).
+- Image: we do NOT use the og:image meta tag. It's meant for social-share
+  previews and on some pages it's been set to a different photo than what's
+  actually shown on the page (e.g. a student testimonial photo instead of
+  the course's own hero image), or drifted to something unrelated entirely.
+  Instead we take the first real <img> that appears after the page's <h1> --
+  that's the actual illustration shown in the purple facts box, which is
+  what Robin wants every time. og:image is kept only as a last-resort
+  fallback if no such <img> is found.
 - sale_price is only ever emitted when the scraped price is LOWER than the
   persisted baseline in data/price_history.json. First run establishes
   baselines with no sale_price anywhere (nothing to compare against yet).
@@ -82,6 +101,7 @@ FEED_TITLE = "NKI Nettstudier — Kurs og utdanning"
 FEED_LINK = "https://www.nki.no"
 FEED_DESCRIPTION = "Produktfeed for NKI Nettstudier. Nettstudier med fleksibel oppstart."
 BRAND = "NKI"  # matches the Hunch-oriented reference feed (was "NKI Nettstudier")
+DEFAULT_IMAGE = f"{BASE_URL}/assets/images/og-default.jpg"
 
 # Display label per entity_type -- used for custom_label_0, the
 # google_product_category text path, and the smart-title suffix. Keep in sync
@@ -116,7 +136,8 @@ EXCLUDED_EXACT_PATHS = {
     "/videregaende/enkeltfag",
 }
 
-# "Utdanningsniva:" facts-box value -> custom_label_0 / nki:entity_type
+# "Utdanningsniva:" facts-box value -> custom_label_0 / nki:entity_type.
+# Used as a FALLBACK when CATEGORY_ENTITY_OVERRIDE below doesn't apply.
 ENTITY_TYPE_MAP = {
     "kurs": "kurs",
     "enkeltemner": "enkeltemner",
@@ -128,7 +149,7 @@ ENTITY_TYPE_MAP = {
     "realfag": "vgo_teori",
     "fagskole": "fagskole",
 }
-# Fallback if the facts-box value is missing or unrecognized: guess from URL.
+# Fallback if neither category nor the facts-box value can classify it: guess from URL.
 URL_FALLBACK_ENTITY_TYPE = (
     ("/fagskole/", "fagskole"),
     ("/videregaende/yrkesfag/", "yrkesfag"),
@@ -138,6 +159,22 @@ URL_FALLBACK_ENTITY_TYPE = (
     ("/kurs/", "kurs"),
     ("/enkeltemner/", "enkeltemner"),
 )
+
+# Category strings that unambiguously belong to the VGO/yrkesfag domain,
+# checked BEFORE the Utdanningsniva-based logic. Found via real mismatches
+# against Robin's reference feed: pages under /videregaende/enkeltfag/ all
+# show Utdanningsniva "Enkeltfag" whether the subject is an academic
+# studiekompetanse subject (e.g. Biologi 1) or a single subject within a
+# vocational program (e.g. "Kommunikasjon og samhandling for
+# tannhelsesekretaerfag", "Ambulansemedisin Vg2") -- the page label can't
+# tell those apart, but the category can. Category also caught one item
+# hosted at /kurs/... ("Forkurs ingenior realfagskurs") whose Utdanningsniva
+# literally says "Kurs" even though it's VGO prep content.
+CATEGORY_ENTITY_OVERRIDE = {
+    "Yrkesfag på videregående": "yrkesfag",
+    "Spesiell studiekompetanse": "vgo_teori",
+    "Generell studiekompetanse": "vgo_teori",
+}
 
 LANEKASSEN_TEXT = "Lånekassegodkjent"  # present in DOM; not wired up yet (see module docstring)
 
@@ -242,6 +279,21 @@ def _extract_fact(text: str, label: str) -> Optional[str]:
     return match.group(1).strip() if match else None
 
 
+def _extract_hero_image(soup: BeautifulSoup, title_tag) -> Optional[str]:
+    """
+    The image shown in the purple facts box is the first real <img> that
+    appears after the <h1>. We skip icon assets (svg) in case a template
+    inserts one between the heading and the photo.
+    """
+    if title_tag is None:
+        return None
+    for img in title_tag.find_all_next("img"):
+        src = img.get("src", "")
+        if src and not src.lower().endswith(".svg"):
+            return src.strip()
+    return None
+
+
 def _parse_price_nok(text: str) -> Optional[float]:
     """'kr 7 900,-' -> 7900.0"""
     digits = re.sub(r"[^\d]", "", text)
@@ -269,12 +321,16 @@ def _primary_category(raw_category: str) -> str:
     return parts[0] if parts else raw_category
 
 
-def classify_entity_type(utdanningsniva: Optional[str], path: str) -> str:
+def classify_entity_type(utdanningsniva: Optional[str], path: str, category: Optional[str] = None) -> str:
+    if category and category in CATEGORY_ENTITY_OVERRIDE:
+        return CATEGORY_ENTITY_OVERRIDE[category]
+
     if utdanningsniva:
         key = utdanningsniva.strip().lower()
         if key in ENTITY_TYPE_MAP:
             return ENTITY_TYPE_MAP[key]
         log.warning("Unrecognized Utdanningsniva value %r for %s, falling back to URL", utdanningsniva, path)
+
     for prefix, entity_type in URL_FALLBACK_ENTITY_TYPE:
         if path.startswith(prefix):
             return entity_type
@@ -294,13 +350,15 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else product.get("name", "")
 
+    image_link = _extract_hero_image(soup, title_tag)
+    if not image_link:
+        og_image = soup.find("meta", attrs={"property": "og:image"})
+        image_link = og_image["content"].strip() if og_image and og_image.get("content") else None
+
     meta_desc = soup.find("meta", attrs={"name": "description"}) or soup.find(
         "meta", attrs={"property": "og:description"}
     )
     description = meta_desc["content"].strip() if meta_desc and meta_desc.get("content") else ""
-
-    og_image = soup.find("meta", attrs={"property": "og:image"})
-    image_link = og_image["content"].strip() if og_image and og_image.get("content") else ""
 
     utdanningsniva = _extract_fact(text, "Utdanningsnivå")
     studietilgang = _extract_fact(text, "Studietilgang")
@@ -435,7 +493,7 @@ def crawl() -> list[Product]:
             continue
 
         path = url.replace(BASE_URL, "")
-        entity_type = classify_entity_type(raw["utdanningsniva"], path)
+        entity_type = classify_entity_type(raw["utdanningsniva"], path, raw["category"])
         price, sale_price, effective_date = resolve_price(raw["id"], raw["price"], history, today)
 
         products.append(
@@ -444,7 +502,7 @@ def crawl() -> list[Product]:
                 title=raw["title"],
                 description=raw["description"],
                 link=url,
-                image_link=raw["image_link"] or f"{BASE_URL}/assets/images/og-default.jpg",
+                image_link=raw["image_link"] or DEFAULT_IMAGE,
                 in_stock=in_stock,
                 price=price,
                 sale_price=sale_price,
