@@ -2490,14 +2490,14 @@
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>24900.00 NOK</g:price>
       <g:google_product_category>5731</g:google_product_category>
-      <g:product_type>Kurs &gt; HR og ledelse, Jus og administrasjon</g:product_type>
+      <g:product_type>Kurs &gt; HR og ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/bedriftsleder-ai-i-arbeidslivet?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001729</g:ads_redirect>
       <g:custom_label_0>kurs</g:custom_label_0>
       <g:custom_label_1>over_15000</g:custom_label_1>
-      <g:custom_label_2>HR og ledelse, Jus og administrasjon</g:custom_label_2>
+      <g:custom_label_2>HR og ledelse</g:custom_label_2>
       <g:custom_label_3>medium</g:custom_label_3>
       <nki:entity_type>kurs</nki:entity_type>
-      <nki:category>HR og ledelse, Jus og administrasjon</nki:category>
+      <nki:category>HR og ledelse</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>24900</nki:price_numeric>
     </item>
@@ -3125,14 +3125,14 @@
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5490.00 NOK</g:price>
       <g:google_product_category>5731</g:google_product_category>
-      <g:product_type>Vgo Teori &gt; Generell studiekompetanse, Spesiell studiekompetanse</g:product_type>
+      <g:product_type>Vgo Teori &gt; Privatist</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/sosialkunnskap?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001593</g:ads_redirect>
       <g:custom_label_0>vgo_teori</g:custom_label_0>
       <g:custom_label_1>5000_15000</g:custom_label_1>
-      <g:custom_label_2>Generell studiekompetanse, Spesiell studiekompetanse</g:custom_label_2>
+      <g:custom_label_2>Privatist</g:custom_label_2>
       <g:custom_label_3>medium</g:custom_label_3>
       <nki:entity_type>vgo_teori</nki:entity_type>
-      <nki:category>Generell studiekompetanse, Spesiell studiekompetanse</nki:category>
+      <nki:category>Privatist</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5490</nki:price_numeric>
     </item>
@@ -3191,14 +3191,14 @@
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>13500.00 NOK</g:price>
       <g:google_product_category>5731</g:google_product_category>
-      <g:product_type>Kurs &gt; Helse og livsstil, Jus og administrasjon</g:product_type>
+      <g:product_type>Kurs &gt; Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/saksbehandling-i-helse-og-omsorgssektoren?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001561</g:ads_redirect>
       <g:custom_label_0>kurs</g:custom_label_0>
       <g:custom_label_1>5000_15000</g:custom_label_1>
-      <g:custom_label_2>Helse og livsstil, Jus og administrasjon</g:custom_label_2>
+      <g:custom_label_2>Helse og livsstil</g:custom_label_2>
       <g:custom_label_3>medium</g:custom_label_3>
       <nki:entity_type>kurs</nki:entity_type>
-      <nki:category>Helse og livsstil, Jus og administrasjon</nki:category>
+      <nki:category>Helse og livsstil</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>13500</nki:price_numeric>
     </item>
@@ -3235,14 +3235,14 @@
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5490.00 NOK</g:price>
       <g:google_product_category>5731</g:google_product_category>
-      <g:product_type>Vgo Teori &gt; Generell studiekompetanse, Spesiell studiekompetanse</g:product_type>
+      <g:product_type>Vgo Teori &gt; Privatist</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/religion-og-etikk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001567</g:ads_redirect>
       <g:custom_label_0>vgo_teori</g:custom_label_0>
       <g:custom_label_1>5000_15000</g:custom_label_1>
-      <g:custom_label_2>Generell studiekompetanse, Spesiell studiekompetanse</g:custom_label_2>
+      <g:custom_label_2>Privatist</g:custom_label_2>
       <g:custom_label_3>medium</g:custom_label_3>
       <nki:entity_type>vgo_teori</nki:entity_type>
-      <nki:category>Generell studiekompetanse, Spesiell studiekompetanse</nki:category>
+      <nki:category>Privatist</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5490</nki:price_numeric>
     </item>
@@ -3543,14 +3543,14 @@
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5490.00 NOK</g:price>
       <g:google_product_category>5731</g:google_product_category>
-      <g:product_type>Vgo Teori &gt; Generell studiekompetanse, Spesiell studiekompetanse</g:product_type>
+      <g:product_type>Vgo Teori &gt; Privatist</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/historie-studieforberedende?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001569</g:ads_redirect>
       <g:custom_label_0>vgo_teori</g:custom_label_0>
       <g:custom_label_1>5000_15000</g:custom_label_1>
-      <g:custom_label_2>Generell studiekompetanse, Spesiell studiekompetanse</g:custom_label_2>
+      <g:custom_label_2>Privatist</g:custom_label_2>
       <g:custom_label_3>medium</g:custom_label_3>
       <nki:entity_type>vgo_teori</nki:entity_type>
-      <nki:category>Generell studiekompetanse, Spesiell studiekompetanse</nki:category>
+      <nki:category>Privatist</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5490</nki:price_numeric>
     </item>
@@ -3785,14 +3785,14 @@
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5490.00 NOK</g:price>
       <g:google_product_category>5731</g:google_product_category>
-      <g:product_type>Vgo Teori &gt; Generell studiekompetanse, Spesiell studiekompetanse</g:product_type>
+      <g:product_type>Vgo Teori &gt; Privatist</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/geografi-fellesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001566</g:ads_redirect>
       <g:custom_label_0>vgo_teori</g:custom_label_0>
       <g:custom_label_1>5000_15000</g:custom_label_1>
-      <g:custom_label_2>Generell studiekompetanse, Spesiell studiekompetanse</g:custom_label_2>
+      <g:custom_label_2>Privatist</g:custom_label_2>
       <g:custom_label_3>medium</g:custom_label_3>
       <nki:entity_type>vgo_teori</nki:entity_type>
-      <nki:category>Generell studiekompetanse, Spesiell studiekompetanse</nki:category>
+      <nki:category>Privatist</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5490</nki:price_numeric>
     </item>
@@ -4027,14 +4027,14 @@
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>26900.00 NOK</g:price>
       <g:google_product_category>5731</g:google_product_category>
-      <g:product_type>Kurs &gt; Økonomi og bærekraft, HR og ledelse</g:product_type>
+      <g:product_type>Kurs &gt; Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/bedriftsleder?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001670</g:ads_redirect>
       <g:custom_label_0>kurs</g:custom_label_0>
       <g:custom_label_1>over_15000</g:custom_label_1>
-      <g:custom_label_2>Økonomi og bærekraft, HR og ledelse</g:custom_label_2>
+      <g:custom_label_2>Økonomi og bærekraft</g:custom_label_2>
       <g:custom_label_3>medium</g:custom_label_3>
       <nki:entity_type>kurs</nki:entity_type>
-      <nki:category>Økonomi og bærekraft, HR og ledelse</nki:category>
+      <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>26900</nki:price_numeric>
     </item>
