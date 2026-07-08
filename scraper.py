@@ -101,6 +101,7 @@ ENTITY_TYPE_MAP = {
     "praksiskandidat": "yrkesfag",
     "enkeltfag": "vgo_teori",
     "studiekompetanse": "vgo_teori",
+    "realfag": "vgo_teori",
     "fagskole": "fagskole",
 }
 # Fallback if the facts-box value is missing or unrecognized: guess from URL.
@@ -244,6 +245,21 @@ def _parse_duration_months(text: str) -> Optional[int]:
     return int(match.group(1)) if match else None
 
 
+def _primary_category(raw_category: str) -> str:
+    """
+    Some dataLayer entries tag a course with multiple categories, comma
+    separated, e.g. 'HR og ledelse, Jus og administrasjon'. We only have room
+    for one custom_label_2 value, so take the first as primary and log the
+    rest so Robin can see what's being dropped.
+    """
+    if not raw_category:
+        return raw_category
+    parts = [p.strip() for p in raw_category.split(",") if p.strip()]
+    if len(parts) > 1:
+        log.info("Multi-category value %r, using primary %r (dropped: %s)", raw_category, parts[0], parts[1:])
+    return parts[0] if parts else raw_category
+
+
 def classify_entity_type(utdanningsniva: Optional[str], path: str) -> str:
     if utdanningsniva:
         key = utdanningsniva.strip().lower()
@@ -294,7 +310,7 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
         "title": title,
         "description": description,
         "image_link": image_link,
-        "category": product.get("category", ""),
+        "category": _primary_category(product.get("category", "")),
         "price": price,
         "utdanningsniva": utdanningsniva,
         "duration_text": studietilgang,
