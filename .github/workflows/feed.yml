@@ -1,0 +1,45 @@
+name: Update NKI product feed
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # 06:00 CET/07:00 CEST — utsalgspris/tilgjengelighet oppdatert til morgenen
+    - cron: "0 15 * * *"  # 16:00 CET/17:00 CEST — fanger opp dagens prisendringer
+  workflow_dispatch: {}    # lar deg trigge en kjøring manuelt fra Actions-fanen
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nki-feed
+  cancel-in-progress: false
+
+jobs:
+  build-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python3 scraper.py
+
+      - name: Commit and push feed if changed
+        run: |
+          git config user.name "Amidays-FeedBot"
+          git config user.email "feedbot@amidays.com"
+          git add docs/feed.xml data/price_history.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Auto-update NKI product feed [skip ci]"
+          git pull --rebase origin main
+          git push origin main
