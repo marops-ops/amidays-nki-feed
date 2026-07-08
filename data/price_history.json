@@ -1,0 +1,850 @@
+{
+  "CRS-OFR-00311": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-00313": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-00314": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-00770": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "CRS-OFR-00771": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "CRS-OFR-00924": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-00925": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-00926": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01110": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01111": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01112": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01279": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01283": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01305": {
+    "baseline": 8500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01306": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01310": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01466": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01467": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01468": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01525": {
+    "baseline": 8500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01526": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01550": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01551": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01552": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01624": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01733": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01734": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-01736": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06952": {
+    "baseline": 16000.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06953": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06954": {
+    "baseline": 16000.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06956": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06957": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06958": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06959": {
+    "baseline": 25500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06960": {
+    "baseline": 25500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06961": {
+    "baseline": 25500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06964": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-06965": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07025": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07026": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07053": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07054": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07055": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07056": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07057": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07058": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07059": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07061": {
+    "baseline": 6500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07073": {
+    "baseline": 18400.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07074": {
+    "baseline": 10800.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07075": {
+    "baseline": 10800.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07078": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07092": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07100": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07108": {
+    "baseline": 6500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07110": {
+    "baseline": 6500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07163": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07164": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07165": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07166": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07173": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07174": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07337": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07338": {
+    "baseline": 6500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07339": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07340": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07343": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07344": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07345": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07347": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07349": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07350": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07463": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07464": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07465": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07479": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07480": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07481": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07482": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07490": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07492": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07494": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07495": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07496": {
+    "baseline": 29900.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07593": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07594": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07595": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07847": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07855": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07856": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07857": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07858": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07859": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07862": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07863": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07864": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07865": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07866": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07867": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07868": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07873": {
+    "baseline": 12000.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07874": {
+    "baseline": 9000.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07876": {
+    "baseline": 6500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07877": {
+    "baseline": 6500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07951": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07952": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07953": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07954": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07955": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07956": {
+    "baseline": 9500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07957": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07958": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07959": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07960": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07961": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07964": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07969": {
+    "baseline": 25500.0,
+    "drop_since": null
+  },
+  "CRS-OFR-07976": {
+    "baseline": 17500.0,
+    "drop_since": null
+  },
+  "PG-0000052": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "PG-0000053": {
+    "baseline": 15900.0,
+    "drop_since": null
+  },
+  "PG-0000055": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0000074": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000120": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000122": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000126": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000127": {
+    "baseline": 26900.0,
+    "drop_since": null
+  },
+  "PG-0000134": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000135": {
+    "baseline": 7500.0,
+    "drop_since": null
+  },
+  "PG-0000141": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "PG-0000158": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000164": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000170": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "PG-0000172": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000175": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "PG-0000179": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000187": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0000191": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000210": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000214": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0000215": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0000216": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000221": {
+    "baseline": 15900.0,
+    "drop_since": null
+  },
+  "PG-0000222": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0000226": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0000227": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000231": {
+    "baseline": 26900.0,
+    "drop_since": null
+  },
+  "PG-0000232": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000241": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "PG-0000242": {
+    "baseline": 28900.0,
+    "drop_since": null
+  },
+  "PG-0000243": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000244": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0000257": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0000258": {
+    "baseline": 20000.0,
+    "drop_since": null
+  },
+  "PG-0000259": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0000261": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000262": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0000263": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0001533": {
+    "baseline": 38900.0,
+    "drop_since": null
+  },
+  "PG-0001534": {
+    "baseline": 81500.0,
+    "drop_since": null
+  },
+  "PG-0001535": {
+    "baseline": 81500.0,
+    "drop_since": null
+  },
+  "PG-0001536": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001551": {
+    "baseline": 19900.0,
+    "drop_since": null
+  },
+  "PG-0001552": {
+    "baseline": 17900.0,
+    "drop_since": null
+  },
+  "PG-0001553": {
+    "baseline": 14900.0,
+    "drop_since": null
+  },
+  "PG-0001555": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "PG-0001557": {
+    "baseline": 23900.0,
+    "drop_since": null
+  },
+  "PG-0001559": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0001561": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "PG-0001562": {
+    "baseline": 38900.0,
+    "drop_since": null
+  },
+  "PG-0001563": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001564": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001566": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001567": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001568": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001569": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001570": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0001571": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "PG-0001572": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "PG-0001573": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001586": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001587": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "PG-0001591": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0001592": {
+    "baseline": 35900.0,
+    "drop_since": null
+  },
+  "PG-0001593": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001594": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0001596": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001598": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001635": {
+    "baseline": 39900.0,
+    "drop_since": null
+  },
+  "PG-0001636": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "PG-0001641": {
+    "baseline": 35900.0,
+    "drop_since": null
+  },
+  "PG-0001642": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001643": {
+    "baseline": 49900.0,
+    "drop_since": null
+  },
+  "PG-0001644": {
+    "baseline": 54900.0,
+    "drop_since": null
+  },
+  "PG-0001645": {
+    "baseline": 34900.0,
+    "drop_since": null
+  },
+  "PG-0001668": {
+    "baseline": 26900.0,
+    "drop_since": null
+  },
+  "PG-0001669": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0001670": {
+    "baseline": 26900.0,
+    "drop_since": null
+  },
+  "PG-0001671": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "PG-0001693": {
+    "baseline": 5490.0,
+    "drop_since": null
+  },
+  "PG-0001695": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001696": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001697": {
+    "baseline": 81500.0,
+    "drop_since": null
+  },
+  "PG-0001700": {
+    "baseline": 50000.0,
+    "drop_since": null
+  },
+  "PG-0001721": {
+    "baseline": 49500.0,
+    "drop_since": null
+  },
+  "PG-0001722": {
+    "baseline": 81500.0,
+    "drop_since": null
+  },
+  "PG-0001729": {
+    "baseline": 24900.0,
+    "drop_since": null
+  },
+  "PG-0001741": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "PG-0001742": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "PG-0001743": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "PG-0001744": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "PG-0001745": {
+    "baseline": 3900.0,
+    "drop_since": null
+  }
+}
