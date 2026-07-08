@@ -5,27 +5,41 @@ NKI Nettstudier product feed generator.
 Crawls nki.no via sitemap.xml, extracts product data from each course/program
 page (GTM dataLayer + on-page facts box), classifies it, tracks price history
 to detect real sale prices, checks availability, and writes an RSS 2.0 feed
-with Google (g:) and NKI custom (nki:) namespaces to docs/feed.xml.
+to docs/feed.xml.
 
-Design notes / known simplifications (see conversation with Robin, 2026-07-08):
+Field schema note (2026-07-08): the feed is deliberately shaped to match a
+Hunch/Meta-oriented reference feed Robin uses for ad templates -- bare
+(un-namespaced) custom_label_0/1/2, fb_product_category, feed_name,
+internal_label, plus g:-namespaced item_group_id, a text-based
+google_product_category, and a single-value product_type. This means
+custom_label_0/1/2 are NOT in Google's g: namespace here, so Google Merchant
+Center will not recognize them as shopping custom labels (it'll just ignore
+the bare tags) -- that's a known, accepted tradeoff for matching Hunch
+without remapping. The nki:* namespace fields, g:ads_redirect and
+g:sale_price_effective_date are kept as bonus/compliance fields even though
+they weren't in the reference example, since extra fields don't break
+template matching, only missing ones would.
+
+Other design notes / known simplifications (see conversation with Robin):
 - Source of truth for id/price/category is the inline GTM dataLayer
   'productDetailView' push on each page (regex + json.loads, no headless
   browser needed -- nki.no is server-rendered by Enonic CMS).
-- custom_label_0 comes straight from the page's "Utdanningsniva:" facts field,
-  normalized to: kurs, enkeltemner, yrkesfag, vgo_teori, fagskole. There is no
-  separate "vgo" rollup value -- Robin filters yrkesfag + vgo_teori together
-  in Meta Ads when she wants the full VGO picture.
-- custom_label_2 (main category) is the dataLayer's own category string,
-  passed through a lookup table (CATEGORY_MAP below) for light normalization.
-  This is coarser than the old feed's hand-curated categories (e.g. the site
-  lumps "HR og ledelse" together where the old feed split HR vs Ledelse) --
-  flagged as a known gap, not silently papered over.
+- custom_label_0 / nki:entity_type comes straight from the page's
+  "Utdanningsniva:" facts field, normalized to: kurs, enkeltemner, yrkesfag,
+  vgo_teori, fagskole. There is no separate "vgo" rollup value -- Robin
+  filters yrkesfag + vgo_teori together in Meta Ads when she wants the full
+  VGO picture.
+- Category (custom_label_1 / fb_product_category / nki:category /
+  g:product_type) is the dataLayer's own category string. Some pages tag a
+  course with multiple comma-separated categories -- we take the first as
+  primary and log the rest (see _primary_category).
 - sale_price is only ever emitted when the scraped price is LOWER than the
-  persisted baseline in price_history.json. First run establishes baselines
-  with no sale_price anywhere (nothing to compare against yet).
-- Lanekassen eligibility (custom_label_4) is intentionally NOT scraped/emitted
-  yet, per Robin's call, even though "Finansiering: Lanekassegodkjent" is a
-  scrapeable field (LANEKASSEN_TEXT below) -- trivial to wire up later.
+  persisted baseline in data/price_history.json. First run establishes
+  baselines with no sale_price anywhere (nothing to compare against yet).
+- Lanekassen eligibility (custom_label_4 in the original spec) is
+  intentionally NOT scraped/emitted, per Robin's call, even though
+  "Finansiering: Lanekassegodkjent" is a scrapeable field (LANEKASSEN_TEXT
+  below) -- trivial to wire up later.
 - Availability is derived from the HTTP status of the same GET used to scrape
   the page (200 -> in stock, anything else -> out of stock), rather than a
   second HEAD request -- same result, half the requests.
@@ -67,8 +81,18 @@ SALE_WINDOW_DAYS = 30  # rolling window while a price drop is active
 FEED_TITLE = "NKI Nettstudier — Kurs og utdanning"
 FEED_LINK = "https://www.nki.no"
 FEED_DESCRIPTION = "Produktfeed for NKI Nettstudier. Nettstudier med fleksibel oppstart."
-BRAND = "NKI Nettstudier"
-GOOGLE_PRODUCT_CATEGORY = "5731"
+BRAND = "NKI"  # matches the Hunch-oriented reference feed (was "NKI Nettstudier")
+
+# Display label per entity_type -- used for custom_label_0, the
+# google_product_category text path, and the smart-title suffix. Keep in sync
+# with ENTITY_TYPE_MAP's target values below.
+ENTITY_TYPE_DISPLAY: dict[str, str] = {
+    "kurs": "Kurs",
+    "enkeltemner": "Enkeltemner",
+    "yrkesfag": "Yrkesfag",
+    "vgo_teori": "Videregående",
+    "fagskole": "Fagskole",
+}
 
 # Only crawl sitemap URLs under these prefixes -- everything else (blogg,
 # om-nki, kampanjer, ...) is not a sellable course/program.
@@ -115,21 +139,6 @@ URL_FALLBACK_ENTITY_TYPE = (
     ("/enkeltemner/", "enkeltemner"),
 )
 
-# Site's own (granular) category string -> Robin's broader marketing bucket.
-# Passthrough for anything not listed -- logged so the table can be extended.
-CATEGORY_MAP: dict[str, str] = {
-    "HR og ledelse": "HR og ledelse",
-    "Jus og administrasjon": "Jus, HMS & administrasjon",
-    "Økonomi og bærekraft": "Økonomi og bærekraft",
-    "Bygg og logistikk": "Bygg og eiendom",
-    "Interiør og design": "Kreativitet og design",
-    "Helse og livsstil": "Helse og livsstil",
-    "Markedsføring og salg": "Markedsføring og salg",
-    "Yrkesfag på videregående": "Privatist",
-    "Spesiell studiekompetanse": "Privatist",
-    "Generell studiekompetanse": "Privatist",
-}
-
 LANEKASSEN_TEXT = "Lånekassegodkjent"  # present in DOM; not wired up yet (see module docstring)
 
 logging.basicConfig(
@@ -156,7 +165,7 @@ class Product:
     price: float  # regular/baseline NOK, always populated
     sale_price: Optional[float]
     sale_price_effective_date: Optional[str]
-    category: str  # raw site category, e.g. "HR og ledelse"
+    category: str  # raw site category (primary, after splitting multi-category values)
     entity_type: str  # kurs / enkeltemner / yrkesfag / vgo_teori / fagskole
     duration_months: Optional[int]
     duration_text: Optional[str]
@@ -249,8 +258,8 @@ def _primary_category(raw_category: str) -> str:
     """
     Some dataLayer entries tag a course with multiple categories, comma
     separated, e.g. 'HR og ledelse, Jus og administrasjon'. We only have room
-    for one custom_label_2 value, so take the first as primary and log the
-    rest so Robin can see what's being dropped.
+    for one category value downstream, so take the first as primary and log
+    the rest so Robin can see what's being dropped.
     """
     if not raw_category:
         return raw_category
@@ -340,16 +349,6 @@ def duration_tier(months: Optional[int]) -> str:
     if months <= 12:
         return "medium"
     return "lang"
-
-
-def map_category(raw_category: str) -> str:
-    if not raw_category:
-        return "Ukategorisert"
-    mapped = CATEGORY_MAP.get(raw_category)
-    if mapped is None:
-        log.warning("No CATEGORY_MAP entry for %r, passing through unchanged", raw_category)
-        return raw_category
-    return mapped
 
 
 # --------------------------------------------------------------------------- #
@@ -497,6 +496,25 @@ def _sub(parent: ET.Element, tag: str, text: Optional[str]) -> None:
     el.text = str(text)
 
 
+def entity_display(entity_type: str) -> str:
+    return ENTITY_TYPE_DISPLAY.get(entity_type, entity_type.replace("_", " ").title())
+
+
+def smart_title(title: str, entity_type: str, category: str) -> str:
+    """'Advokatsekretaer' -> 'Advokatsekretaer − fagskole i jus og administrasjon'"""
+    if not category:
+        return title
+    return f"{title} − {entity_display(entity_type).lower()} i {category.lower()}"
+
+
+def google_product_category_path(entity_type: str, category: str) -> str:
+    """'fagskole', 'Jus og administrasjon' -> 'utdanning > fagskole > jus og administrasjon'"""
+    parts = ["utdanning", entity_display(entity_type).lower()]
+    if category:
+        parts.append(category.lower())
+    return " > ".join(parts)
+
+
 def build_feed_xml(products: list[Product]) -> ET.ElementTree:
     rss = ET.Element("rss", {"version": "2.0"})
     channel = ET.SubElement(rss, "channel")
@@ -506,11 +524,23 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
 
     for p in products:
         item = ET.SubElement(channel, "item")
+        display_type = entity_display(p.entity_type)
+
+        # --- bare (un-namespaced) fields, matching the Hunch reference feed ---
+        _sub(item, "custom_label_0", display_type)
+        _sub(item, "custom_label_1", p.category)
+        _sub(item, "custom_label_2", duration_tier(p.duration_months))  # bonus, extends the pattern
+        _sub(item, "fb_product_category", p.category)
+        _sub(item, "feed_name", p.title)
+        _sub(item, "internal_label", p.title)
+
+        # --- g:-namespaced standard fields ---
         _sub(item, _g("id"), p.id)
-        _sub(item, _g("title"), p.title)
+        _sub(item, _g("title"), smart_title(p.title, p.entity_type, p.category))
         _sub(item, _g("description"), p.description)
         _sub(item, _g("link"), p.link)
         _sub(item, _g("image_link"), p.image_link)
+        _sub(item, _g("item_group_id"), p.id)
         _sub(item, _g("availability"), "in stock" if p.in_stock else "out of stock")
         _sub(item, _g("condition"), "new")
         _sub(item, _g("brand"), BRAND)
@@ -518,10 +548,8 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         if p.sale_price is not None:
             _sub(item, _g("sale_price"), f"{p.sale_price:.2f} NOK")
             _sub(item, _g("sale_price_effective_date"), p.sale_price_effective_date)
-        _sub(item, _g("google_product_category"), GOOGLE_PRODUCT_CATEGORY)
-
-        category = map_category(p.category)
-        _sub(item, _g("product_type"), f"{p.entity_type.replace('_', ' ').title()} > {category}")
+        _sub(item, _g("google_product_category"), google_product_category_path(p.entity_type, p.category))
+        _sub(item, _g("product_type"), p.category)
 
         ads_params = {
             "utm_source": "google",
@@ -531,14 +559,9 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         }
         _sub(item, _g("ads_redirect"), f"{p.link}?{urlencode(ads_params)}")
 
-        _sub(item, _g("custom_label_0"), p.entity_type)
-        _sub(item, _g("custom_label_1"), price_tier(p.price))
-        _sub(item, _g("custom_label_2"), category)
-        _sub(item, _g("custom_label_3"), duration_tier(p.duration_months))
-        # custom_label_4 (Lanekassen) intentionally omitted for now.
-
+        # --- nki:-namespaced bonus fields ---
         _sub(item, _nki("entity_type"), p.entity_type)
-        _sub(item, _nki("category"), category)
+        _sub(item, _nki("category"), p.category)
         _sub(item, _nki("duration"), p.duration_text)
         _sub(item, _nki("price_numeric"), str(int(p.price)))
         if p.sale_price is not None:
