@@ -52,6 +52,13 @@ Other design notes / known simplifications (see conversation with Robin):
   that's the actual illustration shown in the purple facts box, which is
   what Robin wants every time. og:image is kept only as a last-resort
   fallback if no such <img> is found.
+- Description: meta description / og:description first; if neither exists
+  (some newer nki.no pages don't have SEO metadata filled in yet), we
+  generate a short, guaranteed non-empty description instead of leaving the
+  field blank. Google/Hunch reject a product outright ("Field value is not
+  provided") if g:description is missing, and an empty custom_label / etc.
+  can silently drop items out of a Hunch product set -- so every field we
+  emit must always have a value.
 - sale_price is only ever emitted when the scraped price is LOWER than the
   persisted baseline in data/price_history.json. First run establishes
   baselines with no sale_price anywhere (nothing to compare against yet).
@@ -321,6 +328,22 @@ def _primary_category(raw_category: str) -> str:
     return parts[0] if parts else raw_category
 
 
+def _fallback_description(title: str, entity_type: Optional[str], category: Optional[str]) -> str:
+    """
+    Guaranteed non-empty description, used when a page has neither a
+    <meta name="description"> nor an og:description. Google/Hunch reject a
+    product outright ("Field value is not provided") if g:description is
+    missing/empty -- some nki.no pages (mostly newer ones) simply don't have
+    SEO metadata filled in yet, so we can't rely on the page always having it.
+    """
+    display = entity_display(entity_type) if entity_type else ""
+    if display and category:
+        return f"{title} er et {display.lower()}-studium innen {category.lower()} hos NKI Nettstudier."
+    if category:
+        return f"{title} hos NKI Nettstudier, innen {category.lower()}."
+    return f"{title} hos NKI Nettstudier."
+
+
 def classify_entity_type(utdanningsniva: Optional[str], path: str, category: Optional[str] = None) -> str:
     if category and category in CATEGORY_ENTITY_OVERRIDE:
         return CATEGORY_ENTITY_OVERRIDE[category]
@@ -371,11 +394,13 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
     notes = []
     if dom_price is not None and dl_price is not None and abs(dom_price - float(dl_price)) > 0.5:
         notes.append(f"Price mismatch: dataLayer={dl_price} DOM={dom_price}, used dataLayer")
+    if not description:
+        notes.append("No meta description / og:description on page, used generated fallback")
 
     return {
         "id": product.get("id"),
         "title": title,
-        "description": description,
+        "description": description,  # filled in with a fallback in crawl(), once entity_type/category are known
         "image_link": image_link,
         "category": _primary_category(product.get("category", "")),
         "price": price,
@@ -496,11 +521,13 @@ def crawl() -> list[Product]:
         entity_type = classify_entity_type(raw["utdanningsniva"], path, raw["category"])
         price, sale_price, effective_date = resolve_price(raw["id"], raw["price"], history, today)
 
+        description = raw["description"] or _fallback_description(raw["title"], entity_type, raw["category"])
+
         products.append(
             Product(
                 id=raw["id"],
                 title=raw["title"],
-                description=raw["description"],
+                description=description,
                 link=url,
                 image_link=raw["image_link"] or DEFAULT_IMAGE,
                 in_stock=in_stock,

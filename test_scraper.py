@@ -71,6 +71,40 @@ Pris:
 </html>
 """
 
+# No meta description / og:description at all -- exercises the guaranteed
+# fallback description (the real-world bug: Hunch rejected products where
+# this was empty with "Field value is not provided").
+NO_META_HTML = """
+<html>
+<head>
+</head>
+<body>
+<script>
+  dataLayer.push({
+      'event': 'productDetailView',
+      'ecommerce': {
+          'detail': {
+            'products':[{"name":"Saksbehandler","id":"PG-0000259","price":39500,"brand":"NKI","category":"Jus og administrasjon"}]
+          }
+      }
+  });
+</script>
+<h1>Saksbehandler</h1>
+<img src="https://www.nki.no/fagskole/saksbehandler/_/image/real/block-780-780/Solfrid%20Fagskole%202026.jpg" alt="hero">
+<div>
+Utdanningsnivå:
+<span>Fagskole</span>
+Oppstart:
+<span>Start når du vil</span>
+Studietilgang:
+<span>12 måneder</span>
+Pris:
+<span>kr 39 500,-</span>
+</div>
+</body>
+</html>
+"""
+
 
 def check(label, cond):
     status = "OK" if cond else "FAIL"
@@ -148,6 +182,19 @@ check(
     "No category override: Utdanningsniva still used normally",
     scraper.classify_entity_type("Kurs", "/kurs/innforing-i-ledelse", "HR og ledelse") == "kurs",
 )
+
+# --- guaranteed non-empty description (the real Hunch bug: "Field value is not provided") ---
+raw_no_meta = scraper.parse_product_page("https://www.nki.no/fagskole/saksbehandler", NO_META_HTML)
+check("no meta description -> raw description is empty (filled in later in crawl())", raw_no_meta["description"] == "")
+check("note logged about missing description", any("fallback" in n for n in raw_no_meta["notes"]))
+
+fallback_desc = scraper._fallback_description("Saksbehandler", "fagskole", "Jus og administrasjon")
+check("fallback description is non-empty", bool(fallback_desc))
+check("fallback description mentions title", fallback_desc.startswith("Saksbehandler"))
+check("fallback description mentions NKI", "NKI" in fallback_desc)
+
+check("fallback with no category still non-empty", bool(scraper._fallback_description("X", "kurs", "")))
+check("fallback with no entity_type/category still non-empty", bool(scraper._fallback_description("X", None, None)))
 
 # --- price history / sale price logic ---
 from datetime import date, timedelta
