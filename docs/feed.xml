@@ -38,6 +38,7 @@
       <internal_label>Digital sikkerhet - Sikker på jobb</internal_label>
       <g:id>PG-0001745</g:id>
       <g:title>Digital sikkerhet - Sikker på jobb − kurs i hr og ledelse</g:title>
+      <g:description>Digital sikkerhet - Sikker på jobb er et kurs-studium innen hr og ledelse hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/kurs/digital-sikkerhet-sikker-pa-jobb</g:link>
       <g:image_link>https://www.nki.no/kurs/digital-sikkerhet-sikker-pa-jobb/_/image/a19bf77b-c60d-4e18-91b2-24be9b21d087:c02a26caa72bb72953dc06cc1fe8d917ccd4b338/block-780-780/Digital%20markedsf%C3%B8ring%20-%20verkt%C3%B8y_977x640.jpg</g:image_link>
       <g:item_group_id>PG-0001745</g:item_group_id>
@@ -62,6 +63,7 @@
       <internal_label>Digital sikkerhet - For ledere</internal_label>
       <g:id>PG-0001744</g:id>
       <g:title>Digital sikkerhet - For ledere − kurs i hr og ledelse</g:title>
+      <g:description>Digital sikkerhet - For ledere er et kurs-studium innen hr og ledelse hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/kurs/digital-sikkerhet-for-ledere</g:link>
       <g:image_link>https://www.nki.no/kurs/digital-sikkerhet-for-ledere/_/image/a19bf77b-c60d-4e18-91b2-24be9b21d087:c02a26caa72bb72953dc06cc1fe8d917ccd4b338/block-780-780/Digital%20markedsf%C3%B8ring%20-%20verkt%C3%B8y_977x640.jpg</g:image_link>
       <g:item_group_id>PG-0001744</g:item_group_id>
@@ -1311,6 +1313,7 @@
       <internal_label>Klimaregnskap i praksis</internal_label>
       <g:id>PG-0001743</g:id>
       <g:title>Klimaregnskap i praksis − kurs i økonomi og bærekraft</g:title>
+      <g:description>Klimaregnskap i praksis er et kurs-studium innen økonomi og bærekraft hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/kurs/klimaregnskap-i-praksis</g:link>
       <g:image_link>https://www.nki.no/kurs/klimaregnskap-i-praksis/_/image/7d6320da-f42f-42e1-ac81-4e595ff687e2:b9b75f7fdd73ca39df5f82cda82f717a5759b58b/block-780-780/20231128-TBF_9604.jpg</g:image_link>
       <g:item_group_id>PG-0001743</g:item_group_id>
@@ -1335,6 +1338,7 @@
       <internal_label>Bærekraftsrapportering</internal_label>
       <g:id>PG-0001741</g:id>
       <g:title>Bærekraftsrapportering − kurs i økonomi og bærekraft</g:title>
+      <g:description>Bærekraftsrapportering er et kurs-studium innen økonomi og bærekraft hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/kurs/baerekraftsrapportering</g:link>
       <g:image_link>https://www.nki.no/kurs/baerekraftsrapportering/_/image/e7ea2e5c-b722-4a92-bc8b-ec8f30b449b1:7425ab0597482dbea934c91e8250c3b412c801b5/block-780-780/Baerekraftigreiseliv_illustrasjonsbilde.jpg</g:image_link>
       <g:item_group_id>PG-0001741</g:item_group_id>
@@ -1359,6 +1363,7 @@
       <internal_label>Bærekraftssertifisering og samfunnsansvar</internal_label>
       <g:id>PG-0001742</g:id>
       <g:title>Bærekraftssertifisering og samfunnsansvar − kurs i økonomi og bærekraft</g:title>
+      <g:description>Bærekraftssertifisering og samfunnsansvar er et kurs-studium innen økonomi og bærekraft hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/kurs/baerekraftssertifisering-og-samfunnsansvar</g:link>
       <g:image_link>https://www.nki.no/kurs/baerekraftssertifisering-og-samfunnsansvar/_/image/b5f4d91b-bf1f-4393-9950-401a00fd38c5:f58d39607d3870fdd5649ba732c84ab3db9d8fdf/block-780-780/b%C3%A6rekraftig%20drift.jpg</g:image_link>
       <g:item_group_id>PG-0001742</g:item_group_id>
@@ -2820,6 +2825,7 @@
       <internal_label>Bedriftsleder + AI i arbeidslivet</internal_label>
       <g:id>PG-0001729</g:id>
       <g:title>Bedriftsleder + AI i arbeidslivet − kurs i hr og ledelse</g:title>
+      <g:description>Bedriftsleder + AI i arbeidslivet er et kurs-studium innen hr og ledelse hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/kurs/bedriftsleder-ai-i-arbeidslivet</g:link>
       <g:image_link>https://www.nki.no/kurs/bedriftsleder-ai-i-arbeidslivet/_/image/9eed4662-f583-48c1-bccc-aa0d4713babd:a1c35714ac67b1b2a84d6f3e1a249639c5e364dd/block-780-780/bedriftsleder%201.jpg</g:image_link>
       <g:item_group_id>PG-0001729</g:item_group_id>
@@ -2944,6 +2950,7 @@
       <internal_label>Innføring i organisasjon og ledelse</internal_label>
       <g:id>CRS-OFR-07594</g:id>
       <g:title>Innføring i organisasjon og ledelse − enkeltemner i hr og ledelse</g:title>
+      <g:description>Innføring i organisasjon og ledelse er et enkeltemner-studium innen hr og ledelse hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/enkeltemner/innforing-i-organisasjon-og-ledelse</g:link>
       <g:image_link>https://www.nki.no/enkeltemner/innforing-i-organisasjon-og-ledelse/_/image/8b9a6cdf-97e2-40ea-a1f5-cb28ad4321aa:4dac95eb73c7f02a821b94d119753f3aab9e6848/block-780-780/bedriftsleder%202.jpg</g:image_link>
       <g:item_group_id>CRS-OFR-07594</g:item_group_id>
@@ -3268,6 +3275,7 @@
       <internal_label>Innføring i økonomistyring</internal_label>
       <g:id>CRS-OFR-07593</g:id>
       <g:title>Innføring i økonomistyring − enkeltemner i økonomi og bærekraft</g:title>
+      <g:description>Innføring i økonomistyring er et enkeltemner-studium innen økonomi og bærekraft hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/enkeltemner/innforing-i-okonomistyring</g:link>
       <g:image_link>https://www.nki.no/enkeltemner/innforing-i-okonomistyring/_/image/51c02291-1e19-4ee4-93a8-95855b4c07f0:c16db22bf9b1cdcaee403e04d7e1ed3476dfff21/block-780-780/bedriftsleder%203.jpg</g:image_link>
       <g:item_group_id>CRS-OFR-07593</g:item_group_id>
@@ -3292,6 +3300,7 @@
       <internal_label>Innføring i markedsføring</internal_label>
       <g:id>CRS-OFR-07595</g:id>
       <g:title>Innføring i markedsføring − enkeltemner i markedsføring og salg</g:title>
+      <g:description>Innføring i markedsføring er et enkeltemner-studium innen markedsføring og salg hos NKI Nettstudier.</g:description>
       <g:link>https://www.nki.no/enkeltemner/innforing-i-markedsforing</g:link>
       <g:image_link>https://www.nki.no/enkeltemner/innforing-i-markedsforing/_/image/9e119a00-b1d6-4bee-bda7-3497d4b007a1:9d3e3fde8332013045a2b4be3cafd243df765016/block-780-780/bedriftsleder%204.jpg</g:image_link>
       <g:item_group_id>CRS-OFR-07595</g:item_group_id>
