@@ -22,18 +22,13 @@ template matching, only missing ones would.
 
 fb_product_category note (2026-07-09): Meta rejected the feed with "Add
 valid Facebook product category in these fields" -- fb_product_category is
-NOT a free-text field, it must be a value from Meta's own category taxonomy
-(same idea as Google's product taxonomy). We were putting the raw NKI
-category string (e.g. "Jus og administrasjon") in there, which isn't a real
-taxonomy value. Fixed to a single fixed taxonomy value across the whole
-catalog: "Interests > Education > Distance education" -- picked over
-"Higher education" because that would be factually wrong for VGO/enkeltfag
-and short kurs items (not higher ed), whereas every single item in this feed
-genuinely is a distance/online study format. google_product_category is
-still our own made-up "utdanning > ..." path (not real GPC taxonomy either)
--- not fixed yet since Meta prefers fb_product_category when both are
-present, but flag this if Robin ever pushes this feed into Google Merchant
-Center directly.
+NOT a free-text field for Meta's own validation, it must be a value from
+Meta's category taxonomy (a SEPARATE numbering/taxonomy from Google's own
+Product Taxonomy -- don't confuse the two, their numeric IDs don't mean the
+same thing). We set the text value "Interests > Education > Distance
+education" as the default here; in practice Robin ended up needing a
+numeric override rule on the Hunch side for full validation to pass, which
+is outside what this feed field controls.
 
 Other design notes / known simplifications (see conversation with Robin):
 - Source of truth for id/price/category is the inline GTM dataLayer
@@ -44,6 +39,16 @@ Other design notes / known simplifications (see conversation with Robin):
   enkeltfag moved from plain CRS-XXXXX to CRS-OFR-XXXXX). We always trust
   whatever the live dataLayer says at scrape time -- don't expect IDs to
   match older feed exports item-for-item.
+- Discontinued courses (2026-07-11 fix): some pages (e.g. "Tannlegeassistent")
+  keep a stale dataLayer 'products' push even though the page itself shows
+  "Dette studiet er ikke lengre aktivt. Finn ditt studium under
+  Studievelger." -- NKI just never removed the old tracking snippet when
+  the course was discontinued. We now explicitly check for that phrase and
+  skip the page entirely, regardless of how valid the dataLayer looks.
+  Likely related: NKI Fagskoler merged into Fagskolen Kristiania from
+  2026-08-01, and a chunk of what used to be nki.no fagskole/enkeltemner
+  pages now simply redirect off-site (those are already excluded naturally
+  since the redirected page has no NKI dataLayer at all).
 - Entity type (custom_label_0 / nki:entity_type: kurs, enkeltemner, yrkesfag,
   vgo_teori, fagskole) is classified with category as the PRIMARY signal for
   the VGO/yrkesfag domain (CATEGORY_ENTITY_OVERRIDE), falling back to the
@@ -58,7 +63,7 @@ Other design notes / known simplifications (see conversation with Robin):
 - Category (custom_label_1 / nki:category / g:product_type) is the
   dataLayer's own category string. Some pages tag a course with multiple
   comma-separated categories -- we take the first as primary and log the
-  rest (see _primary_category). fb_product_category is now a FIXED taxonomy
+  rest (see _primary_category). fb_product_category is a FIXED taxonomy
   value, separate from this raw category (see note above).
 - Image: we do NOT use the og:image meta tag. It's meant for social-share
   previews and on some pages it's been set to a different photo than what's
@@ -75,17 +80,16 @@ Other design notes / known simplifications (see conversation with Robin):
   provided") if g:description is missing, and an empty custom_label / etc.
   can silently drop items out of a Hunch product set -- so every field we
   emit must always have a value.
-- sale_price is only ever emitted when the scraped price is LOWER than the
-  persisted baseline in data/price_history.json. First run establishes
-  baselines with no sale_price anywhere (nothing to compare against yet).
-- IMPORTANT (2026-07-10 fix): the GTM dataLayer's 'price' field does NOT
-  reflect active discounts -- confirmed on a live sale ("Medisinsk
+- Price / sale detection (2026-07-10 fix): the GTM dataLayer's 'price' field
+  does NOT reflect active discounts -- confirmed on a live sale ("Medisinsk
   sekretaer": dataLayer said price=54900 while the page showed "Foer 54
-  900,- / Naa 43 920,-"). When NKI runs a sale, the ONLY place the real
-  current price shows up is the DOM's "Pris: / Foer X / Naa Y" block. See
-  _extract_price_info -- it's now the source of truth for "current price"
-  fed into resolve_price whenever an active sale is detected; dataLayer price
-  is only used for the regular price when there's no Foer/Naa markup.
+  900,- / Naa 43 920,-"). The DOM's 'Pris: / Foer X / Naa Y' block is the
+  ONLY reliable signal of an active sale and the true live price. See
+  _extract_price_info -- dataLayer price is only trusted when there's no
+  Foer/Naa markup on the page. sale_price itself is only emitted when the
+  resolved current price is LOWER than the persisted baseline in
+  data/price_history.json. First run establishes baselines with no
+  sale_price anywhere (nothing to compare against yet).
 - Lanekassen eligibility (custom_label_4 in the original spec) is
   intentionally NOT scraped/emitted, per Robin's call, even though
   "Finansiering: Lanekassegodkjent" is a scrapeable field (LANEKASSEN_TEXT
@@ -139,7 +143,18 @@ DEFAULT_IMAGE = f"{BASE_URL}/assets/images/og-default.jpg"
 # a real category from their taxonomy. Every item here is a distance/online
 # study product, so this is accurate across the whole catalog regardless of
 # entity_type (unlike "Higher education", which would be wrong for VGO/kurs).
+# Note: Robin also has a numeric override rule set up on the Hunch side for
+# full Meta validation -- that lives in Hunch, not here.
 FB_PRODUCT_CATEGORY = "Interests > Education > Distance education"
+
+# Phrases that mean "this course/page is discontinued" even though the page
+# still has a (stale) GTM dataLayer product push. Checked case-insensitively.
+# Found via "Tannlegeassistent": dataLayer still had id/price/brand, but the
+# page body says "Dette studiet er ikke lengre aktivt. Finn ditt studium
+# under Studievelger." -- NKI just never removed the old tracking snippet.
+DISCONTINUED_MARKERS = (
+    "ikke lengre aktiv",  # matches "aktiv", "aktivt"
+)
 
 # Display label per entity_type -- used for custom_label_0, the
 # google_product_category text path, and the smart-title suffix. Keep in sync
@@ -311,6 +326,15 @@ def _extract_datalayer_product(html: str) -> Optional[dict]:
     return products[0]
 
 
+def _is_discontinued(text: str) -> bool:
+    """
+    True if the page body says the course/program is no longer active, even
+    if it still has a (stale) dataLayer product push. See DISCONTINUED_MARKERS.
+    """
+    lowered = text.lower()
+    return any(marker in lowered for marker in DISCONTINUED_MARKERS)
+
+
 def _extract_fact(text: str, label: str) -> Optional[str]:
     pattern = _FACT_RE_TEMPLATE.format(label=re.escape(label))
     match = re.search(pattern, text)
@@ -348,7 +372,7 @@ def _extract_price_info(text: str) -> dict:
     the GTM dataLayer's own 'price' field does NOT reflect this discount --
     it always reports the pre-discount price, sale or no sale (confirmed on
     "Medisinsk sekretaer": dataLayer price=54900 while the page clearly shows
-    "Før 54 900,- / Naa 43 920,-"). So the DOM Foer/Naa pair is the ONLY
+    "Før 54 900,- / Nå 43 920,-"). So the DOM Foer/Naa pair is the ONLY
     reliable signal that a course is currently discounted and what the live
     price actually is -- dataLayer can't be trusted for this at all.
 
@@ -426,6 +450,10 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
 
     soup = BeautifulSoup(html, "lxml")
     text = soup.get_text("\n")
+
+    if _is_discontinued(text):
+        log.info("%s has a discontinued-course marker in the page body, skipping despite dataLayer product", url)
+        return None
 
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else product.get("name", "")
