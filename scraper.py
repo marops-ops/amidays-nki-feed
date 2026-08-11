@@ -20,6 +20,21 @@ g:sale_price_effective_date are kept as bonus/compliance fields even though
 they weren't in the reference example, since extra fields don't break
 template matching, only missing ones would.
 
+fb_product_category note (2026-07-09): Meta rejected the feed with "Add
+valid Facebook product category in these fields" -- fb_product_category is
+NOT a free-text field, it must be a value from Meta's own category taxonomy
+(same idea as Google's product taxonomy). We were putting the raw NKI
+category string (e.g. "Jus og administrasjon") in there, which isn't a real
+taxonomy value. Fixed to a single fixed taxonomy value across the whole
+catalog: "Interests > Education > Distance education" -- picked over
+"Higher education" because that would be factually wrong for VGO/enkeltfag
+and short kurs items (not higher ed), whereas every single item in this feed
+genuinely is a distance/online study format. google_product_category is
+still our own made-up "utdanning > ..." path (not real GPC taxonomy either)
+-- not fixed yet since Meta prefers fb_product_category when both are
+present, but flag this if Robin ever pushes this feed into Google Merchant
+Center directly.
+
 Other design notes / known simplifications (see conversation with Robin):
 - Source of truth for id/price/category is the inline GTM dataLayer
   'productDetailView' push on each page (regex + json.loads, no headless
@@ -40,10 +55,11 @@ Other design notes / known simplifications (see conversation with Robin):
   apart, but the category can. There is no separate "vgo" rollup value --
   Robin filters yrkesfag + vgo_teori together in Meta Ads when she wants the
   full VGO picture.
-- Category (custom_label_1 / fb_product_category / nki:category /
-  g:product_type) is the dataLayer's own category string. Some pages tag a
-  course with multiple comma-separated categories -- we take the first as
-  primary and log the rest (see _primary_category).
+- Category (custom_label_1 / nki:category / g:product_type) is the
+  dataLayer's own category string. Some pages tag a course with multiple
+  comma-separated categories -- we take the first as primary and log the
+  rest (see _primary_category). fb_product_category is now a FIXED taxonomy
+  value, separate from this raw category (see note above).
 - Image: we do NOT use the og:image meta tag. It's meant for social-share
   previews and on some pages it's been set to a different photo than what's
   actually shown on the page (e.g. a student testimonial photo instead of
@@ -62,6 +78,14 @@ Other design notes / known simplifications (see conversation with Robin):
 - sale_price is only ever emitted when the scraped price is LOWER than the
   persisted baseline in data/price_history.json. First run establishes
   baselines with no sale_price anywhere (nothing to compare against yet).
+- IMPORTANT (2026-07-10 fix): the GTM dataLayer's 'price' field does NOT
+  reflect active discounts -- confirmed on a live sale ("Medisinsk
+  sekretaer": dataLayer said price=54900 while the page showed "Foer 54
+  900,- / Naa 43 920,-"). When NKI runs a sale, the ONLY place the real
+  current price shows up is the DOM's "Pris: / Foer X / Naa Y" block. See
+  _extract_price_info -- it's now the source of truth for "current price"
+  fed into resolve_price whenever an active sale is detected; dataLayer price
+  is only used for the regular price when there's no Foer/Naa markup.
 - Lanekassen eligibility (custom_label_4 in the original spec) is
   intentionally NOT scraped/emitted, per Robin's call, even though
   "Finansiering: Lanekassegodkjent" is a scrapeable field (LANEKASSEN_TEXT
@@ -109,6 +133,13 @@ FEED_LINK = "https://www.nki.no"
 FEED_DESCRIPTION = "Produktfeed for NKI Nettstudier. Nettstudier med fleksibel oppstart."
 BRAND = "NKI"  # matches the Hunch-oriented reference feed (was "NKI Nettstudier")
 DEFAULT_IMAGE = f"{BASE_URL}/assets/images/og-default.jpg"
+
+# Fixed Meta taxonomy value for fb_product_category -- this is NOT free text,
+# Meta rejects the feed ("Add valid Facebook product category") if it isn't
+# a real category from their taxonomy. Every item here is a distance/online
+# study product, so this is accurate across the whole catalog regardless of
+# entity_type (unlike "Higher education", which would be wrong for VGO/kurs).
+FB_PRODUCT_CATEGORY = "Interests > Education > Distance education"
 
 # Display label per entity_type -- used for custom_label_0, the
 # google_product_category text path, and the smart-title suffix. Keep in sync
@@ -307,6 +338,32 @@ def _parse_price_nok(text: str) -> Optional[float]:
     return float(digits) if digits else None
 
 
+_PRICE_SALE_RE = re.compile(r"Pris:\s*\n\s*Før\s+([^\n]+)\n\s*Nå\s+([^\n]+)")
+
+
+def _extract_price_info(text: str) -> dict:
+    """
+    When a course is on sale, nki.no renders 'Pris: / Før <old> / Nå <new>'
+    in the DOM instead of the normal single-line 'Pris: <value>'. Critically,
+    the GTM dataLayer's own 'price' field does NOT reflect this discount --
+    it always reports the pre-discount price, sale or no sale (confirmed on
+    "Medisinsk sekretaer": dataLayer price=54900 while the page clearly shows
+    "Før 54 900,- / Naa 43 920,-"). So the DOM Foer/Naa pair is the ONLY
+    reliable signal that a course is currently discounted and what the live
+    price actually is -- dataLayer can't be trusted for this at all.
+
+    Returns {"current": float|None, "regular_dom": float|None}.
+    regular_dom is only set when an active Foer/Naa sale was found in the DOM.
+    """
+    sale_match = _PRICE_SALE_RE.search(text)
+    if sale_match:
+        before = _parse_price_nok(sale_match.group(1))
+        now = _parse_price_nok(sale_match.group(2))
+        return {"current": now, "regular_dom": before}
+    pris_text = _extract_fact(text, "Pris")
+    return {"current": _parse_price_nok(pris_text) if pris_text else None, "regular_dom": None}
+
+
 def _parse_duration_months(text: str) -> Optional[int]:
     """'3 maneder' -> 3"""
     match = re.search(r"(\d+)", text)
@@ -385,15 +442,26 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
 
     utdanningsniva = _extract_fact(text, "Utdanningsnivå")
     studietilgang = _extract_fact(text, "Studietilgang")
-    pris_text = _extract_fact(text, "Pris")
 
-    dom_price = _parse_price_nok(pris_text) if pris_text else None
+    price_info = _extract_price_info(text)
     dl_price = product.get("price")
-    price = float(dl_price) if dl_price is not None else dom_price
 
     notes = []
-    if dom_price is not None and dl_price is not None and abs(dom_price - float(dl_price)) > 0.5:
-        notes.append(f"Price mismatch: dataLayer={dl_price} DOM={dom_price}, used dataLayer")
+    if price_info["regular_dom"] is not None:
+        # Active Foer/Naa sale in the DOM -- this is the ONLY place the real
+        # live price shows up, dataLayer always reports the pre-discount
+        # price. Use the DOM "Naa" value as the current price so the
+        # price-history sale detection actually sees the drop.
+        price = price_info["current"]
+        notes.append(
+            f"Active sale detected in DOM: før {price_info['regular_dom']} nå {price_info['current']} "
+            f"(dataLayer price={dl_price} does not reflect this, ignored)"
+        )
+    else:
+        dom_price = price_info["current"]
+        price = float(dl_price) if dl_price is not None else dom_price
+        if dom_price is not None and dl_price is not None and abs(dom_price - float(dl_price)) > 0.5:
+            notes.append(f"Price mismatch: dataLayer={dl_price} DOM={dom_price}, used dataLayer")
     if not description:
         notes.append("No meta description / og:description on page, used generated fallback")
 
@@ -615,7 +683,7 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         _sub(item, "custom_label_0", display_type)
         _sub(item, "custom_label_1", p.category)
         _sub(item, "custom_label_2", duration_tier(p.duration_months))  # bonus, extends the pattern
-        _sub(item, "fb_product_category", p.category)
+        _sub(item, "fb_product_category", FB_PRODUCT_CATEGORY)  # must be a real Meta taxonomy value, not raw category
         _sub(item, "feed_name", p.title)
         _sub(item, "internal_label", p.title)
 
