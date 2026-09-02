@@ -21,34 +21,34 @@
   },
   "CRS-OFR-00924": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-00925": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-00926": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01110": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01111": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01112": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01279": {
     "baseline": 7500.0,
     "drop_since": null
   },
   "CRS-OFR-01283": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-01305": {
@@ -57,11 +57,11 @@
   },
   "CRS-OFR-01306": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01310": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01466": {
     "baseline": 9500.0,
@@ -77,23 +77,23 @@
   },
   "CRS-OFR-01525": {
     "baseline": 8500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01526": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01550": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01551": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01552": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-01624": {
     "baseline": 5490.0,
@@ -113,15 +113,15 @@
   },
   "CRS-OFR-06952": {
     "baseline": 16000.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-06953": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-06954": {
     "baseline": 16000.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-06956": {
     "baseline": 9500.0,
@@ -164,68 +164,68 @@
     "drop_since": null
   },
   "CRS-OFR-07053": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07054": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07055": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07056": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07057": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07058": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07059": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07061": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07073": {
     "baseline": 18400.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07074": {
     "baseline": 10800.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07075": {
     "baseline": 10800.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07078": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07092": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07100": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07108": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07110": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07163": {
     "baseline": 17500.0,
@@ -240,24 +240,24 @@
     "drop_since": null
   },
   "CRS-OFR-07166": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07173": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07174": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07337": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07338": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07339": {
     "baseline": 9500.0,
@@ -293,30 +293,30 @@
   },
   "CRS-OFR-07463": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07464": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07465": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07479": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07480": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07481": {
     "baseline": 7500.0,
     "drop_since": null
   },
   "CRS-OFR-07482": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-07490": {
@@ -413,11 +413,11 @@
   },
   "CRS-OFR-07876": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07877": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "CRS-OFR-07951": {
     "baseline": 9500.0,
@@ -481,7 +481,7 @@
   },
   "PG-0000053": {
     "baseline": 15900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000055": {
     "baseline": 49500.0,
@@ -489,7 +489,7 @@
   },
   "PG-0000074": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000120": {
     "baseline": 7900.0,
@@ -541,15 +541,15 @@
   },
   "PG-0000179": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000187": {
     "baseline": 39900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000191": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000210": {
     "baseline": 7900.0,
@@ -557,31 +557,31 @@
   },
   "PG-0000214": {
     "baseline": 39900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000215": {
     "baseline": 39900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000216": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000221": {
     "baseline": 15900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000222": {
     "baseline": 39900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000226": {
     "baseline": 39900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000227": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000231": {
     "baseline": 26900.0,
@@ -589,7 +589,7 @@
   },
   "PG-0000232": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000241": {
     "baseline": 9900.0,
@@ -601,11 +601,11 @@
   },
   "PG-0000243": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000244": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0000257": {
     "baseline": 49500.0,
@@ -633,7 +633,7 @@
   },
   "PG-0001533": {
     "baseline": 38900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001534": {
     "baseline": 81500.0,
@@ -649,15 +649,15 @@
   },
   "PG-0001551": {
     "baseline": 19900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001552": {
     "baseline": 17900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001553": {
     "baseline": 14900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001555": {
     "baseline": 9900.0,
@@ -665,7 +665,7 @@
   },
   "PG-0001557": {
     "baseline": 23900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001559": {
     "baseline": 7900.0,
@@ -677,30 +677,30 @@
   },
   "PG-0001562": {
     "baseline": 38900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001563": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001564": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001566": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001567": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001568": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001569": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001570": {
@@ -729,14 +729,14 @@
   },
   "PG-0001591": {
     "baseline": 39900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001592": {
     "baseline": 35900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001593": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001594": {
@@ -753,15 +753,15 @@
   },
   "PG-0001635": {
     "baseline": 39900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001636": {
     "baseline": 16900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001641": {
     "baseline": 35900.0,
-    "drop_since": null
+    "drop_since": "2026-09-02"
   },
   "PG-0001642": {
     "baseline": 49500.0,
@@ -773,7 +773,7 @@
   },
   "PG-0001644": {
     "baseline": 54900.0,
-    "drop_since": "2026-08-11"
+    "drop_since": null
   },
   "PG-0001645": {
     "baseline": 34900.0,
@@ -796,7 +796,7 @@
     "drop_since": null
   },
   "PG-0001693": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001695": {
