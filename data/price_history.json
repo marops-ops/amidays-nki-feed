@@ -45,7 +45,7 @@
   },
   "CRS-OFR-01279": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-03"
   },
   "CRS-OFR-01283": {
     "baseline": 466650.0,
@@ -53,7 +53,7 @@
   },
   "CRS-OFR-01305": {
     "baseline": 8500.0,
-    "drop_since": null
+    "drop_since": "2026-09-03"
   },
   "CRS-OFR-01306": {
     "baseline": 7500.0,
@@ -96,7 +96,7 @@
     "drop_since": "2026-09-02"
   },
   "CRS-OFR-01624": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "CRS-OFR-01733": {
@@ -313,7 +313,7 @@
   },
   "CRS-OFR-07481": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-03"
   },
   "CRS-OFR-07482": {
     "baseline": 466650.0,
@@ -465,7 +465,7 @@
   },
   "CRS-OFR-07964": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-03"
   },
   "CRS-OFR-07969": {
     "baseline": 25500.0,
@@ -716,7 +716,7 @@
     "drop_since": null
   },
   "PG-0001573": {
-    "baseline": 5490.0,
+    "baseline": 466650.0,
     "drop_since": null
   },
   "PG-0001586": {
