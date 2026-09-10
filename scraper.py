@@ -3,100 +3,85 @@
 NKI Nettstudier product feed generator.
 
 Crawls nki.no via sitemap.xml, extracts product data from each course/program
-page (GTM dataLayer + on-page facts box), classifies it, tracks price history
-to detect real sale prices, checks availability, and writes an RSS 2.0 feed
-to docs/feed.xml.
+page, classifies it, tracks price history to detect real sale prices, checks
+availability, and writes an RSS 2.0 feed to docs/feed.xml.
+
+=============================================================================
+2026-09-12 REWRITE: NKI relaunched nki.no on a new stack (Next.js + Sanity
+CMS, confirmed via _next/static chunk requests and cdn.sanity.io image URLs).
+The old GTM dataLayer 'productDetailView' push, the "Utdanningsniva:/Pris:"
+facts-box text, and the hero-<img>-after-<h1> pattern are ALL gone. This is a
+from-scratch rewrite of the extraction layer; everything below the "Page
+parsing" section (price history, XML building, tiering) is unchanged.
+
+New source of truth: schema.org JSON-LD (<script type="application/ld+json">),
+which is actually a step up in data quality over the old dataLayer approach:
+  - Two shapes depending on content type:
+      @type "Course"  -- plain kurs/enkeltfag/yrkesfag pages. Has name,
+                          description (real, good SEO copy -- our generated
+                          fallback description should rarely trigger now),
+                          offers.price/priceCurrency/availability, and
+                          hasCourseInstance.courseWorkload (ISO 8601
+                          duration, e.g. "PT250H" = 250 hours). NO sku, NO
+                          image field.
+      @type "Product"  -- fagskole/"pakke"-style pages. Has all of the above
+                          PLUS sku (the OLD PG-xxxx catalog ID survives here!)
+                          and a direct, correct image URL (Sanity CDN).
+  - A BreadcrumbList block whose 2nd item's URL query string
+    (?level=X&subject=Y) is a clean, structured classification signal --
+    replaces the old Utdanningsniva-text + CATEGORY_ENTITY_OVERRIDE hack
+    entirely. Confirmed values: level=kurs, level=vgo (subject=yrkesfag /
+    praksiskandidat / enkeltfag / studiekompetanse / realfag), and presumably
+    level=fagskole / level=enkeltemner (not yet observed directly but
+    follows the same pattern). Crucially, subject=yrkesfag vs
+    subject=enkeltfag correctly disambiguates vocational-vs-academic VGO
+    single subjects that the old Utdanningsniva field could NOT tell apart
+    (e.g. "Kommunikasjon og samhandling for ambulansefag" -> subject=yrkesfag
+    even though it lives under the same /videregaende/enkeltfag/ URL prefix
+    as academic subjects like Biologi 1, subject=enkeltfag).
+  - Discontinued courses (e.g. old "Tannlegeassistent") now return a real
+    HTTP 404 instead of a live 200 page with an "ikke lengre aktiv" banner --
+    simpler than before, the DISCONTINUED_MARKERS text check below is now
+    just belt-and-suspenders for any stale page that might still 200.
+  - og:image is now RELIABLE as an image fallback (unlike the old site,
+    where it sometimes pointed at an unrelated photo) because actual <img>
+    tags in the static HTML are lazy-loaded blank placeholders on this
+    Next.js build -- there is no hero-image-in-DOM to scrape anymore, so we
+    prefer the JSON-LD "image" field (Product type) and fall back to
+    og:image (works for both types).
+
+ID strategy (confirmed with Robin 2026-09-12): Product-type pages keep their
+sku (old PG-xxxx ID, preserves price-history/pixel continuity). Course-type
+pages have no sku at all anymore, so we use the URL path as the id instead
+(e.g. "kurs/trening-som-medisin") -- stable, guaranteed unique, and simpler
+than trying to fabricate one from the title.
+
+Sale detection: no live "Foer/Naa" sale was available to confirm against
+during this rewrite. offers.price is expected to reflect the true current
+price directly (unlike the old dataLayer bug where price never changed for
+a sale) -- resolve_price's baseline-diff logic should catch real drops on
+its own. The DOM Foer/Naa regex check is kept as a defensive extra signal in
+case that visual pattern still exists somewhere; harmless no-op if absent.
+=============================================================================
 
 Field schema note (2026-07-08): the feed is deliberately shaped to match a
 Hunch/Meta-oriented reference feed Robin uses for ad templates -- bare
 (un-namespaced) custom_label_0/1/2, fb_product_category, feed_name,
 internal_label, plus g:-namespaced item_group_id, a text-based
-google_product_category, and a single-value product_type. This means
-custom_label_0/1/2 are NOT in Google's g: namespace here, so Google Merchant
-Center will not recognize them as shopping custom labels (it'll just ignore
-the bare tags) -- that's a known, accepted tradeoff for matching Hunch
-without remapping. The nki:* namespace fields, g:ads_redirect and
-g:sale_price_effective_date are kept as bonus/compliance fields even though
-they weren't in the reference example, since extra fields don't break
-template matching, only missing ones would.
+google_product_category, and a single-value product_type.
 
-fb_product_category note (2026-07-09): Meta rejected the feed with "Add
-valid Facebook product category in these fields" -- fb_product_category is
-NOT a free-text field for Meta's own validation, it must be a value from
-Meta's category taxonomy (a SEPARATE numbering/taxonomy from Google's own
-Product Taxonomy -- don't confuse the two, their numeric IDs don't mean the
-same thing). We set the text value "Interests > Education > Distance
-education" as the default here; in practice Robin ended up needing a
-numeric override rule on the Hunch side for full validation to pass, which
-is outside what this feed field controls.
+fb_product_category note (2026-07-09/11): must be a value from Meta's own
+category taxonomy (separate numbering from Google's Product Taxonomy).
+Default text value here is "Interests > Education > Distance education";
+Robin also has a numeric override rule on the Hunch side.
 
-Other design notes / known simplifications (see conversation with Robin):
-- Source of truth for id/price/category is the inline GTM dataLayer
-  'productDetailView' push on each page (regex + json.loads, no headless
-  browser needed -- nki.no is server-rendered by Enonic CMS).
-- Course IDs on nki.no get renumbered over time (e.g. "Innforing i ledelse"
-  went from CRS-00586 in an older export to PG-0000172 live; many VGO
-  enkeltfag moved from plain CRS-XXXXX to CRS-OFR-XXXXX). We always trust
-  whatever the live dataLayer says at scrape time -- don't expect IDs to
-  match older feed exports item-for-item.
-- Discontinued courses (2026-07-11 fix): some pages (e.g. "Tannlegeassistent")
-  keep a stale dataLayer 'products' push even though the page itself shows
-  "Dette studiet er ikke lengre aktivt. Finn ditt studium under
-  Studievelger." -- NKI just never removed the old tracking snippet when
-  the course was discontinued. We now explicitly check for that phrase and
-  skip the page entirely, regardless of how valid the dataLayer looks.
-  Likely related: NKI Fagskoler merged into Fagskolen Kristiania from
-  2026-08-01, and a chunk of what used to be nki.no fagskole/enkeltemner
-  pages now simply redirect off-site (those are already excluded naturally
-  since the redirected page has no NKI dataLayer at all).
-- Entity type (custom_label_0 / nki:entity_type: kurs, enkeltemner, yrkesfag,
-  vgo_teori, fagskole) is classified with category as the PRIMARY signal for
-  the VGO/yrkesfag domain (CATEGORY_ENTITY_OVERRIDE), falling back to the
-  page's own "Utdanningsniva:" facts field otherwise. This was a real bug fix:
-  pages under /videregaende/enkeltfag/ all show Utdanningsniva "Enkeltfag"
-  whether the subject is academic (studiekompetanse, e.g. Biologi 1) or a
-  single subject within a vocational program (e.g. "Kommunikasjon og
-  samhandling for tannhelsesekretaerfag") -- the page label can't tell those
-  apart, but the category can. There is no separate "vgo" rollup value --
-  Robin filters yrkesfag + vgo_teori together in Meta Ads when she wants the
-  full VGO picture.
-- Category (custom_label_1 / nki:category / g:product_type) is the
-  dataLayer's own category string. Some pages tag a course with multiple
-  comma-separated categories -- we take the first as primary and log the
-  rest (see _primary_category). fb_product_category is a FIXED taxonomy
-  value, separate from this raw category (see note above).
-- Image: we do NOT use the og:image meta tag. It's meant for social-share
-  previews and on some pages it's been set to a different photo than what's
-  actually shown on the page (e.g. a student testimonial photo instead of
-  the course's own hero image), or drifted to something unrelated entirely.
-  Instead we take the first real <img> that appears after the page's <h1> --
-  that's the actual illustration shown in the purple facts box, which is
-  what Robin wants every time. og:image is kept only as a last-resort
-  fallback if no such <img> is found.
-- Description: meta description / og:description first; if neither exists
-  (some newer nki.no pages don't have SEO metadata filled in yet), we
-  generate a short, guaranteed non-empty description instead of leaving the
-  field blank. Google/Hunch reject a product outright ("Field value is not
-  provided") if g:description is missing, and an empty custom_label / etc.
-  can silently drop items out of a Hunch product set -- so every field we
-  emit must always have a value.
-- Price / sale detection (2026-07-10 fix): the GTM dataLayer's 'price' field
-  does NOT reflect active discounts -- confirmed on a live sale ("Medisinsk
-  sekretaer": dataLayer said price=54900 while the page showed "Foer 54
-  900,- / Naa 43 920,-"). The DOM's 'Pris: / Foer X / Naa Y' block is the
-  ONLY reliable signal of an active sale and the true live price. See
-  _extract_price_info -- dataLayer price is only trusted when there's no
-  Foer/Naa markup on the page. sale_price itself is only emitted when the
-  resolved current price is LOWER than the persisted baseline in
-  data/price_history.json. First run establishes baselines with no
-  sale_price anywhere (nothing to compare against yet).
-- Lanekassen eligibility (custom_label_4 in the original spec) is
-  intentionally NOT scraped/emitted, per Robin's call, even though
-  "Finansiering: Lanekassegodkjent" is a scrapeable field (LANEKASSEN_TEXT
-  below) -- trivial to wire up later.
-- Availability is derived from the HTTP status of the same GET used to scrape
-  the page (200 -> in stock, anything else -> out of stock), rather than a
-  second HEAD request -- same result, half the requests.
+Other longstanding design notes:
+- sale_price is only ever emitted when the resolved current price is LOWER
+  than the persisted baseline in data/price_history.json. First run
+  establishes baselines with no sale_price anywhere.
+- Lanekassen eligibility is intentionally NOT scraped/emitted (Robin's call).
+- Availability is derived from the HTTP status of the same GET used to
+  scrape the page (200 -> in stock, anything else -> out of stock).
 """
 
 from __future__ import annotations
@@ -111,7 +96,7 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlencode
+from urllib.parse import parse_qs, urlencode, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -135,30 +120,17 @@ SALE_WINDOW_DAYS = 30  # rolling window while a price drop is active
 FEED_TITLE = "NKI Nettstudier — Kurs og utdanning"
 FEED_LINK = "https://www.nki.no"
 FEED_DESCRIPTION = "Produktfeed for NKI Nettstudier. Nettstudier med fleksibel oppstart."
-BRAND = "NKI"  # matches the Hunch-oriented reference feed (was "NKI Nettstudier")
+BRAND = "NKI"
 DEFAULT_IMAGE = f"{BASE_URL}/assets/images/og-default.jpg"
 
-# Fixed Meta taxonomy value for fb_product_category -- this is NOT free text,
-# Meta rejects the feed ("Add valid Facebook product category") if it isn't
-# a real category from their taxonomy. Every item here is a distance/online
-# study product, so this is accurate across the whole catalog regardless of
-# entity_type (unlike "Higher education", which would be wrong for VGO/kurs).
-# Note: Robin also has a numeric override rule set up on the Hunch side for
-# full Meta validation -- that lives in Hunch, not here.
 FB_PRODUCT_CATEGORY = "Interests > Education > Distance education"
 
-# Phrases that mean "this course/page is discontinued" even though the page
-# still has a (stale) GTM dataLayer product push. Checked case-insensitively.
-# Found via "Tannlegeassistent": dataLayer still had id/price/brand, but the
-# page body says "Dette studiet er ikke lengre aktivt. Finn ditt studium
-# under Studievelger." -- NKI just never removed the old tracking snippet.
+# Belt-and-suspenders only now (see module docstring) -- new site 404s
+# discontinued courses instead of showing this banner on a 200 page.
 DISCONTINUED_MARKERS = (
-    "ikke lengre aktiv",  # matches "aktiv", "aktivt"
+    "ikke lengre aktiv",
 )
 
-# Display label per entity_type -- used for custom_label_0, the
-# google_product_category text path, and the smart-title suffix. Keep in sync
-# with ENTITY_TYPE_MAP's target values below.
 ENTITY_TYPE_DISPLAY: dict[str, str] = {
     "kurs": "Kurs",
     "enkeltemner": "Enkeltemner",
@@ -167,16 +139,12 @@ ENTITY_TYPE_DISPLAY: dict[str, str] = {
     "fagskole": "Fagskole",
 }
 
-# Only crawl sitemap URLs under these prefixes -- everything else (blogg,
-# om-nki, kampanjer, ...) is not a sellable course/program.
 ALLOWED_PREFIXES = (
     "/kurs/",
     "/enkeltemner/",
     "/fagskole/",
     "/videregaende/",
 )
-# Index/listing pages that live under an allowed prefix but aren't products.
-# Belt-and-suspenders on top of the "must have a dataLayer product" check.
 EXCLUDED_EXACT_PATHS = {
     "/kurs",
     "/enkeltemner",
@@ -189,20 +157,24 @@ EXCLUDED_EXACT_PATHS = {
     "/videregaende/enkeltfag",
 }
 
-# "Utdanningsniva:" facts-box value -> custom_label_0 / nki:entity_type.
-# Used as a FALLBACK when CATEGORY_ENTITY_OVERRIDE below doesn't apply.
-ENTITY_TYPE_MAP = {
+# breadcrumb ?level=... -> entity_type, for levels that don't need a subject
+# to disambiguate.
+LEVEL_TO_ENTITY_TYPE = {
     "kurs": "kurs",
     "enkeltemner": "enkeltemner",
-    "enkeltemne": "enkeltemner",
+    "fagskole": "fagskole",
+}
+# breadcrumb ?level=vgo&subject=... -> entity_type. This is what replaces the
+# old Utdanningsniva/CATEGORY_ENTITY_OVERRIDE ambiguity fix -- subject
+# reliably distinguishes vocational vs academic VGO single subjects.
+VGO_SUBJECT_TO_ENTITY_TYPE = {
     "yrkesfag": "yrkesfag",
     "praksiskandidat": "yrkesfag",
     "enkeltfag": "vgo_teori",
     "studiekompetanse": "vgo_teori",
     "realfag": "vgo_teori",
-    "fagskole": "fagskole",
 }
-# Fallback if neither category nor the facts-box value can classify it: guess from URL.
+# Last-resort fallback if breadcrumb data is missing/malformed: guess from URL.
 URL_FALLBACK_ENTITY_TYPE = (
     ("/fagskole/", "fagskole"),
     ("/videregaende/yrkesfag/", "yrkesfag"),
@@ -213,23 +185,7 @@ URL_FALLBACK_ENTITY_TYPE = (
     ("/enkeltemner/", "enkeltemner"),
 )
 
-# Category strings that unambiguously belong to the VGO/yrkesfag domain,
-# checked BEFORE the Utdanningsniva-based logic. Found via real mismatches
-# against Robin's reference feed: pages under /videregaende/enkeltfag/ all
-# show Utdanningsniva "Enkeltfag" whether the subject is an academic
-# studiekompetanse subject (e.g. Biologi 1) or a single subject within a
-# vocational program (e.g. "Kommunikasjon og samhandling for
-# tannhelsesekretaerfag", "Ambulansemedisin Vg2") -- the page label can't
-# tell those apart, but the category can. Category also caught one item
-# hosted at /kurs/... ("Forkurs ingenior realfagskurs") whose Utdanningsniva
-# literally says "Kurs" even though it's VGO prep content.
-CATEGORY_ENTITY_OVERRIDE = {
-    "Yrkesfag på videregående": "yrkesfag",
-    "Spesiell studiekompetanse": "vgo_teori",
-    "Generell studiekompetanse": "vgo_teori",
-}
-
-LANEKASSEN_TEXT = "Lånekassegodkjent"  # present in DOM; not wired up yet (see module docstring)
+LANEKASSEN_TEXT = "Lånekassegodkjent"  # not wired up, see module docstring
 
 logging.basicConfig(
     level=logging.INFO,
@@ -252,14 +208,14 @@ class Product:
     link: str
     image_link: str
     in_stock: bool
-    price: float  # regular/baseline NOK, always populated
+    price: float
     sale_price: Optional[float]
     sale_price_effective_date: Optional[str]
-    category: str  # raw site category (primary, after splitting multi-category values)
-    entity_type: str  # kurs / enkeltemner / yrkesfag / vgo_teori / fagskole
+    category: str
+    entity_type: str
     duration_months: Optional[int]
     duration_text: Optional[str]
-    notes: list[str] = field(default_factory=list)  # scrape warnings, for the run summary
+    notes: list[str] = field(default_factory=list)
 
 
 # --------------------------------------------------------------------------- #
@@ -305,32 +261,63 @@ def get_candidate_urls() -> list[str]:
 
 
 # --------------------------------------------------------------------------- #
-# Page parsing
+# Page parsing (rewritten 2026-09-12 for the new nki.no -- see module docstring)
 # --------------------------------------------------------------------------- #
 
-_PRODUCTS_RE = re.compile(r"'products'\s*:\s*(\[.*?\])", re.DOTALL)
 _FACT_RE_TEMPLATE = r"{label}:\s*\n?\s*([^\n]+)"
+# New site (2026-09) price/sale markup: no "Pris:" label anymore, "Før" and
+# "Nå" appear in either order, format is "5 490 kr" (space thousands, no
+# comma). Matched independently so order doesn't matter.
+_PRICE_FOER_RE = re.compile(r"Før\s*\n?\s*([\d\s]+)\s*kr", re.IGNORECASE)
+_PRICE_NAA_RE = re.compile(r"Nå\s*\n?\s*([\d\s]+)\s*kr", re.IGNORECASE)
+_ISO8601_DURATION_RE = re.compile(
+    r"^P(?:(?P<years>\d+)Y)?(?:(?P<months>\d+)M)?(?:(?P<weeks>\d+)W)?(?:(?P<days>\d+)D)?"
+    r"(?:T(?:(?P<hours>\d+)H)?(?:(?P<minutes>\d+)M)?(?:(?P<seconds>\d+)S)?)?$"
+)
 
 
-def _extract_datalayer_product(html: str) -> Optional[dict]:
-    match = _PRODUCTS_RE.search(html)
-    if not match:
-        return None
-    try:
-        products = json.loads(match.group(1))
-    except json.JSONDecodeError:
-        log.warning("Found 'products' block but could not parse JSON: %s", match.group(1)[:200])
-        return None
-    if not products:
-        return None
-    return products[0]
+def _extract_ld_json_blocks(soup: BeautifulSoup) -> list[dict]:
+    blocks = []
+    for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        raw = script.string or script.get_text()
+        if not raw:
+            continue
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        blocks.append(data)
+    return blocks
+
+
+def _find_first_ld_json(blocks: list[dict], types: tuple[str, ...]) -> Optional[dict]:
+    for block in blocks:
+        if isinstance(block, dict) and block.get("@type") in types:
+            return block
+    return None
+
+
+def _parse_breadcrumb(breadcrumb: Optional[dict]) -> tuple[Optional[str], Optional[str], Optional[str]]:
+    """
+    Returns (level, subject, category_label). category_label is the 2nd
+    breadcrumb item's display name (e.g. "Helse og livsstil" for kurs pages,
+    "Yrkesfag" for VGO pages) -- used as our raw 'category' field downstream.
+    """
+    if not breadcrumb:
+        return None, None, None
+    items = breadcrumb.get("itemListElement") or []
+    if len(items) < 2:
+        return None, None, None
+    second = items[1]
+    category_label = second.get("name")
+    item_url = second.get("item") or ""
+    query = parse_qs(urlparse(item_url).query)
+    level = (query.get("level") or [None])[0]
+    subject = (query.get("subject") or [None])[0]
+    return level, subject, category_label
 
 
 def _is_discontinued(text: str) -> bool:
-    """
-    True if the page body says the course/program is no longer active, even
-    if it still has a (stale) dataLayer product push. See DISCONTINUED_MARKERS.
-    """
     lowered = text.lower()
     return any(marker in lowered for marker in DISCONTINUED_MARKERS)
 
@@ -341,81 +328,65 @@ def _extract_fact(text: str, label: str) -> Optional[str]:
     return match.group(1).strip() if match else None
 
 
-def _extract_hero_image(soup: BeautifulSoup, title_tag) -> Optional[str]:
-    """
-    The image shown in the purple facts box is the first real <img> that
-    appears after the <h1>. We skip icon assets (svg) in case a template
-    inserts one between the heading and the photo.
-    """
-    if title_tag is None:
-        return None
-    for img in title_tag.find_all_next("img"):
-        src = img.get("src", "")
-        if src and not src.lower().endswith(".svg"):
-            return src.strip()
-    return None
-
-
 def _parse_price_nok(text: str) -> Optional[float]:
-    """'kr 7 900,-' -> 7900.0"""
     digits = re.sub(r"[^\d]", "", text)
     return float(digits) if digits else None
 
 
-_PRICE_SALE_RE = re.compile(r"Pris:\s*\n\s*Før\s+([^\n]+)\n\s*Nå\s+([^\n]+)")
-
-
 def _extract_price_info(text: str) -> dict:
     """
-    When a course is on sale, nki.no renders 'Pris: / Før <old> / Nå <new>'
-    in the DOM instead of the normal single-line 'Pris: <value>'. Critically,
-    the GTM dataLayer's own 'price' field does NOT reflect this discount --
-    it always reports the pre-discount price, sale or no sale (confirmed on
-    "Medisinsk sekretaer": dataLayer price=54900 while the page clearly shows
-    "Før 54 900,- / Nå 43 920,-"). So the DOM Foer/Naa pair is the ONLY
-    reliable signal that a course is currently discounted and what the live
-    price actually is -- dataLayer can't be trusted for this at all.
-
-    Returns {"current": float|None, "regular_dom": float|None}.
-    regular_dom is only set when an active Foer/Naa sale was found in the DOM.
+    Detects an active 'Foer/Naa' sale on the NEW site (2026-09): shown as a
+    crossed-out "Før X kr" plus current "Nå Y kr", with a "-N%" badge, in
+    either order (confirmed live on "Biologi 2": "Nå 4 667 kr / Før 5 490 kr
+    / -14%"). offers.price in JSON-LD DOES already reflect the discounted
+    price correctly on this site (unlike the old dataLayer bug), so this DOM
+    check exists to recover the REGULAR price for baseline-seeding -- see
+    resolve_price's regular_hint param.
     """
-    sale_match = _PRICE_SALE_RE.search(text)
-    if sale_match:
-        before = _parse_price_nok(sale_match.group(1))
-        now = _parse_price_nok(sale_match.group(2))
+    foer_match = _PRICE_FOER_RE.search(text)
+    naa_match = _PRICE_NAA_RE.search(text)
+    if foer_match and naa_match:
+        before = _parse_price_nok(foer_match.group(1))
+        now = _parse_price_nok(naa_match.group(1))
         return {"current": now, "regular_dom": before}
-    pris_text = _extract_fact(text, "Pris")
-    return {"current": _parse_price_nok(pris_text) if pris_text else None, "regular_dom": None}
+    return {"current": None, "regular_dom": None}
 
 
-def _parse_duration_months(text: str) -> Optional[int]:
-    """'3 maneder' -> 3"""
-    match = re.search(r"(\d+)", text)
-    return int(match.group(1)) if match else None
-
-
-def _primary_category(raw_category: str) -> str:
+def _parse_iso8601_duration(value: Optional[str]) -> tuple[Optional[int], Optional[str]]:
     """
-    Some dataLayer entries tag a course with multiple categories, comma
-    separated, e.g. 'HR og ledelse, Jus og administrasjon'. We only have room
-    for one category value downstream, so take the first as primary and log
-    the rest so Robin can see what's being dropped.
+    'PT250H' -> (months≈1, "250 timer"). hasCourseInstance.courseWorkload is
+    the new site's duration field, ISO 8601 duration format. Only present on
+    Course-type pages so far -- Product-type pages simply don't have it.
     """
-    if not raw_category:
-        return raw_category
-    parts = [p.strip() for p in raw_category.split(",") if p.strip()]
-    if len(parts) > 1:
-        log.info("Multi-category value %r, using primary %r (dropped: %s)", raw_category, parts[0], parts[1:])
-    return parts[0] if parts else raw_category
+    if not value:
+        return None, None
+    match = _ISO8601_DURATION_RE.match(value.strip())
+    if not match:
+        return None, value
+    parts = {k: int(v) if v else 0 for k, v in match.groupdict().items()}
+    total_hours = (
+        parts["years"] * 8760
+        + parts["months"] * 730
+        + parts["weeks"] * 168
+        + parts["days"] * 24
+        + parts["hours"]
+        + parts["minutes"] / 60
+    )
+    if not total_hours:
+        return None, value
+    months = max(1, round(total_hours / 730))
+    if parts["hours"] and not any([parts["years"], parts["months"], parts["weeks"], parts["days"]]):
+        text = f"{parts['hours']} timer"
+    else:
+        text = value
+    return months, text
 
 
 def _fallback_description(title: str, entity_type: Optional[str], category: Optional[str]) -> str:
     """
-    Guaranteed non-empty description, used when a page has neither a
-    <meta name="description"> nor an og:description. Google/Hunch reject a
-    product outright ("Field value is not provided") if g:description is
-    missing/empty -- some nki.no pages (mostly newer ones) simply don't have
-    SEO metadata filled in yet, so we can't rely on the page always having it.
+    Guaranteed non-empty description -- should rarely trigger now that the
+    new site's JSON-LD has real per-page descriptions, but kept as a safety
+    net (Meta/Hunch reject a product outright if g:description is empty).
     """
     display = entity_display(entity_type) if entity_type else ""
     if display and category:
@@ -425,15 +396,20 @@ def _fallback_description(title: str, entity_type: Optional[str], category: Opti
     return f"{title} hos NKI Nettstudier."
 
 
-def classify_entity_type(utdanningsniva: Optional[str], path: str, category: Optional[str] = None) -> str:
-    if category and category in CATEGORY_ENTITY_OVERRIDE:
-        return CATEGORY_ENTITY_OVERRIDE[category]
+def classify_entity_type(level: Optional[str], subject: Optional[str], path: str) -> str:
+    if level == "vgo":
+        if subject and subject in VGO_SUBJECT_TO_ENTITY_TYPE:
+            return VGO_SUBJECT_TO_ENTITY_TYPE[subject]
+        log.warning("level=vgo with unrecognized subject %r for %s, defaulting to vgo_teori", subject, path)
+        return "vgo_teori"
 
-    if utdanningsniva:
-        key = utdanningsniva.strip().lower()
-        if key in ENTITY_TYPE_MAP:
-            return ENTITY_TYPE_MAP[key]
-        log.warning("Unrecognized Utdanningsniva value %r for %s, falling back to URL", utdanningsniva, path)
+    if level in LEVEL_TO_ENTITY_TYPE:
+        return LEVEL_TO_ENTITY_TYPE[level]
+
+    if level:
+        log.warning("Unrecognized breadcrumb level %r for %s, falling back to URL", level, path)
+    else:
+        log.warning("No breadcrumb level found for %s, falling back to URL", path)
 
     for prefix, entity_type in URL_FALLBACK_ENTITY_TYPE:
         if path.startswith(prefix):
@@ -444,65 +420,68 @@ def classify_entity_type(utdanningsniva: Optional[str], path: str, category: Opt
 
 def parse_product_page(url: str, html: str) -> Optional[dict]:
     """Returns a raw field dict, or None if this isn't a product page."""
-    product = _extract_datalayer_product(html)
+    soup = BeautifulSoup(html, "lxml")
+    blocks = _extract_ld_json_blocks(soup)
+
+    product = _find_first_ld_json(blocks, ("Course", "Product"))
     if product is None:
         return None
 
-    soup = BeautifulSoup(html, "lxml")
     text = soup.get_text("\n")
-
     if _is_discontinued(text):
-        log.info("%s has a discontinued-course marker in the page body, skipping despite dataLayer product", url)
+        log.info("%s has a discontinued-course marker in the page body, skipping", url)
         return None
 
-    title_tag = soup.find("h1")
-    title = title_tag.get_text(strip=True) if title_tag else product.get("name", "")
+    breadcrumb = _find_first_ld_json(blocks, ("BreadcrumbList",))
+    level, subject, category = _parse_breadcrumb(breadcrumb)
 
-    image_link = _extract_hero_image(soup, title_tag)
+    title = (product.get("name") or "").strip()
+
+    description = (product.get("description") or "").strip()
+
+    sku = product.get("sku")
+    path = url.replace(BASE_URL, "").strip("/")
+    item_id = sku or path  # URL path used as id for Course-type pages (no sku) -- confirmed with Robin
+
+    image_link = product.get("image")
     if not image_link:
         og_image = soup.find("meta", attrs={"property": "og:image"})
         image_link = og_image["content"].strip() if og_image and og_image.get("content") else None
 
-    meta_desc = soup.find("meta", attrs={"name": "description"}) or soup.find(
-        "meta", attrs={"property": "og:description"}
-    )
-    description = meta_desc["content"].strip() if meta_desc and meta_desc.get("content") else ""
-
-    utdanningsniva = _extract_fact(text, "Utdanningsnivå")
-    studietilgang = _extract_fact(text, "Studietilgang")
+    offers = product.get("offers") or {}
+    dl_price = offers.get("price")
 
     price_info = _extract_price_info(text)
-    dl_price = product.get("price")
-
     notes = []
-    if price_info["regular_dom"] is not None:
-        # Active Foer/Naa sale in the DOM -- this is the ONLY place the real
-        # live price shows up, dataLayer always reports the pre-discount
-        # price. Use the DOM "Naa" value as the current price so the
-        # price-history sale detection actually sees the drop.
-        price = price_info["current"]
-        notes.append(
-            f"Active sale detected in DOM: før {price_info['regular_dom']} nå {price_info['current']} "
-            f"(dataLayer price={dl_price} does not reflect this, ignored)"
-        )
-    else:
-        dom_price = price_info["current"]
-        price = float(dl_price) if dl_price is not None else dom_price
-        if dom_price is not None and dl_price is not None and abs(dom_price - float(dl_price)) > 0.5:
-            notes.append(f"Price mismatch: dataLayer={dl_price} DOM={dom_price}, used dataLayer")
+    # offers.price already reflects the live/current price correctly on the
+    # new site (confirmed: shows the discounted price during an active
+    # sale) -- use it directly. price_info["regular_dom"] is only used to
+    # seed an accurate baseline for products we're seeing for the first time
+    # while already on sale (see resolve_price's regular_hint).
+    price = float(dl_price) if dl_price is not None else price_info["current"]
+    regular_hint = price_info["regular_dom"]
+    if regular_hint is not None:
+        notes.append(f"Active DOM sale detected: før {regular_hint} nå {price_info['current']} (offers.price={dl_price})")
+
     if not description:
-        notes.append("No meta description / og:description on page, used generated fallback")
+        notes.append("No description in structured data, used generated fallback")
+
+    duration_months, duration_text = _parse_iso8601_duration(
+        (product.get("hasCourseInstance") or {}).get("courseWorkload")
+    )
 
     return {
-        "id": product.get("id"),
+        "id": item_id,
         "title": title,
-        "description": description,  # filled in with a fallback in crawl(), once entity_type/category are known
+        "description": description,
         "image_link": image_link,
-        "category": _primary_category(product.get("category", "")),
+        "category": category or "",
         "price": price,
-        "utdanningsniva": utdanningsniva,
-        "duration_text": studietilgang,
-        "duration_months": _parse_duration_months(studietilgang) if studietilgang else None,
+        "regular_hint": regular_hint,
+        "level": level,
+        "subject": subject,
+        "duration_text": duration_text,
+        "duration_months": duration_months,
         "notes": notes,
     }
 
@@ -546,14 +525,35 @@ def save_price_history(history: dict) -> None:
     PRICE_HISTORY_PATH.write_text(json.dumps(history, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
 
 
-def resolve_price(product_id: str, current_price: float, history: dict, today: date) -> tuple[float, Optional[float], Optional[str]]:
+def resolve_price(
+    product_id: str,
+    current_price: float,
+    history: dict,
+    today: date,
+    regular_hint: Optional[float] = None,
+) -> tuple[float, Optional[float], Optional[str]]:
     """
     Returns (price, sale_price, sale_price_effective_date).
     Mutates `history` in place.
+
+    regular_hint: the DOM-scraped "Foer" (regular) price, when the page shows
+    an active sale (see _extract_price_info). Used ONLY the first time we see
+    a product_id with no existing history entry -- without it, a product that
+    is *already* on sale the very first time we scrape it would silently get
+    its discounted price baked in as the "normal" baseline, and the ongoing
+    sale would never be detected (exactly what happened during the 2026-09
+    site-rewrite ID migration, where every Course-type product effectively
+    became "new" overnight). With the hint, we seed baseline=regular_hint
+    instead and correctly emit sale_price on the very first run.
     """
     entry = history.get(product_id)
 
     if entry is None:
+        if regular_hint is not None and regular_hint > current_price:
+            history[product_id] = {"baseline": regular_hint, "drop_since": today.isoformat()}
+            end = today + timedelta(days=SALE_WINDOW_DAYS)
+            effective_date = f"{today.isoformat()}T00:00+0100/{end.isoformat()}T23:59+0100"
+            return regular_hint, current_price, effective_date
         history[product_id] = {"baseline": current_price, "drop_since": None}
         return current_price, None, None
 
@@ -568,12 +568,10 @@ def resolve_price(product_id: str, current_price: float, history: dict, today: d
         return baseline, current_price, effective_date
 
     if current_price > baseline:
-        # New regular price -- not a sale, just a price change.
         entry["baseline"] = current_price
         entry["drop_since"] = None
         return current_price, None, None
 
-    # current_price == baseline
     entry["drop_since"] = None
     return baseline, None, None
 
@@ -601,12 +599,10 @@ def crawl() -> list[Product]:
         if not in_stock:
             out_of_stock.append(f"{url} (HTTP {resp.status_code})")
 
-        # Even for a non-200, NKI may serve a body (soft 404); try to parse
-        # anyway so we don't drop items that are just temporarily flaky.
         raw = parse_product_page(url, resp.text)
         if raw is None:
             skipped_non_product += 1
-            log.info("No product data found on %s, treating as a listing page (skipped)", url)
+            log.info("No product data found on %s, treating as a listing/404 page (skipped)", url)
             continue
 
         if not raw["id"] or raw["price"] is None:
@@ -614,8 +610,10 @@ def crawl() -> list[Product]:
             continue
 
         path = url.replace(BASE_URL, "")
-        entity_type = classify_entity_type(raw["utdanningsniva"], path, raw["category"])
-        price, sale_price, effective_date = resolve_price(raw["id"], raw["price"], history, today)
+        entity_type = classify_entity_type(raw["level"], raw["subject"], path)
+        price, sale_price, effective_date = resolve_price(
+            raw["id"], raw["price"], history, today, regular_hint=raw.get("regular_hint")
+        )
 
         description = raw["description"] or _fallback_description(raw["title"], entity_type, raw["category"])
 
@@ -682,14 +680,12 @@ def entity_display(entity_type: str) -> str:
 
 
 def smart_title(title: str, entity_type: str, category: str) -> str:
-    """'Advokatsekretaer' -> 'Advokatsekretaer − fagskole i jus og administrasjon'"""
     if not category:
         return title
     return f"{title} − {entity_display(entity_type).lower()} i {category.lower()}"
 
 
 def google_product_category_path(entity_type: str, category: str) -> str:
-    """'fagskole', 'Jus og administrasjon' -> 'utdanning > fagskole > jus og administrasjon'"""
     parts = ["utdanning", entity_display(entity_type).lower()]
     if category:
         parts.append(category.lower())
@@ -707,15 +703,13 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         item = ET.SubElement(channel, "item")
         display_type = entity_display(p.entity_type)
 
-        # --- bare (un-namespaced) fields, matching the Hunch reference feed ---
         _sub(item, "custom_label_0", display_type)
         _sub(item, "custom_label_1", p.category)
-        _sub(item, "custom_label_2", duration_tier(p.duration_months))  # bonus, extends the pattern
-        _sub(item, "fb_product_category", FB_PRODUCT_CATEGORY)  # must be a real Meta taxonomy value, not raw category
+        _sub(item, "custom_label_2", duration_tier(p.duration_months))
+        _sub(item, "fb_product_category", FB_PRODUCT_CATEGORY)
         _sub(item, "feed_name", p.title)
         _sub(item, "internal_label", p.title)
 
-        # --- g:-namespaced standard fields ---
         _sub(item, _g("id"), p.id)
         _sub(item, _g("title"), smart_title(p.title, p.entity_type, p.category))
         _sub(item, _g("description"), p.description)
@@ -740,7 +734,6 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         }
         _sub(item, _g("ads_redirect"), f"{p.link}?{urlencode(ads_params)}")
 
-        # --- nki:-namespaced bonus fields ---
         _sub(item, _nki("entity_type"), p.entity_type)
         _sub(item, _nki("category"), p.category)
         _sub(item, _nki("duration"), p.duration_text)
