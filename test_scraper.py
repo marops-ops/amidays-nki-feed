@@ -1,106 +1,48 @@
-"""Quick sanity checks against real snippets captured from nki.no (2026-07-08).
-Not a full test suite -- just enough to catch encoding/regex mistakes before
-running the scraper against the live site from GitHub Actions.
+"""
+Sanity checks against real page structure captured from nki.no (rewritten
+2026-09-12 for the new Next.js/Sanity/JSON-LD site, extended 2026-09-14 for
+the header-widget sale-price fix). Not a full test suite -- just enough to
+catch parsing/regex mistakes before running the scraper against the live
+site from GitHub Actions.
 """
 
 import scraper
 
-SAMPLE_HTML = """
-<html>
-<head>
-<meta property="og:description" content="Praktisk nettkurs i ledelse som gir deg kunnskapen du trenger for a bli en god leder.">
-<meta property="og:image" content="https://www.nki.no/kurs/innforing-i-ledelse/_/image/abc/width-800/pic.jpg">
-</head>
-<body>
-<script>
-  dataLayer.push({
-      'event': 'productDetailView',
-      'ecommerce': {
-          'detail': {
-            'products':[{"name":"Innføring i ledelse","id":"PG-0000172","price":7900,"brand":"NKI","category":"HR og ledelse"}]
-          }
-      }
-  });
-</script>
-<h1>Innføring i ledelse</h1>
-<div>
-Utdanningsnivå:
-<span>Kurs</span>
-Oppstart:
-<span>Start når du vil</span>
-Studietilgang:
-<span>3 måneder</span>
-Pris:
-<span>kr 7 900,-</span>
-</div>
-</body>
-</html>
-"""
 
-FAGSKOLE_HTML = """
-<html>
-<head>
-<meta property="og:description" content="Bli prosjektleder med fagskoleutdanning.">
-<meta property="og:image" content="https://www.nki.no/fagskole/prosjektleder/_/image/abc/width-800/pic.jpg">
-</head>
-<body>
-<script>
-  dataLayer.push({
-      'event': 'productDetailView',
-      'ecommerce': {
-          'detail': {
-            'products':[{"name":"Prosjektleder","id":"PG-0001642","price":49500,"brand":"NKI","category":"HR og ledelse, Jus og administrasjon"}]
-          }
-      }
-  });
-</script>
-<h1>Prosjektleder</h1>
-<div>
-Utdanningsnivå:
-<span>Fagskole</span>
-Finansiering:
-<span>Lånekassegodkjent</span>
-Oppstart:
-<span>Start når du vil</span>
-Studietilgang:
-<span>12 måneder</span>
-Pris:
-<span>kr 49 500,-</span>
-</div>
-</body>
-</html>
-"""
+def _script(payload_dict) -> str:
+    import json
+    return f'<script type="application/ld+json">{json.dumps(payload_dict)}</script>'
 
-# No meta description / og:description at all -- exercises the guaranteed
-# fallback description (the real-world bug: Hunch rejected products where
-# this was empty with "Field value is not provided").
-NO_META_HTML = """
+
+def _page(ld_blocks, before_h1_extra="", after_h1_extra="", h1_text=None, meta_extra=""):
+    """
+    Builds minimal but structurally realistic HTML: <head> with meta tags,
+    then BEFORE the <h1> some optional extra markup (used to simulate the
+    real site's header/nav "campaign widget" that sits before the product
+    content), then the <h1>, then optional extra markup AFTER it (used to
+    simulate the product's own real price block).
+    """
+    name = h1_text
+    if name is None:
+        for block in ld_blocks:
+            if block.get("@type") in ("Course", "Product"):
+                name = block.get("name", "Product")
+                break
+    scripts = "\n".join(_script(b) for b in ld_blocks)
+    return f"""
 <html>
 <head>
+{meta_extra}
+{scripts}
 </head>
 <body>
-<script>
-  dataLayer.push({
-      'event': 'productDetailView',
-      'ecommerce': {
-          'detail': {
-            'products':[{"name":"Saksbehandler","id":"PG-0000259","price":39500,"brand":"NKI","category":"Jus og administrasjon"}]
-          }
-      }
-  });
-</script>
-<h1>Saksbehandler</h1>
-<img src="https://www.nki.no/fagskole/saksbehandler/_/image/real/block-780-780/Solfrid%20Fagskole%202026.jpg" alt="hero">
-<div>
-Utdanningsnivå:
-<span>Fagskole</span>
-Oppstart:
-<span>Start når du vil</span>
-Studietilgang:
-<span>12 måneder</span>
-Pris:
-<span>kr 39 500,-</span>
-</div>
+<header>
+{before_h1_extra}
+</header>
+<main>
+<h1>{name}</h1>
+{after_h1_extra}
+</main>
 </body>
 </html>
 """
@@ -113,117 +55,284 @@ def check(label, cond):
         raise SystemExit(1)
 
 
-raw = scraper.parse_product_page("https://www.nki.no/kurs/innforing-i-ledelse", SAMPLE_HTML)
-check("dataLayer id extracted", raw["id"] == "PG-0000172")
-check("dataLayer price extracted", raw["price"] == 7900)
-check("dataLayer category extracted", raw["category"] == "HR og ledelse")
-check("Utdanningsniva extracted", raw["utdanningsniva"] == "Kurs")
-check("Studietilgang extracted", raw["duration_text"] == "3 måneder")
-check("duration_months parsed", raw["duration_months"] == 3)
-check("title from h1", raw["title"] == "Innføring i ledelse")
-check("og:image used as fallback when no body <img>", raw["image_link"].endswith("pic.jpg"))
-check("og:description captured", "ledelse" in raw["description"])
+# --------------------------------------------------------------------------- #
+# Fixtures: JSON-LD blocks matching the two real shapes on nki.no
+# --------------------------------------------------------------------------- #
 
-# --- hero image: must prefer the real <img> after <h1> over og:image ---
-HERO_IMG_HTML = SAMPLE_HTML.replace(
-    "<h1>Innføring i ledelse</h1>",
-    '<h1>Innføring i ledelse</h1>\n<img src="/icons/heart.svg" alt="">'
-    '\n<img src="https://www.nki.no/kurs/innforing-i-ledelse/_/image/real/block-780-780/pexels-fauxels.jpg" alt="hero">',
-)
-raw_hero = scraper.parse_product_page("https://www.nki.no/kurs/innforing-i-ledelse", HERO_IMG_HTML)
-check(
-    "hero <img> after h1 wins over og:image",
-    raw_hero["image_link"] == "https://www.nki.no/kurs/innforing-i-ledelse/_/image/real/block-780-780/pexels-fauxels.jpg",
-)
-check("svg icon between h1 and hero photo is skipped", not raw_hero["image_link"].endswith(".svg"))
+COURSE_LD = {
+    "@type": "Course",
+    "name": "Trening som medisin",
+    "description": "Kurset Trening som medisin gir deg treningsfysiologien bak anbefalingene.",
+    "url": "https://www.nki.no/kurs/trening-som-medisin",
+    "provider": {"@type": "Organization", "name": "NKI Nettstudier"},
+    "offers": {"@type": "Offer", "price": 9900, "priceCurrency": "NOK", "availability": "https://schema.org/InStock"},
+    "hasCourseInstance": {"@type": "CourseInstance", "courseWorkload": "PT250H"},
+}
+COURSE_BREADCRUMB = {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Hjem", "item": "https://www.nki.no/"},
+        {"@type": "ListItem", "position": 2, "name": "Helse og livsstil", "item": "https://www.nki.no/kurs?level=kurs"},
+    ],
+}
 
-entity = scraper.classify_entity_type(raw["utdanningsniva"], "/kurs/innforing-i-ledelse")
-check("entity_type = kurs", entity == "kurs")
-check("price_tier 7900 = 5000_15000", scraper.price_tier(7900) == "5000_15000")
-check("duration_tier 3mnd = kort", scraper.duration_tier(3) == "kort")
-check("entity_display kurs = Kurs", scraper.entity_display("kurs") == "Kurs")
+PRODUCT_LD = {
+    "@type": "Product",
+    "name": "Medisinsk sekretær",
+    "description": "Bli medisinsk sekretær med denne fagskolepakken.",
+    "url": "https://www.nki.no/fagskole/medisinsk-sekretaer",
+    "sku": "PG-0001745",
+    "image": "https://cdn.sanity.io/images/nki/medisinsk-sekretaer.jpg",
+    "offers": {"@type": "Offer", "price": 54900, "priceCurrency": "NOK", "availability": "https://schema.org/InStock"},
+}
+PRODUCT_BREADCRUMB = {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Hjem", "item": "https://www.nki.no/"},
+        {"@type": "ListItem", "position": 2, "name": "Fagskole", "item": "https://www.nki.no/fagskole?level=fagskole"},
+    ],
+}
+
+ENKELTFAG_LD = {
+    "@type": "Course",
+    "name": "Biologi 2 (REA3036/3037)",
+    "description": "Enkeltfag Biologi 2 på videregående nivå.",
+    "url": "https://www.nki.no/videregaende/enkeltfag/biologi-2",
+    "offers": {"@type": "Offer", "price": 5490, "priceCurrency": "NOK", "availability": "https://schema.org/InStock"},
+}
+ENKELTFAG_BREADCRUMB = {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Hjem", "item": "https://www.nki.no/"},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Spesiell studiekompetanse",
+            "item": "https://www.nki.no/videregaende?level=vgo&subject=enkeltfag",
+        },
+    ],
+}
+
+YRKESFAG_LD = {
+    "@type": "Course",
+    "name": "Kommunikasjon og samhandling for ambulansefag",
+    "description": "Yrkesfaglig enkeltfag for ambulansefag.",
+    "url": "https://www.nki.no/videregaende/enkeltfag/ambulansemedisin",
+    "offers": {"@type": "Offer", "price": 4900, "priceCurrency": "NOK", "availability": "https://schema.org/InStock"},
+}
+YRKESFAG_BREADCRUMB = {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Hjem", "item": "https://www.nki.no/"},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Yrkesfag på videregående",
+            "item": "https://www.nki.no/videregaende?level=vgo&subject=yrkesfag",
+        },
+    ],
+}
+
+NO_DESC_LD = {
+    "@type": "Product",
+    "name": "Saksbehandler",
+    "description": "",
+    "url": "https://www.nki.no/fagskole/saksbehandler",
+    "sku": "PG-0000259",
+    "offers": {"@type": "Offer", "price": 39500, "priceCurrency": "NOK", "availability": "https://schema.org/InStock"},
+}
+
+DISCONTINUED_HTML = """
+<html>
+<head></head>
+<body>
+<h1>Tannlegeassistent</h1>
+<div>Dette studiet er ikke lengre aktivt. Finn ditt studium under Studievelger.</div>
+</body>
+</html>
+"""
+
+# --------------------------------------------------------------------------- #
+# Basic Course parsing
+# --------------------------------------------------------------------------- #
+
+COURSE_HTML = _page([COURSE_LD, COURSE_BREADCRUMB])
+raw = scraper.parse_product_page("https://www.nki.no/kurs/trening-som-medisin", COURSE_HTML)
+check("Course: id falls back to URL path (no sku)", raw["id"] == "kurs/trening-som-medisin")
+check("Course: title from JSON-LD name", raw["title"] == "Trening som medisin")
+check("Course: description from JSON-LD", "treningsfysiologien" in raw["description"])
+check("Course: price from offers.price", raw["price"] == 9900)
+check("Course: no regular_hint when no sale markup present", raw["regular_hint"] is None)
+check("Course: duration parsed from ISO8601 (PT250H)", raw["duration_text"] == "250 timer")
+check("Course: duration_months >= 1", raw["duration_months"] == 1)
+check("Course: level/subject from breadcrumb", raw["level"] == "kurs")
+check("Course: category from breadcrumb 2nd item", raw["category"] == "Helse og livsstil")
+
+# --------------------------------------------------------------------------- #
+# Basic Product (fagskole/pakke) parsing
+# --------------------------------------------------------------------------- #
+
+PRODUCT_HTML = _page([PRODUCT_LD, PRODUCT_BREADCRUMB])
+raw2 = scraper.parse_product_page("https://www.nki.no/fagskole/medisinsk-sekretaer", PRODUCT_HTML)
+check("Product: id uses sku (PG-xxxx), not URL", raw2["id"] == "PG-0001745")
+check("Product: image from JSON-LD image field", raw2["image_link"] == "https://cdn.sanity.io/images/nki/medisinsk-sekretaer.jpg")
+check("Product: price from offers.price", raw2["price"] == 54900)
+
+entity2 = scraper.classify_entity_type(raw2["level"], raw2["subject"], "fagskole/medisinsk-sekretaer")
+check("Product: entity_type = fagskole", entity2 == "fagskole")
+
+# --------------------------------------------------------------------------- #
+# Breadcrumb-based VGO disambiguation (yrkesfag vs vgo_teori)
+# --------------------------------------------------------------------------- #
+
+ENKELTFAG_HTML = _page([ENKELTFAG_LD, ENKELTFAG_BREADCRUMB])
+raw3 = scraper.parse_product_page("https://www.nki.no/videregaende/enkeltfag/biologi-2", ENKELTFAG_HTML)
+entity3 = scraper.classify_entity_type(raw3["level"], raw3["subject"], "videregaende/enkeltfag/biologi-2")
+check("Academic enkeltfag (subject=enkeltfag) -> vgo_teori", entity3 == "vgo_teori")
+
+YRKESFAG_HTML = _page([YRKESFAG_LD, YRKESFAG_BREADCRUMB])
+raw4 = scraper.parse_product_page("https://www.nki.no/videregaende/enkeltfag/ambulansemedisin", YRKESFAG_HTML)
+entity4 = scraper.classify_entity_type(raw4["level"], raw4["subject"], "videregaende/enkeltfag/ambulansemedisin")
+check("Vocational enkeltfag (subject=yrkesfag), same URL prefix -> yrkesfag, not vgo_teori", entity4 == "yrkesfag")
+
+# --------------------------------------------------------------------------- #
+# Discontinued course detection
+# --------------------------------------------------------------------------- #
+
 check(
-    "smart_title suffix",
-    scraper.smart_title("Innføring i ledelse", "kurs", "HR og ledelse") == "Innføring i ledelse − kurs i hr og ledelse",
-)
-check(
-    "google_product_category path",
-    scraper.google_product_category_path("kurs", "HR og ledelse") == "utdanning > kurs > hr og ledelse",
+    "Discontinued marker text -> page skipped entirely",
+    scraper.parse_product_page("https://www.nki.no/kurs/tannlegeassistent", DISCONTINUED_HTML) is None,
 )
 
-raw2 = scraper.parse_product_page("https://www.nki.no/fagskole/prosjektleder", FAGSKOLE_HTML)
-check("fagskole id", raw2["id"] == "PG-0001642")
-check("multi-category split to primary", raw2["category"] == "HR og ledelse")
-entity2 = scraper.classify_entity_type(raw2["utdanningsniva"], "/fagskole/prosjektleder")
-check("entity_type = fagskole", entity2 == "fagskole")
-check("duration_tier 12mnd = medium", scraper.duration_tier(raw2["duration_months"]) == "medium")
-check("entity_display fagskole = Fagskole", scraper.entity_display("fagskole") == "Fagskole")
-check(
-    "google_product_category matches Robin's reference example",
-    scraper.google_product_category_path("fagskole", "Jus og administrasjon") == "utdanning > fagskole > jus og administrasjon",
-)
+# --------------------------------------------------------------------------- #
+# Guaranteed non-empty description fallback
+# --------------------------------------------------------------------------- #
 
-check("Realfag maps to vgo_teori", scraper.classify_entity_type("Realfag", "/videregaende/realfag/x") == "vgo_teori")
-
-# --- category-priority classification (real mismatches found against Robin's reference feed) ---
-check(
-    "Enkeltfag + 'Yrkesfag paa videregaende' category -> yrkesfag (not vgo_teori)",
-    scraper.classify_entity_type("Enkeltfag", "/videregaende/enkeltfag/ambulansemedisin", "Yrkesfag på videregående") == "yrkesfag",
-)
-check(
-    "Enkeltfag + 'Spesiell studiekompetanse' category -> vgo_teori",
-    scraper.classify_entity_type("Enkeltfag", "/videregaende/enkeltfag/biologi-1", "Spesiell studiekompetanse") == "vgo_teori",
-)
-check(
-    "Kurs-URL item with VGO category still classified as vgo_teori",
-    scraper.classify_entity_type("Kurs", "/kurs/forkurs-ingenior-realfagskurs", "Spesiell studiekompetanse") == "vgo_teori",
-)
-check(
-    "No category override: Utdanningsniva still used normally",
-    scraper.classify_entity_type("Kurs", "/kurs/innforing-i-ledelse", "HR og ledelse") == "kurs",
-)
-
-# --- guaranteed non-empty description (the real Hunch bug: "Field value is not provided") ---
-raw_no_meta = scraper.parse_product_page("https://www.nki.no/fagskole/saksbehandler", NO_META_HTML)
-check("no meta description -> raw description is empty (filled in later in crawl())", raw_no_meta["description"] == "")
-check("note logged about missing description", any("fallback" in n for n in raw_no_meta["notes"]))
+NO_DESC_HTML = _page([NO_DESC_LD])
+raw_no_desc = scraper.parse_product_page("https://www.nki.no/fagskole/saksbehandler", NO_DESC_HTML)
+check("Empty JSON-LD description -> raw description empty (filled in later by crawl())", raw_no_desc["description"] == "")
+check("Note logged about missing description", any("fallback" in n for n in raw_no_desc["notes"]))
 
 fallback_desc = scraper._fallback_description("Saksbehandler", "fagskole", "Jus og administrasjon")
-check("fallback description is non-empty", bool(fallback_desc))
-check("fallback description mentions title", fallback_desc.startswith("Saksbehandler"))
-check("fallback description mentions NKI", "NKI" in fallback_desc)
+check("Fallback description non-empty", bool(fallback_desc))
+check("Fallback description mentions title", fallback_desc.startswith("Saksbehandler"))
+check("Fallback description mentions NKI", "NKI" in fallback_desc)
+check("Fallback with no category still non-empty", bool(scraper._fallback_description("X", "kurs", "")))
+check("Fallback with no entity_type/category still non-empty", bool(scraper._fallback_description("X", None, None)))
 
-check("fallback with no category still non-empty", bool(scraper._fallback_description("X", "kurs", "")))
-check("fallback with no entity_type/category still non-empty", bool(scraper._fallback_description("X", None, None)))
+# --------------------------------------------------------------------------- #
+# 2026-09-14 FIX: header/nav "campaign widget" must NOT be mistaken for the
+# current product's own sale. This reproduces the real bug found live: every
+# nki.no page renders a nav widget listing 2-3 unrelated discounted packages
+# (with their own "Foer"/"Naa" DOM text) BEFORE the page's own <h1>.
+# --------------------------------------------------------------------------- #
 
-# --- price history / sale price logic ---
+HEADER_WIDGET_HTML = """
+<div class="nav-campaign-widget">
+  <a href="/videregaende/studiekompetanse/generell-studiekompetanse-23-5-regelen">
+    <span class="type-weight-medium"><del><span class="sr-only">Før</span>35 900 kr</del>
+    <span><span class="sr-only">Nå</span>30 515 kr</span></span>
+  </a>
+  <a href="/videregaende/yrkesfag/ambulansefag-vg2">
+    <span class="type-weight-medium"><del><span class="sr-only">Før</span>39 900 kr</del>
+    <span><span class="sr-only">Nå</span>33 915 kr</span></span>
+  </a>
+</div>
+"""
+
+# Case A: product has NO real sale of its own (offers.price is the plain
+# price, no Foer/Naa after the h1) -- reproduces "AI i arbeidslivet" live.
+NO_SALE_LD = dict(COURSE_LD)
+NO_SALE_LD["name"] = "AI i arbeidslivet"
+NO_SALE_LD["offers"] = {"@type": "Offer", "price": 3900, "priceCurrency": "NOK", "availability": "https://schema.org/InStock"}
+NO_SALE_HTML = _page([NO_SALE_LD, COURSE_BREADCRUMB], before_h1_extra=HEADER_WIDGET_HTML)
+raw_no_sale = scraper.parse_product_page("https://www.nki.no/kurs/ai-i-arbeidslivet", NO_SALE_HTML)
+check(
+    "Header widget's unrelated Foer/Naa (before h1) is NOT picked up as this product's sale",
+    raw_no_sale["regular_hint"] is None,
+)
+check("Price stays the real offers.price, not the header widget's 35900", raw_no_sale["price"] == 3900)
+
+# Case B: product DOES have a real, active sale of its own, rendered AFTER
+# the h1 -- reproduces "Biologi 2" live (Nå 4 667 kr / Før 5 490 kr / -14%),
+# on a page that ALSO has the unrelated header widget before the h1.
+SALE_LD = dict(ENKELTFAG_LD)
+SALE_LD["offers"] = {"@type": "Offer", "price": 4667, "priceCurrency": "NOK", "availability": "https://schema.org/InStock"}
+SALE_HTML = _page(
+    [SALE_LD, ENKELTFAG_BREADCRUMB],
+    before_h1_extra=HEADER_WIDGET_HTML,
+    after_h1_extra="<div>Nå\n4 667 kr\nFør\n5 490 kr\n-14%</div>",
+)
+raw_sale = scraper.parse_product_page("https://www.nki.no/videregaende/enkeltfag/biologi-2", SALE_HTML)
+check("offers.price (already discounted) used directly as the live price", raw_sale["price"] == 4667)
+check(
+    "regular_hint recovered from the product's OWN Foer/Naa (after h1), not the header widget's 35900",
+    raw_sale["regular_hint"] == 5490,
+)
+check("Note logged about the active DOM sale", any("Active DOM sale" in n for n in raw_sale["notes"]))
+
+fresh_history = {}
+price, sale, eff = scraper.resolve_price(
+    "videregaende/enkeltfag/biologi-2", raw_sale["price"], fresh_history, __import__("datetime").date(2026, 9, 10),
+    regular_hint=raw_sale["regular_hint"],
+)
+check("First-ever sight of an active sale: baseline seeded to the real regular price (5490, not 35900)", price == 5490)
+check("First-ever sight of an active sale: sale_price emitted immediately", sale == 4667)
+check("Baseline stored correctly", fresh_history["videregaende/enkeltfag/biologi-2"]["baseline"] == 5490)
+
+# --------------------------------------------------------------------------- #
+# Price history / sale price resolution logic
+# --------------------------------------------------------------------------- #
+
 from datetime import date, timedelta
 
 history = {}
-today = date(2026, 7, 8)
+today = date(2026, 9, 10)
 
-price, sale, eff = scraper.resolve_price("PG-0000172", 7900, history, today)
-check("first run: no sale_price", sale is None and price == 7900)
-check("baseline stored", history["PG-0000172"]["baseline"] == 7900)
+price, sale, eff = scraper.resolve_price("kurs/trening-som-medisin", 9900, history, today, regular_hint=None)
+check("First run with no sale: unaffected by the regular_hint fix", sale is None and price == 9900)
+check("Baseline stored", history["kurs/trening-som-medisin"]["baseline"] == 9900)
 
-price, sale, eff = scraper.resolve_price("PG-0000172", 5925, history, today)
-check("price drop detected", sale == 5925 and price == 7900)
-check("effective_date starts today", eff.startswith("2026-07-08"))
-check("drop_since recorded", history["PG-0000172"]["drop_since"] == "2026-07-08")
+price, sale, eff = scraper.resolve_price("kurs/trening-som-medisin", 7425, history, today)
+check("Price drop detected", sale == 7425 and price == 9900)
+check("Effective_date starts today", eff.startswith("2026-09-10"))
+check("drop_since recorded", history["kurs/trening-som-medisin"]["drop_since"] == "2026-09-10")
 
 later = today + timedelta(days=5)
-price, sale, eff = scraper.resolve_price("PG-0000172", 5925, history, later)
-check("drop_since NOT reset on continued sale", history["PG-0000172"]["drop_since"] == "2026-07-08")
-check("effective_date end rolls forward", eff.endswith("2026-08-12T23:59+0100"))
+price, sale, eff = scraper.resolve_price("kurs/trening-som-medisin", 7425, history, later)
+check("drop_since NOT reset on continued sale", history["kurs/trening-som-medisin"]["drop_since"] == "2026-09-10")
+check("Effective_date end rolls forward", eff.endswith("2026-10-15T23:59+0100"))
 
-price, sale, eff = scraper.resolve_price("PG-0000172", 7900, history, later)
-check("price back to baseline: no sale", sale is None and price == 7900)
+price, sale, eff = scraper.resolve_price("kurs/trening-som-medisin", 9900, history, later)
+check("Price back to baseline: no sale", sale is None and price == 9900)
 
-price, sale, eff = scraper.resolve_price("PG-0000172", 8900, history, later)
-check("price increase becomes new baseline", sale is None and price == 8900)
-check("baseline updated", history["PG-0000172"]["baseline"] == 8900)
+price, sale, eff = scraper.resolve_price("kurs/trening-som-medisin", 10900, history, later)
+check("Price increase becomes new baseline", sale is None and price == 10900)
+check("Baseline updated", history["kurs/trening-som-medisin"]["baseline"] == 10900)
 
-# --- full XML build, spot-check the new field structure ---
+# --------------------------------------------------------------------------- #
+# Tiering / display helpers
+# --------------------------------------------------------------------------- #
+
+check("price_tier 7900 = 5000_15000", scraper.price_tier(7900) == "5000_15000")
+check("price_tier 3900 = under_5000", scraper.price_tier(3900) == "under_5000")
+check("duration_tier 3mnd = kort", scraper.duration_tier(3) == "kort")
+check("duration_tier 12mnd = medium", scraper.duration_tier(12) == "medium")
+check("duration_tier 24mnd = lang", scraper.duration_tier(24) == "lang")
+check("entity_display kurs = Kurs", scraper.entity_display("kurs") == "Kurs")
+check(
+    "smart_title suffix",
+    scraper.smart_title("Trening som medisin", "kurs", "Helse og livsstil") == "Trening som medisin − kurs i helse og livsstil",
+)
+check(
+    "google_product_category path",
+    scraper.google_product_category_path("fagskole", "Jus og administrasjon") == "utdanning > fagskole > jus og administrasjon",
+)
+
+# --------------------------------------------------------------------------- #
+# Full XML build, spot-check field structure
+# --------------------------------------------------------------------------- #
+
 p1 = scraper.Product(
     id="PG-0001534", title="Advokatsekretær", description="Bli advokatsekretær.",
     link="https://www.nki.no/fagskole/advokatsekretaer", image_link="https://www.nki.no/img.jpg",
@@ -243,16 +352,13 @@ def text_of(tag, ns=None):
 
 check("bare custom_label_0", text_of("custom_label_0") == "Fagskole")
 check("bare custom_label_1", text_of("custom_label_1") == "Jus og administrasjon")
-check("bare fb_product_category", text_of("fb_product_category") == "Jus og administrasjon")
+check("fb_product_category is the fixed taxonomy value", text_of("fb_product_category") == "Interests > Education > Distance education")
 check("bare feed_name (plain title)", text_of("feed_name") == "Advokatsekretær")
 check("bare internal_label", text_of("internal_label") == "Advokatsekretær")
 check("g:id", text_of("g:id", NS) == "PG-0001534")
 check("g:item_group_id matches id", text_of("g:item_group_id", NS) == "PG-0001534")
 check("g:brand is NKI", text_of("g:brand", NS) == "NKI")
-check(
-    "g:title has smart suffix",
-    text_of("g:title", NS) == "Advokatsekretær − fagskole i jus og administrasjon",
-)
+check("g:title has smart suffix", text_of("g:title", NS) == "Advokatsekretær − fagskole i jus og administrasjon")
 check(
     "g:google_product_category text path",
     text_of("g:google_product_category", NS) == "utdanning > fagskole > jus og administrasjon",

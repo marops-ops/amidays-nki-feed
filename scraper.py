@@ -56,12 +56,29 @@ pages have no sku at all anymore, so we use the URL path as the id instead
 (e.g. "kurs/trening-som-medisin") -- stable, guaranteed unique, and simpler
 than trying to fabricate one from the title.
 
-Sale detection: no live "Foer/Naa" sale was available to confirm against
-during this rewrite. offers.price is expected to reflect the true current
-price directly (unlike the old dataLayer bug where price never changed for
-a sale) -- resolve_price's baseline-diff logic should catch real drops on
-its own. The DOM Foer/Naa regex check is kept as a defensive extra signal in
-case that visual pattern still exists somewhere; harmless no-op if absent.
+2026-09-14 FIX -- sale-price regex was matching the SITE HEADER, not the
+product: the "Foer/Naa" DOM check below originally ran against
+soup.get_text() for the WHOLE page. Turns out every nki.no page's main
+navigation ("Hovedmeny") renders a hidden "campaign" widget listing 2-3
+currently-discounted packages (e.g. "Generell studiekompetanse (23/5)" --
+this is genuine rendered DOM, not script/JSON payload, confirmed via raw
+HTML fetch) *before* the page's own <h1> in document order. re.search()
+only returns the first match, so on any page where that widget's Foer/Naa
+text appeared before the product's own price block, we grabbed the WRONG
+product's price entirely -- root cause of 127/136 feed items showing an
+identical, bogus "35900 NOK" regular price regardless of their real price.
+Fixed by scoping the Foer/Naa search to text *after* the <h1>
+(_text_after_h1 below) -- confirmed via live re-fetch of a real sale page
+(Biologi 2: real "Foer 5490 / Naa 4667" both occur after <h1>, the header
+widget's unrelated 35900/39900/38900 entries all occur before it) and a
+false-positive page (AI i arbeidslivet, no sale at all: header widget was
+the ONLY source of "Foer" text on the whole page).
+
+Sale detection: offers.price reflects the true current price directly
+(unlike the old dataLayer bug where price never changed for a sale) --
+resolve_price's baseline-diff logic catches real drops on its own. The DOM
+Foer/Naa check (now correctly scoped, see above) is used only to recover
+the regular price for first-run baseline-seeding.
 =============================================================================
 
 Field schema note (2026-07-08): the feed is deliberately shaped to match a
@@ -333,6 +350,33 @@ def _parse_price_nok(text: str) -> Optional[float]:
     return float(digits) if digits else None
 
 
+def _text_after_h1(soup: BeautifulSoup) -> str:
+    """
+    Text starting from the page's <h1> onward, in document order --
+    deliberately EXCLUDES the site header/nav, which renders before the
+    <h1> and contains a "campaign" widget listing 2-3 unrelated,
+    currently-discounted packages with their own "Foer"/"Naa" price text
+    (confirmed real DOM, not script payload -- see 2026-09-14 fix note in
+    the module docstring). Without this scoping, _extract_price_info's
+    re.search() (first-match-only) would grab that widget's price instead
+    of the current product's own, on any page where the widget happens to
+    render before the product's price block.
+
+    Falls back to the full page text if no <h1> is found (shouldn't happen
+    on a real product page, but fail open rather than crash).
+    """
+    h1 = soup.find("h1")
+    if h1 is None:
+        return soup.get_text("\n")
+    parts = [h1.get_text(" ", strip=True)]
+    for node in h1.find_all_next(string=True):
+        parent_name = node.parent.name if node.parent else ""
+        if parent_name in ("script", "style"):
+            continue
+        parts.append(str(node))
+    return "\n".join(parts)
+
+
 def _extract_price_info(text: str) -> dict:
     """
     Detects an active 'Foer/Naa' sale on the NEW site (2026-09): shown as a
@@ -342,6 +386,10 @@ def _extract_price_info(text: str) -> dict:
     price correctly on this site (unlike the old dataLayer bug), so this DOM
     check exists to recover the REGULAR price for baseline-seeding -- see
     resolve_price's regular_hint param.
+
+    IMPORTANT: caller must pass text scoped to the current product (see
+    _text_after_h1) -- do NOT pass the raw whole-page soup.get_text(), see
+    2026-09-14 fix note in the module docstring.
     """
     foer_match = _PRICE_FOER_RE.search(text)
     naa_match = _PRICE_NAA_RE.search(text)
@@ -451,7 +499,12 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
     offers = product.get("offers") or {}
     dl_price = offers.get("price")
 
-    price_info = _extract_price_info(text)
+    # Scoped to text AFTER <h1> only -- see _text_after_h1 docstring and the
+    # 2026-09-14 fix note at the top of this module. Using the whole-page
+    # text here was the bug: it matched the site header's unrelated
+    # "campaign" widget instead of this product's own price.
+    price_text = _text_after_h1(soup)
+    price_info = _extract_price_info(price_text)
     notes = []
     # offers.price already reflects the live/current price correctly on the
     # new site (confirmed: shows the discounted price during an active
