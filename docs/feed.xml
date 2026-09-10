@@ -1848,33 +1848,6 @@
       <nki:sale_price_numeric>9900</nki:sale_price_numeric>
     </item>
     <item>
-      <custom_label_0>Videregående</custom_label_0>
-      <custom_label_1>Enkeltfag</custom_label_1>
-      <custom_label_2>kort</custom_label_2>
-      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
-      <feed_name>Eksamensboost 1P</feed_name>
-      <internal_label>Eksamensboost 1P</internal_label>
-      <g:id>videregaende/enkeltfag/eksamensboost-1p</g:id>
-      <g:title>Eksamensboost 1P − videregående i enkeltfag</g:title>
-      <g:description>Eksamensboost 1P er et videregående-studium innen enkeltfag hos NKI Nettstudier.</g:description>
-      <g:link>https://www.nki.no/videregaende/enkeltfag/eksamensboost-1p</g:link>
-      <g:image_link>https://www.nki.no/static/og-default.png</g:image_link>
-      <g:item_group_id>videregaende/enkeltfag/eksamensboost-1p</g:item_group_id>
-      <g:availability>in stock</g:availability>
-      <g:condition>new</g:condition>
-      <g:brand>NKI</g:brand>
-      <g:price>35900.00 NOK</g:price>
-      <g:sale_price>30515.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-10T00:00+0100/2026-10-10T23:59+0100</g:sale_price_effective_date>
-      <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
-      <g:product_type>Enkeltfag</g:product_type>
-      <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/eksamensboost-1p?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Feksamensboost-1p</g:ads_redirect>
-      <nki:entity_type>vgo_teori</nki:entity_type>
-      <nki:category>Enkeltfag</nki:category>
-      <nki:price_numeric>35900</nki:price_numeric>
-      <nki:sale_price_numeric>30515</nki:sale_price_numeric>
-    </item>
-    <item>
       <custom_label_0>Yrkesfag</custom_label_0>
       <custom_label_1>Yrkesfag</custom_label_1>
       <custom_label_2>kort</custom_label_2>
@@ -2715,60 +2688,6 @@
       <nki:sale_price_numeric>9900</nki:sale_price_numeric>
     </item>
     <item>
-      <custom_label_0>Enkeltemner</custom_label_0>
-      <custom_label_1>Grammatikk og skriveregler</custom_label_1>
-      <custom_label_2>kort</custom_label_2>
-      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
-      <feed_name>Grammatikk og skriveregler</feed_name>
-      <internal_label>Grammatikk og skriveregler</internal_label>
-      <g:id>enkeltemner/grammatikk-og-skriveregler</g:id>
-      <g:title>Grammatikk og skriveregler − enkeltemner i grammatikk og skriveregler</g:title>
-      <g:description>Grammatikk og skriveregler er et enkeltemner-studium innen grammatikk og skriveregler hos NKI Nettstudier.</g:description>
-      <g:link>https://www.nki.no/enkeltemner/grammatikk-og-skriveregler</g:link>
-      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/b34bc826d990c8d738860e00176a4629013ff80a-1600x800.jpg?rect=38,0,1524,800&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
-      <g:item_group_id>enkeltemner/grammatikk-og-skriveregler</g:item_group_id>
-      <g:availability>in stock</g:availability>
-      <g:condition>new</g:condition>
-      <g:brand>NKI</g:brand>
-      <g:price>35900.00 NOK</g:price>
-      <g:sale_price>30515.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-10T00:00+0100/2026-10-10T23:59+0100</g:sale_price_effective_date>
-      <g:google_product_category>utdanning &gt; enkeltemner &gt; grammatikk og skriveregler</g:google_product_category>
-      <g:product_type>Grammatikk og skriveregler</g:product_type>
-      <g:ads_redirect>https://www.nki.no/enkeltemner/grammatikk-og-skriveregler?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=enkeltemner&amp;utm_content=enkeltemner%2Fgrammatikk-og-skriveregler</g:ads_redirect>
-      <nki:entity_type>enkeltemner</nki:entity_type>
-      <nki:category>Grammatikk og skriveregler</nki:category>
-      <nki:price_numeric>35900</nki:price_numeric>
-      <nki:sale_price_numeric>30515</nki:sale_price_numeric>
-    </item>
-    <item>
-      <custom_label_0>Videregående</custom_label_0>
-      <custom_label_1>Enkeltfag</custom_label_1>
-      <custom_label_2>kort</custom_label_2>
-      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
-      <feed_name>Eksamenskurs 2P</feed_name>
-      <internal_label>Eksamenskurs 2P</internal_label>
-      <g:id>videregaende/enkeltfag/eksamenskurs-2p</g:id>
-      <g:title>Eksamenskurs 2P − videregående i enkeltfag</g:title>
-      <g:description>Eksamenskurs 2P er et videregående-studium innen enkeltfag hos NKI Nettstudier.</g:description>
-      <g:link>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p</g:link>
-      <g:image_link>https://www.nki.no/static/og-default.png</g:image_link>
-      <g:item_group_id>videregaende/enkeltfag/eksamenskurs-2p</g:item_group_id>
-      <g:availability>in stock</g:availability>
-      <g:condition>new</g:condition>
-      <g:brand>NKI</g:brand>
-      <g:price>35900.00 NOK</g:price>
-      <g:sale_price>30515.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-10T00:00+0100/2026-10-10T23:59+0100</g:sale_price_effective_date>
-      <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
-      <g:product_type>Enkeltfag</g:product_type>
-      <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Feksamenskurs-2p</g:ads_redirect>
-      <nki:entity_type>vgo_teori</nki:entity_type>
-      <nki:category>Enkeltfag</nki:category>
-      <nki:price_numeric>35900</nki:price_numeric>
-      <nki:sale_price_numeric>30515</nki:sale_price_numeric>
-    </item>
-    <item>
       <custom_label_0>Kurs</custom_label_0>
       <custom_label_1>Ledelse</custom_label_1>
       <custom_label_2>kort</custom_label_2>
@@ -2907,33 +2826,6 @@
       <nki:duration>125 timer</nki:duration>
       <nki:price_numeric>35900</nki:price_numeric>
       <nki:sale_price_numeric>7900</nki:sale_price_numeric>
-    </item>
-    <item>
-      <custom_label_0>Videregående</custom_label_0>
-      <custom_label_1>Enkeltfag</custom_label_1>
-      <custom_label_2>kort</custom_label_2>
-      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
-      <feed_name>Eksamenskurs 2P-Y</feed_name>
-      <internal_label>Eksamenskurs 2P-Y</internal_label>
-      <g:id>videregaende/enkeltfag/eksamenskurs-2p-y</g:id>
-      <g:title>Eksamenskurs 2P-Y − videregående i enkeltfag</g:title>
-      <g:description>Eksamenskurs 2P-Y er et videregående-studium innen enkeltfag hos NKI Nettstudier.</g:description>
-      <g:link>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p-y</g:link>
-      <g:image_link>https://www.nki.no/static/og-default.png</g:image_link>
-      <g:item_group_id>videregaende/enkeltfag/eksamenskurs-2p-y</g:item_group_id>
-      <g:availability>in stock</g:availability>
-      <g:condition>new</g:condition>
-      <g:brand>NKI</g:brand>
-      <g:price>35900.00 NOK</g:price>
-      <g:sale_price>30515.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-10T00:00+0100/2026-10-10T23:59+0100</g:sale_price_effective_date>
-      <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
-      <g:product_type>Enkeltfag</g:product_type>
-      <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p-y?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Feksamenskurs-2p-y</g:ads_redirect>
-      <nki:entity_type>vgo_teori</nki:entity_type>
-      <nki:category>Enkeltfag</nki:category>
-      <nki:price_numeric>35900</nki:price_numeric>
-      <nki:sale_price_numeric>30515</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
