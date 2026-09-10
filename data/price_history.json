@@ -846,5 +846,409 @@
   "PG-0001745": {
     "baseline": 3900.0,
     "drop_since": null
+  },
+  "enkeltemner/fysikk-forkurs": {
+    "baseline": 9000.0,
+    "drop_since": null
+  },
+  "enkeltemner/innforing-i-markedsforing": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "enkeltemner/innforing-i-okonomistyring": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "enkeltemner/innforing-i-organisasjon-og-ledelse": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "enkeltemner/matematikk-forkurs": {
+    "baseline": 12000.0,
+    "drop_since": null
+  },
+  "enkeltemner/revit-architecture": {
+    "baseline": 29900.0,
+    "drop_since": null
+  },
+  "kurs/ai-i-arbeidslivet": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "kurs/arbeidsrett-personalansvar": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "kurs/arbeidsrett-rekruttering-og-onboarding": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "kurs/arbeidsrett-sykefravaer-og-oppfolging": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "kurs/autocad": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "kurs/drosjeloyve-teorikurs": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/entreprenorskap-innovasjon-og-forretningsplan": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/ernaering-og-baerekraftig-kosthold": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/grunnleggende-regnskap": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/hvordan-takle-hersketeknikker": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/innforing-i-baerekraftig-handel": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/innforing-i-digital-markedsforing": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/innforing-i-ledelse": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/konflikter-pa-jobb": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/loyvekurs-for-person-og-godstransport": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "kurs/malrettet-prosjektstyring": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "kurs/okonomi-pa-1-2-3": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/organisasjonspsykologi": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/pleieassistent": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "kurs/praktisk-hr-ledelse": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "kurs/radgivende-salg": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/relasjonsledelse-i-praksis": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/saksbehandling-i-helse-og-omsorgssektoren": {
+    "baseline": 13500.0,
+    "drop_since": null
+  },
+  "kurs/selvledelse-i-praksis--utviklet-i-samarbeid-med-metier": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "kurs/sirkulaerokonomi-pa-1-2-3": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/sosiale-medier-og-innholdsmarkedsforing": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/strategisk-ledelse-og-innovasjon": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/stress-og-stressmestring": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "kurs/styrearbeid-i-praksis": {
+    "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/systematisk-ferdigstillelse": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "kurs/trening-som-medisin": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "videregaende/enkeltfag/ambulansemedisin": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/biologi-1": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/biologi-2": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/elektronisk-kommunikasjon": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/elektroniske-kretser-og-nettverk": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/energi-og-styresystemer-vg1": {
+    "baseline": 8500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/energi-og-styresystemer-vg2": {
+    "baseline": 8500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/engelsk-for-yrkesfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/engelsk-studieforberedende": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/fysikk-1": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/geofag-1": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/geografi-fellesfag": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/helse-og-sykdom-vg2": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/helse-og-sykdom-vg3": {
+    "baseline": 16000.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/helsefremmende-arbeid-vg1": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/helsefremmende-arbeid-vg2": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/historie-pabygging": {
+    "baseline": 6500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/historie-studieforberedende": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kjemi-1": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kjemi-2": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-ambulansefag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-barne-og-ungdomsarbeiderfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helse-og-oppvekstfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helsearbeiderfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helsesekretaer": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helseservicefag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-tannhelsesekretaerfag": {
+    "baseline": 10800.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kroppsoving-vg1-og-vg2": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/kroppsoving-vg3": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-1p": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-1p-y-for-elektro-og-datateknologi": {
+    "baseline": 6500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-1p-y-for-helse-og-oppvekstfag": {
+    "baseline": 6500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-1t": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-2p": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-2p-y": {
+    "baseline": 6500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-r1": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-r2": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-s1": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/matematikk-s2": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/naturfag-for-elektro-og-datateknologi": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/naturfag-for-helse-og-oppvekstfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/naturfag-pabygging": {
+    "baseline": 6500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/naturfag-studieforberedende": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/norsk-for-yrkesfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/norsk-pabygging": {
+    "baseline": 6500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/norsk-studieforberedende": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/pedagogisk-arbeid": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/psykologi-1": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/religion-og-etikk": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/samfunnskunnskap-for-studieforberedende-og-yrkesfag": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/smittevern-tannanatomi-og-fysiologi": {
+    "baseline": 10800.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/sosialkunnskap": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/sosiologi-og-sosialantropologi": {
+    "baseline": 5490.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/yrkesliv-i-ambulansefag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/yrkesliv-i-barne-og-ungdomsarbeiderfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/yrkesliv-i-helse-og-oppvekstfag-vg1": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/yrkesliv-i-helsearbeiderfag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/yrkesliv-i-helsesekretaerfag": {
+    "baseline": 16000.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/yrkesliv-i-helseservicefag": {
+    "baseline": 7500.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/enkeltfag/yrkesliv-i-tannhelsesekretaerfag": {
+    "baseline": 18400.0,
+    "drop_since": "2026-09-10"
+  },
+  "videregaende/yrkesfag/ambulansefaget": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "videregaende/yrkesfag/barne-og-ungdomsarbeiderfaget": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "videregaende/yrkesfag/helsearbeiderfaget": {
+    "baseline": 16900.0,
+    "drop_since": null
+  },
+  "videregaende/yrkesfag/logistikkfaget": {
+    "baseline": 16900.0,
+    "drop_since": null
   }
 }
