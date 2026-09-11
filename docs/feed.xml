@@ -3233,6 +3233,30 @@
       <nki:sale_price_numeric>14365</nki:sale_price_numeric>
     </item>
     <item>
+      <custom_label_0>Videregående</custom_label_0>
+      <custom_label_1>Forkurs</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Forkurs ingeniør</feed_name>
+      <internal_label>Forkurs ingeniør</internal_label>
+      <g:id>PG-0000242</g:id>
+      <g:title>Forkurs ingeniør − videregående i forkurs</g:title>
+      <g:description>Vårt nettbaserte forkurs til ingeniørutdanning gir deg det faglige grunnlaget du trenger for å kvalifisere til opptak ved høyere ingeniørutdanning. Søk nå!</g:description>
+      <g:link>https://www.nki.no/kurs/forkurs-ingenior</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/082b8f57622702e4389cec9a09df93993fd11476-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-0000242</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>28900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; videregående &gt; forkurs</g:google_product_category>
+      <g:product_type>Forkurs</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/forkurs-ingenior?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0000242</g:ads_redirect>
+      <nki:entity_type>vgo_teori</nki:entity_type>
+      <nki:category>Forkurs</nki:category>
+      <nki:price_numeric>28900</nki:price_numeric>
+    </item>
+    <item>
       <custom_label_0>Yrkesfag</custom_label_0>
       <custom_label_1>Yrkesfag</custom_label_1>
       <custom_label_2>kort</custom_label_2>
@@ -3513,6 +3537,30 @@
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:price_numeric>26900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Videregående</custom_label_0>
+      <custom_label_1>Forkurs</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Realfagspakke forkurs ingeniør</feed_name>
+      <internal_label>Realfagspakke forkurs ingeniør</internal_label>
+      <g:id>PG-0000258</g:id>
+      <g:title>Realfagspakke forkurs ingeniør − videregående i forkurs</g:title>
+      <g:description>Forkurs i realfag for ingeniør er rettet mot deg med generell studiekompetanse som trenger denne fordypningen for å søke opptak ved ingeniørutdanning. Søk her!</g:description>
+      <g:link>https://www.nki.no/kurs/forkurs-ingenior-realfagskurs</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/2706c38a72d6b6920847f1e2d897942717fecdb3-1600x1067.jpg?rect=0,114,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-0000258</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>20000.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; videregående &gt; forkurs</g:google_product_category>
+      <g:product_type>Forkurs</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/forkurs-ingenior-realfagskurs?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0000258</g:ads_redirect>
+      <nki:entity_type>vgo_teori</nki:entity_type>
+      <nki:category>Forkurs</nki:category>
+      <nki:price_numeric>20000</nki:price_numeric>
     </item>
   </channel>
 </rss>
