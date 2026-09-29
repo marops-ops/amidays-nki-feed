@@ -480,7 +480,7 @@
     "drop_since": null
   },
   "PG-0000053": {
-    "baseline": 15900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "PG-0000055": {
@@ -540,15 +540,15 @@
     "drop_since": null
   },
   "PG-0000179": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "PG-0000187": {
-    "baseline": 39900.0,
+    "baseline": 41900.0,
     "drop_since": null
   },
   "PG-0000191": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "PG-0000210": {
@@ -564,27 +564,27 @@
     "drop_since": null
   },
   "PG-0000216": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "PG-0000221": {
-    "baseline": 15900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "PG-0000222": {
-    "baseline": 39900.0,
+    "baseline": 41900.0,
     "drop_since": null
   },
   "PG-0000226": {
-    "baseline": 39900.0,
+    "baseline": 41900.0,
     "drop_since": null
   },
   "PG-0000227": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "PG-0000231": {
-    "baseline": 26900.0,
+    "baseline": 28500.0,
     "drop_since": null
   },
   "PG-0000232": {
@@ -592,11 +592,11 @@
     "drop_since": "2026-09-02"
   },
   "PG-0000241": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "PG-0000242": {
-    "baseline": 28900.0,
+    "baseline": 30500.0,
     "drop_since": null
   },
   "PG-0000243": {
@@ -632,7 +632,7 @@
     "drop_since": null
   },
   "PG-0001533": {
-    "baseline": 38900.0,
+    "baseline": 39900.0,
     "drop_since": null
   },
   "PG-0001534": {
@@ -648,15 +648,15 @@
     "drop_since": null
   },
   "PG-0001551": {
-    "baseline": 19900.0,
+    "baseline": 20900.0,
     "drop_since": null
   },
   "PG-0001552": {
-    "baseline": 17900.0,
+    "baseline": 18900.0,
     "drop_since": null
   },
   "PG-0001553": {
-    "baseline": 14900.0,
+    "baseline": 15900.0,
     "drop_since": null
   },
   "PG-0001555": {
@@ -664,7 +664,7 @@
     "drop_since": null
   },
   "PG-0001557": {
-    "baseline": 23900.0,
+    "baseline": 24900.0,
     "drop_since": null
   },
   "PG-0001559": {
@@ -676,7 +676,7 @@
     "drop_since": null
   },
   "PG-0001562": {
-    "baseline": 38900.0,
+    "baseline": 39900.0,
     "drop_since": null
   },
   "PG-0001563": {
@@ -728,11 +728,11 @@
     "drop_since": null
   },
   "PG-0001591": {
-    "baseline": 39900.0,
+    "baseline": 41900.0,
     "drop_since": null
   },
   "PG-0001592": {
-    "baseline": 35900.0,
+    "baseline": 39500.0,
     "drop_since": null
   },
   "PG-0001593": {
@@ -752,15 +752,15 @@
     "drop_since": null
   },
   "PG-0001635": {
-    "baseline": 39900.0,
+    "baseline": 41900.0,
     "drop_since": null
   },
   "PG-0001636": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "PG-0001641": {
-    "baseline": 35900.0,
+    "baseline": 39500.0,
     "drop_since": null
   },
   "PG-0001642": {
@@ -768,19 +768,19 @@
     "drop_since": null
   },
   "PG-0001643": {
-    "baseline": 49900.0,
+    "baseline": 51900.0,
     "drop_since": null
   },
   "PG-0001644": {
     "baseline": 54900.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "PG-0001645": {
-    "baseline": 34900.0,
+    "baseline": 36900.0,
     "drop_since": null
   },
   "PG-0001668": {
-    "baseline": 26900.0,
+    "baseline": 28500.0,
     "drop_since": null
   },
   "PG-0001669": {
@@ -788,7 +788,7 @@
     "drop_since": null
   },
   "PG-0001670": {
-    "baseline": 26900.0,
+    "baseline": 28500.0,
     "drop_since": null
   },
   "PG-0001671": {
@@ -812,7 +812,7 @@
     "drop_since": null
   },
   "PG-0001700": {
-    "baseline": 50000.0,
+    "baseline": 52500.0,
     "drop_since": null
   },
   "PG-0001721": {
@@ -848,27 +848,27 @@
     "drop_since": null
   },
   "enkeltemner/fysikk-forkurs": {
-    "baseline": 9000.0,
+    "baseline": 9500.0,
     "drop_since": null
   },
   "enkeltemner/innforing-i-markedsforing": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "enkeltemner/innforing-i-okonomistyring": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "enkeltemner/innforing-i-organisasjon-og-ledelse": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "enkeltemner/matematikk-forkurs": {
-    "baseline": 12000.0,
+    "baseline": 12900.0,
     "drop_since": null
   },
   "enkeltemner/revit-architecture": {
-    "baseline": 29900.0,
+    "baseline": 31900.0,
     "drop_since": null
   },
   "kurs/ai-i-arbeidslivet": {
@@ -888,7 +888,7 @@
     "drop_since": null
   },
   "kurs/autocad": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "kurs/baerekraftsrapportering": {
@@ -908,15 +908,15 @@
     "drop_since": null
   },
   "kurs/drosjeloyve-teorikurs": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/entreprenorskap-innovasjon-og-forretningsplan": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/ernaering-og-baerekraftig-kosthold": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/gevinstrealisering-i-prosjekter": {
@@ -924,23 +924,23 @@
     "drop_since": null
   },
   "kurs/grunnleggende-regnskap": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/hvordan-takle-hersketeknikker": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/innforing-i-baerekraftig-handel": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/innforing-i-digital-markedsforing": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/innforing-i-ledelse": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/klimaregnskap-i-praksis": {
@@ -948,15 +948,15 @@
     "drop_since": null
   },
   "kurs/konflikter-pa-jobb": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/loyvekurs-for-person-og-godstransport": {
-    "baseline": 13500.0,
+    "baseline": 14500.0,
     "drop_since": null
   },
   "kurs/malrettet-prosjektstyring": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "kurs/okonomi-pa-1-2-3": {
@@ -968,15 +968,15 @@
     "drop_since": null
   },
   "kurs/organisasjonspsykologi": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/pleieassistent": {
-    "baseline": 13500.0,
+    "baseline": 14500.0,
     "drop_since": null
   },
   "kurs/praktisk-hr-ledelse": {
-    "baseline": 13500.0,
+    "baseline": 14500.0,
     "drop_since": null
   },
   "kurs/prosjektledelse-fra-ide-til-plan": {
@@ -988,35 +988,35 @@
     "drop_since": null
   },
   "kurs/radgivende-salg": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/relasjonsledelse-i-praksis": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/saksbehandling-i-helse-og-omsorgssektoren": {
-    "baseline": 13500.0,
+    "baseline": 14500.0,
     "drop_since": null
   },
   "kurs/selvledelse-i-praksis--utviklet-i-samarbeid-med-metier": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "kurs/sirkulaerokonomi-pa-1-2-3": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/sosiale-medier-og-innholdsmarkedsforing": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/strategisk-ledelse-og-innovasjon": {
-    "baseline": 7900.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "kurs/stress-og-stressmestring": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "kurs/styrearbeid-i-praksis": {
@@ -1036,263 +1036,275 @@
     "drop_since": null
   },
   "kurs/trening-som-medisin": {
-    "baseline": 9900.0,
+    "baseline": 10400.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/ambulansemedisin": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/biologi-1": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/biologi-2": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
+    "drop_since": null
+  },
+  "videregaende/enkeltfag/eksamensboost-1p": {
+    "baseline": 525.0,
+    "drop_since": null
+  },
+  "videregaende/enkeltfag/eksamenskurs-2p": {
+    "baseline": 525.0,
+    "drop_since": null
+  },
+  "videregaende/enkeltfag/eksamenskurs-2p-y": {
+    "baseline": 525.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/elektronisk-kommunikasjon": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/elektroniske-kretser-og-nettverk": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/energi-og-styresystemer-vg1": {
-    "baseline": 8500.0,
+    "baseline": 8900.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/energi-og-styresystemer-vg2": {
-    "baseline": 8500.0,
+    "baseline": 8900.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/engelsk-for-yrkesfag": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/engelsk-studieforberedende": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/fysikk-1": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/geofag-1": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/geografi-fellesfag": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/helse-og-sykdom-vg2": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/helse-og-sykdom-vg3": {
-    "baseline": 16000.0,
+    "baseline": 16900.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/helsefremmende-arbeid-vg1": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/helsefremmende-arbeid-vg2": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/historie-pabygging": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/historie-studieforberedende": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kjemi-1": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kjemi-2": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-ambulansefag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-barne-og-ungdomsarbeiderfag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helse-og-oppvekstfag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helsearbeiderfag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helsesekretaer": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helseservicefag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kommunikasjon-og-samhandling-for-tannhelsesekretaerfag": {
-    "baseline": 10800.0,
+    "baseline": 11500.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/kroppsoving-vg1-og-vg2": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/kroppsoving-vg3": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-1p": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-1p-y-for-elektro-og-datateknologi": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/matematikk-1p-y-for-helse-og-oppvekstfag": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/matematikk-1t": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-2p": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-2p-y": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/matematikk-r1": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-r2": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-s1": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-s2": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/naturfag-for-elektro-og-datateknologi": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/naturfag-for-helse-og-oppvekstfag": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/naturfag-pabygging": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/naturfag-studieforberedende": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/norsk-for-yrkesfag": {
     "baseline": 7500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/norsk-pabygging": {
     "baseline": 6500.0,
-    "drop_since": null
+    "drop_since": "2026-09-29"
   },
   "videregaende/enkeltfag/norsk-studieforberedende": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/pedagogisk-arbeid": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/psykologi-1": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/religion-og-etikk": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/samfunnskunnskap-for-studieforberedende-og-yrkesfag": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/smittevern-tannanatomi-og-fysiologi": {
-    "baseline": 10800.0,
+    "baseline": 11500.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/sosialkunnskap": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/sosiologi-og-sosialantropologi": {
-    "baseline": 5490.0,
+    "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/yrkesliv-i-ambulansefag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/yrkesliv-i-barne-og-ungdomsarbeiderfag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/yrkesliv-i-helse-og-oppvekstfag-vg1": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/yrkesliv-i-helsearbeiderfag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/yrkesliv-i-helsesekretaerfag": {
-    "baseline": 16000.0,
+    "baseline": 16900.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/yrkesliv-i-helseservicefag": {
-    "baseline": 7500.0,
+    "baseline": 8300.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/yrkesliv-i-tannhelsesekretaerfag": {
-    "baseline": 18400.0,
+    "baseline": 19500.0,
     "drop_since": null
   },
   "videregaende/yrkesfag/ambulansefaget": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "videregaende/yrkesfag/barne-og-ungdomsarbeiderfaget": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "videregaende/yrkesfag/helsearbeiderfaget": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   },
   "videregaende/yrkesfag/logistikkfaget": {
-    "baseline": 16900.0,
+    "baseline": 17900.0,
     "drop_since": null
   }
 }

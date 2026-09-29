@@ -20,14 +20,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/helsefremmende-arbeid-vg2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fhelsefremmende-arbeid-vg2</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>197 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -45,14 +45,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/strategisk-ledelse-og-innovasjon?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fstrategisk-ledelse-og-innovasjon</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -71,6 +71,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-pabygging</g:ads_redirect>
@@ -78,6 +80,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>84 timer</nki:duration>
       <nki:price_numeric>6500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -95,14 +98,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16000.00 NOK</g:price>
+      <g:price>16900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helsesekretaerfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helsesekretaerfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>370 timer</nki:duration>
-      <nki:price_numeric>16000</nki:price_numeric>
+      <nki:price_numeric>16900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -120,14 +123,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kommunikasjon-og-samhandling-for-ambulansefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkommunikasjon-og-samhandling-for-ambulansefag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -145,14 +148,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/biologi-1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fbiologi-1</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -170,14 +173,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/trening-som-medisin?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Ftrening-som-medisin</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>250 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -195,14 +198,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-studieforberedende?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-studieforberedende</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -220,14 +223,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helsearbeiderfaget?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fyrkesfag%2Fhelsearbeiderfaget</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Praksiskandidat</nki:category>
       <nki:duration>477 timer</nki:duration>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -245,13 +248,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-2p?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-2p</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -269,14 +272,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9000.00 NOK</g:price>
+      <g:price>9500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; forkurs</g:google_product_category>
       <g:product_type>Forkurs</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/fysikk-forkurs?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=enkeltemner%2Ffysikk-forkurs</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Forkurs</nki:category>
       <nki:duration>360 timer</nki:duration>
-      <nki:price_numeric>9000</nki:price_numeric>
+      <nki:price_numeric>9500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -294,14 +297,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/norsk-studieforberedende?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnorsk-studieforberedende</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>393 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -319,14 +322,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kjemi-2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fkjemi-2</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -344,14 +347,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-r1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-r1</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -370,6 +373,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-for-elektro-og-datateknologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-for-elektro-og-datateknologi</g:ads_redirect>
@@ -377,6 +382,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>56 timer</nki:duration>
       <nki:price_numeric>7500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -394,14 +400,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/sirkulaerokonomi-pa-1-2-3?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsirkulaerokonomi-pa-1-2-3</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>20 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -419,14 +425,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helsearbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkommunikasjon-og-samhandling-for-helsearbeiderfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -444,14 +450,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/religion-og-etikk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Freligion-og-etikk</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>84 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -469,14 +475,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-1p?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-1p</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -494,14 +500,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/biologi-2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fbiologi-2</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -519,14 +525,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kommunikasjon-og-samhandling-for-barne-og-ungdomsarbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkommunikasjon-og-samhandling-for-barne-og-ungdomsarbeiderfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -544,14 +550,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/ambulansemedisin?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fambulansemedisin</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>197 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -570,6 +576,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/norsk-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnorsk-pabygging</g:ads_redirect>
@@ -577,6 +585,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>281 timer</nki:duration>
       <nki:price_numeric>6500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -594,14 +603,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>13500.00 NOK</g:price>
+      <g:price>14500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; transport</g:google_product_category>
       <g:product_type>Transport</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/loyvekurs-for-person-og-godstransport?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Floyvekurs-for-person-og-godstransport</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Transport</nki:category>
       <nki:duration>50 timer</nki:duration>
-      <nki:price_numeric>13500</nki:price_numeric>
+      <nki:price_numeric>14500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -619,14 +628,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/ernaering-og-baerekraftig-kosthold?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fernaering-og-baerekraftig-kosthold</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -644,14 +653,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helsearbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helsearbeiderfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -669,14 +678,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>8500.00 NOK</g:price>
+      <g:price>8900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/energi-og-styresystemer-vg2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fenergi-og-styresystemer-vg2</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>337 timer</nki:duration>
-      <nki:price_numeric>8500</nki:price_numeric>
+      <nki:price_numeric>8900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -694,14 +703,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/relasjonsledelse-i-praksis?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Frelasjonsledelse-i-praksis</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -719,14 +728,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; markedsføring og salg</g:google_product_category>
       <g:product_type>Markedsføring og salg</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/innforing-i-digital-markedsforing?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Finnforing-i-digital-markedsforing</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Markedsføring og salg</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -744,14 +753,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; bygg og eiendom</g:google_product_category>
       <g:product_type>Bygg og eiendom</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/autocad?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fautocad</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Bygg og eiendom</nki:category>
       <nki:duration>80 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -769,14 +778,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/geografi-fellesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fgeografi-fellesfag</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>56 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -794,14 +803,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>8500.00 NOK</g:price>
+      <g:price>8900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/energi-og-styresystemer-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fenergi-og-styresystemer-vg1</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>280 timer</nki:duration>
-      <nki:price_numeric>8500</nki:price_numeric>
+      <nki:price_numeric>8900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -819,14 +828,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/pedagogisk-arbeid?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fpedagogisk-arbeid</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>197 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -844,14 +853,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/innforing-i-organisasjon-og-ledelse?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Finnforing-i-organisasjon-og-ledelse</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>100 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -869,14 +878,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/grunnleggende-regnskap?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fgrunnleggende-regnskap</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -894,14 +903,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/elektronisk-kommunikasjon?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Felektronisk-kommunikasjon</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -920,6 +929,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/norsk-for-yrkesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnorsk-for-yrkesfag</g:ads_redirect>
@@ -927,6 +938,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>112 timer</nki:duration>
       <nki:price_numeric>7500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -944,14 +956,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/hvordan-takle-hersketeknikker?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fhvordan-takle-hersketeknikker</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>HR</nki:category>
       <nki:duration>15 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -969,14 +981,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>29900.00 NOK</g:price>
+      <g:price>31900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; bygg og eiendom</g:google_product_category>
       <g:product_type>Bygg og eiendom</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/revit-architecture?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Frevit-architecture</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Bygg og eiendom</nki:category>
       <nki:duration>120 timer</nki:duration>
-      <nki:price_numeric>29900</nki:price_numeric>
+      <nki:price_numeric>31900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -994,14 +1006,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; transport</g:google_product_category>
       <g:product_type>Transport</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/drosjeloyve-teorikurs?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fdrosjeloyve-teorikurs</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Transport</nki:category>
       <nki:duration>20 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1020,6 +1032,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-1p-y-for-helse-og-oppvekstfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-1p-y-for-helse-og-oppvekstfag</g:ads_redirect>
@@ -1027,6 +1041,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>84 timer</nki:duration>
       <nki:price_numeric>6500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1044,14 +1059,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/innforing-i-okonomistyring?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Finnforing-i-okonomistyring</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>100 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -1069,14 +1084,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/engelsk-studieforberedende?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fengelsk-studieforberedende</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1094,14 +1109,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helse-og-oppvekstfag-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helse-og-oppvekstfag-vg1</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1120,6 +1135,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/engelsk-for-yrkesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fengelsk-for-yrkesfag</g:ads_redirect>
@@ -1127,6 +1144,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
       <nki:price_numeric>7500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -1144,14 +1162,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/sosiologi-og-sosialantropologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fsosiologi-og-sosialantropologi</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1169,14 +1187,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/barne-og-ungdomsarbeiderfaget?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fyrkesfag%2Fbarne-og-ungdomsarbeiderfaget</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Praksiskandidat</nki:category>
       <nki:duration>477 timer</nki:duration>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1195,6 +1213,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-1p-y-for-elektro-og-datateknologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-1p-y-for-elektro-og-datateknologi</g:ads_redirect>
@@ -1202,6 +1222,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>84 timer</nki:duration>
       <nki:price_numeric>6500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -1219,14 +1240,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/historie-studieforberedende?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fhistorie-studieforberedende</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>169 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1244,14 +1265,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/elektroniske-kretser-og-nettverk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Felektroniske-kretser-og-nettverk</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>197 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1269,14 +1290,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/innforing-i-baerekraftig-handel?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Finnforing-i-baerekraftig-handel</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1294,14 +1315,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/malrettet-prosjektstyring?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fmalrettet-prosjektstyring</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>225 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1319,14 +1340,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helsesekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkommunikasjon-og-samhandling-for-helsesekretaer</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>184 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1344,14 +1365,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helseservicefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helseservicefag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1369,14 +1390,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/helsefremmende-arbeid-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fhelsefremmende-arbeid-vg1</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>197 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1394,14 +1415,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>13500.00 NOK</g:price>
+      <g:price>14500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/pleieassistent?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fpleieassistent</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>13500</nki:price_numeric>
+      <nki:price_numeric>14500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1419,14 +1440,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16000.00 NOK</g:price>
+      <g:price>16900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/helse-og-sykdom-vg3?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fhelse-og-sykdom-vg3</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>371 timer</nki:duration>
-      <nki:price_numeric>16000</nki:price_numeric>
+      <nki:price_numeric>16900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -1444,14 +1465,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/sosialkunnskap?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fsosialkunnskap</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1565,14 +1586,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/selvledelse-i-praksis--utviklet-i-samarbeid-med-metier?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fselvledelse-i-praksis--utviklet-i-samarbeid-med-metier</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>HR</nki:category>
       <nki:duration>12 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1650,6 +1671,30 @@
       <nki:price_numeric>9900</nki:price_numeric>
     </item>
     <item>
+      <custom_label_0>Videregående</custom_label_0>
+      <custom_label_1>Enkeltfag</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Eksamensboost 1P</feed_name>
+      <internal_label>Eksamensboost 1P</internal_label>
+      <g:id>videregaende/enkeltfag/eksamensboost-1p</g:id>
+      <g:title>Eksamensboost 1P − videregående i enkeltfag</g:title>
+      <g:description>Eksamensboost 1P er et videregående-studium innen enkeltfag hos NKI Nettstudier.</g:description>
+      <g:link>https://www.nki.no/videregaende/enkeltfag/eksamensboost-1p</g:link>
+      <g:image_link>https://www.nki.no/static/og-default.png</g:image_link>
+      <g:item_group_id>videregaende/enkeltfag/eksamensboost-1p</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>525.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
+      <g:product_type>Enkeltfag</g:product_type>
+      <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/eksamensboost-1p?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Feksamensboost-1p</g:ads_redirect>
+      <nki:entity_type>vgo_teori</nki:entity_type>
+      <nki:category>Enkeltfag</nki:category>
+      <nki:price_numeric>525</nki:price_numeric>
+    </item>
+    <item>
       <custom_label_0>Kurs</custom_label_0>
       <custom_label_1>Digitalisering og teknologi</custom_label_1>
       <custom_label_2>kort</custom_label_2>
@@ -1684,7 +1729,7 @@
       <g:title>Digital sikkerhet - For ledere − kurs i digitalisering og teknologi</g:title>
       <g:description>Nettkurs i digital sikkerhet for ledere. Forstå ansvaret ditt etter digitalsikkerhetsloven og NIS2, prioriter risiko og bygg sikkerhetskultur. Start i dag!</g:description>
       <g:link>https://www.nki.no/kurs/digital-sikkerhet-for-ledere</g:link>
-      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/fd4231e2c1becbe87d48915f06c7c9c1cd703b0e-4500x3000.jpg?rect=0,319,4500,2363&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/1ff91e4b49c792236a7a3a7b6adb89401e79bf39-2400x1600.jpg?rect=0,170,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/digital-sikkerhet-for-ledere</g:item_group_id>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -1929,14 +1974,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>10800.00 NOK</g:price>
+      <g:price>11500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kommunikasjon-og-samhandling-for-tannhelsesekretaerfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkommunikasjon-og-samhandling-for-tannhelsesekretaerfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>50 timer</nki:duration>
-      <nki:price_numeric>10800</nki:price_numeric>
+      <nki:price_numeric>11500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1954,14 +1999,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/helse-og-sykdom-vg2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fhelse-og-sykdom-vg2</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>197 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -1979,14 +2024,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/psykologi-1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fpsykologi-1</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2004,14 +2049,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/konflikter-pa-jobb?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkonflikter-pa-jobb</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>HR</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2030,6 +2075,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/historie-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fhistorie-pabygging</g:ads_redirect>
@@ -2037,6 +2084,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
       <nki:price_numeric>6500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2055,6 +2103,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-for-helse-og-oppvekstfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-for-helse-og-oppvekstfag</g:ads_redirect>
@@ -2062,6 +2112,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>56 timer</nki:duration>
       <nki:price_numeric>7500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2079,14 +2130,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/geofag-1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fgeofag-1</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2104,14 +2155,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/ambulansefaget?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fyrkesfag%2Fambulansefaget</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Praksiskandidat</nki:category>
       <nki:duration>477 timer</nki:duration>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2130,6 +2181,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kroppsoving-vg1-og-vg2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkroppsoving-vg1-og-vg2</g:ads_redirect>
@@ -2137,6 +2190,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>112 timer</nki:duration>
       <nki:price_numeric>7500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2154,14 +2208,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-1t?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-1t</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2179,14 +2233,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/stress-og-stressmestring?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fstress-og-stressmestring</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>250 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2204,14 +2258,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kjemi-1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fkjemi-1</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2229,14 +2283,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-ambulansefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-ambulansefag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2254,14 +2308,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/samfunnskunnskap-for-studieforberedende-og-yrkesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fsamfunnskunnskap-for-studieforberedende-og-yrkesfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>84 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2279,14 +2333,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>13500.00 NOK</g:price>
+      <g:price>14500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/saksbehandling-i-helse-og-omsorgssektoren?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsaksbehandling-i-helse-og-omsorgssektoren</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>250 timer</nki:duration>
-      <nki:price_numeric>13500</nki:price_numeric>
+      <nki:price_numeric>14500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2304,14 +2358,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kroppsoving-vg3?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkroppsoving-vg3</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>56 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2329,14 +2383,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>12000.00 NOK</g:price>
+      <g:price>12900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; forkurs</g:google_product_category>
       <g:product_type>Forkurs</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/matematikk-forkurs?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=enkeltemner%2Fmatematikk-forkurs</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Forkurs</nki:category>
       <nki:duration>600 timer</nki:duration>
-      <nki:price_numeric>12000</nki:price_numeric>
+      <nki:price_numeric>12900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2354,14 +2408,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-s2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-s2</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2379,14 +2433,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/fysikk-1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Ffysikk-1</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2404,14 +2458,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>13500.00 NOK</g:price>
+      <g:price>14500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/praktisk-hr-ledelse?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fpraktisk-hr-ledelse</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>HR</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>13500</nki:price_numeric>
+      <nki:price_numeric>14500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2429,14 +2483,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-r2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-r2</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2454,14 +2508,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/innforing-i-ledelse?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Finnforing-i-ledelse</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2479,14 +2533,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>5490.00 NOK</g:price>
+      <g:price>5950.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-s1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-s1</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>5490</nki:price_numeric>
+      <nki:price_numeric>5950</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2504,14 +2558,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/logistikkfaget?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fyrkesfag%2Flogistikkfaget</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Praksiskandidat</nki:category>
       <nki:duration>477 timer</nki:duration>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2530,6 +2584,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
+      <g:sale_price>5950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-2p-y?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-2p-y</g:ads_redirect>
@@ -2537,6 +2593,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>140 timer</nki:duration>
       <nki:price_numeric>6500</nki:price_numeric>
+      <nki:sale_price_numeric>5950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2554,14 +2611,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helseservicefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkommunikasjon-og-samhandling-for-helseservicefag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2579,14 +2636,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; markedsføring og salg</g:google_product_category>
       <g:product_type>Markedsføring og salg</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/sosiale-medier-og-innholdsmarkedsforing?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsosiale-medier-og-innholdsmarkedsforing</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Markedsføring og salg</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2604,14 +2661,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>18400.00 NOK</g:price>
+      <g:price>19500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-tannhelsesekretaerfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-tannhelsesekretaerfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>425 timer</nki:duration>
-      <nki:price_numeric>18400</nki:price_numeric>
+      <nki:price_numeric>19500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2629,14 +2686,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kommunikasjon-og-samhandling-for-helse-og-oppvekstfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkommunikasjon-og-samhandling-for-helse-og-oppvekstfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2654,14 +2711,38 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/innforing-i-markedsforing?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Finnforing-i-markedsforing</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>100 timer</nki:duration>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Videregående</custom_label_0>
+      <custom_label_1>Enkeltfag</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Eksamenskurs 2P</feed_name>
+      <internal_label>Eksamenskurs 2P</internal_label>
+      <g:id>videregaende/enkeltfag/eksamenskurs-2p</g:id>
+      <g:title>Eksamenskurs 2P − videregående i enkeltfag</g:title>
+      <g:description>Eksamenskurs 2P er et videregående-studium innen enkeltfag hos NKI Nettstudier.</g:description>
+      <g:link>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p</g:link>
+      <g:image_link>https://www.nki.no/static/og-default.png</g:image_link>
+      <g:item_group_id>videregaende/enkeltfag/eksamenskurs-2p</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>525.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
+      <g:product_type>Enkeltfag</g:product_type>
+      <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Feksamenskurs-2p</g:ads_redirect>
+      <nki:entity_type>vgo_teori</nki:entity_type>
+      <nki:category>Enkeltfag</nki:category>
+      <nki:price_numeric>525</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2679,14 +2760,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/entreprenorskap-innovasjon-og-forretningsplan?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fentreprenorskap-innovasjon-og-forretningsplan</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2704,14 +2785,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7500.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-barne-og-ungdomsarbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-barne-og-ungdomsarbeiderfag</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>140 timer</nki:duration>
-      <nki:price_numeric>7500</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2729,14 +2810,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>10800.00 NOK</g:price>
+      <g:price>11500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/smittevern-tannanatomi-og-fysiologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fsmittevern-tannanatomi-og-fysiologi</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>250 timer</nki:duration>
-      <nki:price_numeric>10800</nki:price_numeric>
+      <nki:price_numeric>11500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2754,14 +2835,14 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/organisasjonspsykologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Forganisasjonspsykologi</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>HR</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2779,14 +2860,38 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>7900.00 NOK</g:price>
+      <g:price>8300.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; markedsføring og salg</g:google_product_category>
       <g:product_type>Markedsføring og salg</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/radgivende-salg?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fradgivende-salg</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Markedsføring og salg</nki:category>
       <nki:duration>125 timer</nki:duration>
-      <nki:price_numeric>7900</nki:price_numeric>
+      <nki:price_numeric>8300</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Videregående</custom_label_0>
+      <custom_label_1>Enkeltfag</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Eksamenskurs 2P-Y</feed_name>
+      <internal_label>Eksamenskurs 2P-Y</internal_label>
+      <g:id>videregaende/enkeltfag/eksamenskurs-2p-y</g:id>
+      <g:title>Eksamenskurs 2P-Y − videregående i enkeltfag</g:title>
+      <g:description>Eksamenskurs 2P-Y er et videregående-studium innen enkeltfag hos NKI Nettstudier.</g:description>
+      <g:link>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p-y</g:link>
+      <g:image_link>https://www.nki.no/static/og-default.png</g:image_link>
+      <g:item_group_id>videregaende/enkeltfag/eksamenskurs-2p-y</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>525.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
+      <g:product_type>Enkeltfag</g:product_type>
+      <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/eksamenskurs-2p-y?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Feksamenskurs-2p-y</g:ads_redirect>
+      <nki:entity_type>vgo_teori</nki:entity_type>
+      <nki:category>Enkeltfag</nki:category>
+      <nki:price_numeric>525</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2804,13 +2909,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>15900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elenergi-og-ekom-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000221</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>15900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2828,13 +2933,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helsearbeiderfag-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000191</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2852,13 +2957,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/ambulansefag-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000227</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2876,13 +2981,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>23900.00 NOK</g:price>
+      <g:price>24900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/studiekompetanse/pabygg-vg4?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001557</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Fagpakker</nki:category>
-      <nki:price_numeric>23900</nki:price_numeric>
+      <nki:price_numeric>24900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2900,13 +3005,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>49900.00 NOK</g:price>
+      <g:price>51900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; bygg og eiendom</g:google_product_category>
       <g:product_type>Bygg og eiendom</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/teknisk-tegner-bygg?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001643</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Bygg og eiendom</nki:category>
-      <nki:price_numeric>49900</nki:price_numeric>
+      <nki:price_numeric>51900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2924,13 +3029,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>17900.00 NOK</g:price>
+      <g:price>18900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/realfag/medisinpakke-norge?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001552</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Fagpakker</nki:category>
-      <nki:price_numeric>17900</nki:price_numeric>
+      <nki:price_numeric>18900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2948,13 +3053,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>50000.00 NOK</g:price>
+      <g:price>52500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/energimontorfaget-for-praksiskandidater?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001700</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Praksiskandidat</nki:category>
-      <nki:price_numeric>50000</nki:price_numeric>
+      <nki:price_numeric>52500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2972,13 +3077,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>39900.00 NOK</g:price>
+      <g:price>41900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helseservicefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000187</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>39900</nki:price_numeric>
+      <nki:price_numeric>41900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2996,13 +3101,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>39900.00 NOK</g:price>
+      <g:price>41900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helse-og-oppvekstfag-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001635</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>39900</nki:price_numeric>
+      <nki:price_numeric>41900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3020,13 +3125,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>14900.00 NOK</g:price>
+      <g:price>15900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/realfag/realfagskurs-til-ingeniorutdanning?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001553</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Fagpakker</nki:category>
-      <nki:price_numeric>14900</nki:price_numeric>
+      <nki:price_numeric>15900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3044,13 +3149,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>26900.00 NOK</g:price>
+      <g:price>28500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
       <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/kontormedarbeider?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001668</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Jus, HMS &amp; administrasjon</nki:category>
-      <nki:price_numeric>26900</nki:price_numeric>
+      <nki:price_numeric>28500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3092,13 +3197,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>39900.00 NOK</g:price>
+      <g:price>41900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/ambulansefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000226</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>39900</nki:price_numeric>
+      <nki:price_numeric>41900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3116,13 +3221,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>35900.00 NOK</g:price>
+      <g:price>39500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/studiekompetanse/generell-studiekompetanse-23-5-regelen?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001641</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Fagpakker</nki:category>
-      <nki:price_numeric>35900</nki:price_numeric>
+      <nki:price_numeric>39500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3140,13 +3245,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>9900.00 NOK</g:price>
+      <g:price>10400.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
       <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/innforing-i-jus-og-arbeidsrett?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0000241</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Jus, HMS &amp; administrasjon</nki:category>
-      <nki:price_numeric>9900</nki:price_numeric>
+      <nki:price_numeric>10400</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3164,13 +3269,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>39900.00 NOK</g:price>
+      <g:price>41900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elenergi-og-ekom?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000222</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>39900</nki:price_numeric>
+      <nki:price_numeric>41900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3188,13 +3293,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>19900.00 NOK</g:price>
+      <g:price>20900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/realfag/medisinpakke-utland?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001551</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Fagpakker</nki:category>
-      <nki:price_numeric>19900</nki:price_numeric>
+      <nki:price_numeric>20900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3212,13 +3317,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/barne-og-ungdomsarbeiderfag-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000216</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3236,13 +3341,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helseservicefag-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000179</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3260,13 +3365,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>16900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helse-og-oppvekstfag-programfag-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001636</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>16900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3284,13 +3389,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>28900.00 NOK</g:price>
+      <g:price>30500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; forkurs</g:google_product_category>
       <g:product_type>Forkurs</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/forkurs-ingenior?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0000242</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Forkurs</nki:category>
-      <nki:price_numeric>28900</nki:price_numeric>
+      <nki:price_numeric>30500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3308,37 +3413,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>15900.00 NOK</g:price>
+      <g:price>17900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elektro-og-datateknologi-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000053</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>15900</nki:price_numeric>
-    </item>
-    <item>
-      <custom_label_0>Kurs</custom_label_0>
-      <custom_label_1>HR</custom_label_1>
-      <custom_label_2>kort</custom_label_2>
-      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
-      <feed_name>Bedriftsleder + AI i arbeidslivet</feed_name>
-      <internal_label>Bedriftsleder + AI i arbeidslivet</internal_label>
-      <g:id>PG-0001729</g:id>
-      <g:title>Bedriftsleder + AI i arbeidslivet − kurs i hr</g:title>
-      <g:description>Kurspakken Bedriftsleder og AI i arbeidslivet gir deg økonomisk oversikt og trygg bruk av AI. Begge kurs til 24 900 kroner. Start i dag!</g:description>
-      <g:link>https://www.nki.no/kurs/bedriftsleder-ai-i-arbeidslivet</g:link>
-      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/68bd0e420ac24afde51724da4ba1bcebcc91eba3-1600x1048.jpg?rect=0,104,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
-      <g:item_group_id>PG-0001729</g:item_group_id>
-      <g:availability>in stock</g:availability>
-      <g:condition>new</g:condition>
-      <g:brand>NKI</g:brand>
-      <g:price>24900.00 NOK</g:price>
-      <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
-      <g:product_type>HR</g:product_type>
-      <g:ads_redirect>https://www.nki.no/kurs/bedriftsleder-ai-i-arbeidslivet?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001729</g:ads_redirect>
-      <nki:entity_type>kurs</nki:entity_type>
-      <nki:category>HR</nki:category>
-      <nki:price_numeric>24900</nki:price_numeric>
+      <nki:price_numeric>17900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3356,13 +3437,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>38900.00 NOK</g:price>
+      <g:price>39900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/tannhelsesekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001562</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>38900</nki:price_numeric>
+      <nki:price_numeric>39900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3380,13 +3461,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>34900.00 NOK</g:price>
+      <g:price>36900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; kreativitet og design</g:google_product_category>
       <g:product_type>Kreativitet og design</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/interiordesigner?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001645</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Kreativitet og design</nki:category>
-      <nki:price_numeric>34900</nki:price_numeric>
+      <nki:price_numeric>36900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3428,13 +3509,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>26900.00 NOK</g:price>
+      <g:price>28500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; kreativitet og design</g:google_product_category>
       <g:product_type>Kreativitet og design</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/boligstylist?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0000231</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Kreativitet og design</nki:category>
-      <nki:price_numeric>26900</nki:price_numeric>
+      <nki:price_numeric>28500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3453,12 +3534,15 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>54900.00 NOK</g:price>
+      <g:sale_price>53500.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-10-29T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/medisinsk-sekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001644</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Helse og livsstil</nki:category>
       <nki:price_numeric>54900</nki:price_numeric>
+      <nki:sale_price_numeric>53500</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3476,13 +3560,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>35900.00 NOK</g:price>
+      <g:price>39500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/studiekompetanse/pabygg-vg3?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001592</g:ads_redirect>
       <nki:entity_type>vgo_teori</nki:entity_type>
       <nki:category>Fagpakker</nki:category>
-      <nki:price_numeric>35900</nki:price_numeric>
+      <nki:price_numeric>39500</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3500,13 +3584,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>38900.00 NOK</g:price>
+      <g:price>39900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helsesekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001533</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>38900</nki:price_numeric>
+      <nki:price_numeric>39900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3524,13 +3608,13 @@
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>39900.00 NOK</g:price>
+      <g:price>41900.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elektro-og-datateknologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001591</g:ads_redirect>
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
-      <nki:price_numeric>39900</nki:price_numeric>
+      <nki:price_numeric>41900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3543,18 +3627,18 @@
       <g:title>Bedriftsleder − kurs i ledelse</g:title>
       <g:description>Bedriftsleder dekker de tre LØM-emnene for ledere i små og mellomstore bedrifter: ledelse, økonomistyring og markedsføring. Start i dag!</g:description>
       <g:link>https://www.nki.no/kurs/bedriftsleder</g:link>
-      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/fd4231e2c1becbe87d48915f06c7c9c1cd703b0e-4500x3000.jpg?rect=0,295,4500,2363&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/1ff91e4b49c792236a7a3a7b6adb89401e79bf39-2400x1600.jpg?rect=0,157,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0001670</g:item_group_id>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
-      <g:price>26900.00 NOK</g:price>
+      <g:price>28500.00 NOK</g:price>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/bedriftsleder?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001670</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Ledelse</nki:category>
-      <nki:price_numeric>26900</nki:price_numeric>
+      <nki:price_numeric>28500</nki:price_numeric>
     </item>
   </channel>
 </rss>
