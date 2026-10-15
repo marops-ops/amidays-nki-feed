@@ -1959,6 +1959,54 @@
       <nki:price_numeric>3900</nki:price_numeric>
     </item>
     <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Jus, HMS &amp; administrasjon</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Kurs i brannvern - Introduksjon</feed_name>
+      <internal_label>Kurs i brannvern - Introduksjon</internal_label>
+      <g:id>kurs/kurs-i-brannvern-introduksjon</g:id>
+      <g:title>Kurs i brannvern - Introduksjon − kurs i jus, hms &amp; administrasjon</g:title>
+      <g:description>Nettkurs i brannvern for drift og vedlikehold av bygg. Lær lovverket, TEK17, material- og bygningskunnskap, med øvinger i FDVweb. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/kurs-i-brannvern-introduksjon</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/90e5c2bd70306dfec13e7afdc1a9eecb475e843a-2400x1600.jpg?rect=0,170,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>kurs/kurs-i-brannvern-introduksjon</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>3900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
+      <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/kurs-i-brannvern-introduksjon?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkurs-i-brannvern-introduksjon</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Jus, HMS &amp; administrasjon</nki:category>
+      <nki:price_numeric>3900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Jus, HMS &amp; administrasjon</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Kurs i brannvern - Risiko og forebygging</feed_name>
+      <internal_label>Kurs i brannvern - Risiko og forebygging</internal_label>
+      <g:id>kurs/kurs-i-brannvern-risiko-og-forebygging</g:id>
+      <g:title>Kurs i brannvern - Risiko og forebygging − kurs i jus, hms &amp; administrasjon</g:title>
+      <g:description>Nettkurs i brannvern. Lær å gjennomføre risikovurderinger, forstå ansvar og roller og planlegge brannforebyggende tiltak i bygg. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/kurs-i-brannvern-risiko-og-forebygging</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/ab2899ec25c966d1577efe1a86bb67cd92096beb-4032x2268.jpg?rect=0,76,4032,2117&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>kurs/kurs-i-brannvern-risiko-og-forebygging</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>3900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
+      <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/kurs-i-brannvern-risiko-og-forebygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkurs-i-brannvern-risiko-og-forebygging</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Jus, HMS &amp; administrasjon</nki:category>
+      <nki:price_numeric>3900</nki:price_numeric>
+    </item>
+    <item>
       <custom_label_0>Yrkesfag</custom_label_0>
       <custom_label_1>Yrkesfag</custom_label_1>
       <custom_label_2>kort</custom_label_2>

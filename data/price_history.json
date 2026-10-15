@@ -951,6 +951,14 @@
     "baseline": 8300.0,
     "drop_since": null
   },
+  "kurs/kurs-i-brannvern-introduksjon": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
+  "kurs/kurs-i-brannvern-risiko-og-forebygging": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
   "kurs/loyvekurs-for-person-og-godstransport": {
     "baseline": 14500.0,
     "drop_since": null
