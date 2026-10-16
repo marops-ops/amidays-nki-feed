@@ -891,6 +891,10 @@
     "baseline": 10400.0,
     "drop_since": null
   },
+  "kurs/baerekraftig-logistikk-og-sirkulaerokonomi": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
   "kurs/baerekraftsrapportering": {
     "baseline": 3900.0,
     "drop_since": null
@@ -941,6 +945,10 @@
   },
   "kurs/innforing-i-ledelse": {
     "baseline": 8300.0,
+    "drop_since": null
+  },
+  "kurs/introduksjon-til-logistikk": {
+    "baseline": 3900.0,
     "drop_since": null
   },
   "kurs/klimaregnskap-i-praksis": {
@@ -1029,6 +1037,10 @@
   },
   "kurs/styrearbeid-i-praksis": {
     "baseline": 7900.0,
+    "drop_since": null
+  },
+  "kurs/supply-chain-management-og-helhetlig-logistikk": {
+    "baseline": 3900.0,
     "drop_since": null
   },
   "kurs/systematisk-ferdigstillelse": {

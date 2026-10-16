@@ -1600,10 +1600,10 @@
       <custom_label_1>Økonomi og bærekraft</custom_label_1>
       <custom_label_2>kort</custom_label_2>
       <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
-      <feed_name>Økonomi på 1-2-3</feed_name>
-      <internal_label>Økonomi på 1-2-3</internal_label>
+      <feed_name>Økonomi for ikke-økonomer</feed_name>
+      <internal_label>Økonomi for ikke-økonomer</internal_label>
       <g:id>kurs/okonomi-pa-1-2-3</g:id>
-      <g:title>Økonomi på 1-2-3 − kurs i økonomi og bærekraft</g:title>
+      <g:title>Økonomi for ikke-økonomer − kurs i økonomi og bærekraft</g:title>
       <g:description>Kurs i økonomi for deg uten økonomiutdanning. Forstå regnskap, budsjetter og rapporter i jobben. Start i dag!</g:description>
       <g:link>https://www.nki.no/kurs/okonomi-pa-1-2-3</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/a4c4f1351f3069bd11c3d8c57d828a9c1490bfbf-1600x1059.jpg?rect=0,110,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
@@ -1744,13 +1744,13 @@
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
-      <custom_label_1>Økonomi og bærekraft</custom_label_1>
+      <custom_label_1>Digitalisering og teknologi</custom_label_1>
       <custom_label_2>kort</custom_label_2>
       <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
       <feed_name>Tjenestedesign - Forstå kundeopplevelsen</feed_name>
       <internal_label>Tjenestedesign - Forstå kundeopplevelsen</internal_label>
       <g:id>kurs/tjenestedesign-forsta-kundeopplevelsen</g:id>
-      <g:title>Tjenestedesign - Forstå kundeopplevelsen − kurs i økonomi og bærekraft</g:title>
+      <g:title>Tjenestedesign - Forstå kundeopplevelsen − kurs i digitalisering og teknologi</g:title>
       <g:description>Nettkurs i tjenestedesign for alle ansatte. Forstå hva kundeopplevelse er, hvordan kundereisen henger sammen og hva du selv kan gjøre bedre. Start i dag!</g:description>
       <g:link>https://www.nki.no/kurs/tjenestedesign-forsta-kundeopplevelsen</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/e0086d9b0e09e7df9e57191acad2f004beca2687-1200x800.jpg?rect=0,85,1200,630&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
@@ -1759,22 +1759,22 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
-      <g:product_type>Økonomi og bærekraft</g:product_type>
+      <g:google_product_category>utdanning &gt; kurs &gt; digitalisering og teknologi</g:google_product_category>
+      <g:product_type>Digitalisering og teknologi</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/tjenestedesign-forsta-kundeopplevelsen?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Ftjenestedesign-forsta-kundeopplevelsen</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
-      <nki:category>Økonomi og bærekraft</nki:category>
+      <nki:category>Digitalisering og teknologi</nki:category>
       <nki:price_numeric>3900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
-      <custom_label_1>Økonomi og bærekraft</custom_label_1>
+      <custom_label_1>Digitalisering og teknologi</custom_label_1>
       <custom_label_2>kort</custom_label_2>
       <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
       <feed_name>Tjenestedesign - Forbedre kundeopplevelsen</feed_name>
       <internal_label>Tjenestedesign - Forbedre kundeopplevelsen</internal_label>
       <g:id>kurs/tjenestedesign-forbedre-kundeopplevelsen</g:id>
-      <g:title>Tjenestedesign - Forbedre kundeopplevelsen − kurs i økonomi og bærekraft</g:title>
+      <g:title>Tjenestedesign - Forbedre kundeopplevelsen − kurs i digitalisering og teknologi</g:title>
       <g:description>Nettkurs i tjenestedesign for deg som utvikler tjenester. Lær å kartlegge kundereisen, hente brukerinnsikt og teste løsninger som fungerer. Start i dag!</g:description>
       <g:link>https://www.nki.no/kurs/tjenestedesign-forbedre-kundeopplevelsen</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/e0086d9b0e09e7df9e57191acad2f004beca2687-1200x800.jpg?rect=0,85,1200,630&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
@@ -1783,11 +1783,11 @@
       <g:condition>new</g:condition>
       <g:brand>NKI</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
-      <g:product_type>Økonomi og bærekraft</g:product_type>
+      <g:google_product_category>utdanning &gt; kurs &gt; digitalisering og teknologi</g:google_product_category>
+      <g:product_type>Digitalisering og teknologi</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/tjenestedesign-forbedre-kundeopplevelsen?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Ftjenestedesign-forbedre-kundeopplevelsen</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
-      <nki:category>Økonomi og bærekraft</nki:category>
+      <nki:category>Digitalisering og teknologi</nki:category>
       <nki:price_numeric>3900</nki:price_numeric>
     </item>
     <item>
@@ -2004,6 +2004,78 @@
       <g:ads_redirect>https://www.nki.no/kurs/kurs-i-brannvern-risiko-og-forebygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkurs-i-brannvern-risiko-og-forebygging</g:ads_redirect>
       <nki:entity_type>kurs</nki:entity_type>
       <nki:category>Jus, HMS &amp; administrasjon</nki:category>
+      <nki:price_numeric>3900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Økonomi og bærekraft</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Bærekraftig logistikk og sirkulær økonomi</feed_name>
+      <internal_label>Bærekraftig logistikk og sirkulær økonomi</internal_label>
+      <g:id>kurs/baerekraftig-logistikk-og-sirkulaerokonomi</g:id>
+      <g:title>Bærekraftig logistikk og sirkulær økonomi − kurs i økonomi og bærekraft</g:title>
+      <g:description>Nettkurs i bærekraftig logistikk. Lær om sirkulær økonomi, grønn logistikk, ISO-sertifisering og FNs bærekraftsmål i praksis for virksomheten. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/baerekraftig-logistikk-og-sirkulaerokonomi</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/5dcef19a6fdb21ad21352bd066c76947b5806be1-1600x800.jpg?rect=38,0,1524,800&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>kurs/baerekraftig-logistikk-og-sirkulaerokonomi</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>3900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
+      <g:product_type>Økonomi og bærekraft</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/baerekraftig-logistikk-og-sirkulaerokonomi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fbaerekraftig-logistikk-og-sirkulaerokonomi</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Økonomi og bærekraft</nki:category>
+      <nki:price_numeric>3900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Økonomi og bærekraft</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Supply Chain Management og helhetlig logistikk</feed_name>
+      <internal_label>Supply Chain Management og helhetlig logistikk</internal_label>
+      <g:id>kurs/supply-chain-management-og-helhetlig-logistikk</g:id>
+      <g:title>Supply Chain Management og helhetlig logistikk − kurs i økonomi og bærekraft</g:title>
+      <g:description>Nettkurs i supply chain management. Lær ABC-analyse, prognoser, sikkerhetslager og logistikkregnskap for en helhetlig forsyningskjede. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/supply-chain-management-og-helhetlig-logistikk</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/c311007f6848244e88c63495974093b670bdc9f5-2200x2200.jpg?rect=0,523,2200,1155&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>kurs/supply-chain-management-og-helhetlig-logistikk</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>3900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
+      <g:product_type>Økonomi og bærekraft</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/supply-chain-management-og-helhetlig-logistikk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsupply-chain-management-og-helhetlig-logistikk</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Økonomi og bærekraft</nki:category>
+      <nki:price_numeric>3900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Økonomi og bærekraft</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Introduksjon til logistikk</feed_name>
+      <internal_label>Introduksjon til logistikk</internal_label>
+      <g:id>kurs/introduksjon-til-logistikk</g:id>
+      <g:title>Introduksjon til logistikk − kurs i økonomi og bærekraft</g:title>
+      <g:description>Nettkurs i logistikk for nyansatte og deg uten fagbakgrunn. Lær grunnbegrepene, verdikjeden og hva som driver endringene i bransjen. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/introduksjon-til-logistikk</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/b2867edcaf7de3499f375911a37da5f87d4eaa7f-2400x1605.jpg?rect=0,173,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>kurs/introduksjon-til-logistikk</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>3900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
+      <g:product_type>Økonomi og bærekraft</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/introduksjon-til-logistikk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fintroduksjon-til-logistikk</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Økonomi og bærekraft</nki:category>
       <nki:price_numeric>3900</nki:price_numeric>
     </item>
     <item>
