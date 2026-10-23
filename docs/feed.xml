@@ -2079,6 +2079,30 @@
       <nki:price_numeric>3900</nki:price_numeric>
     </item>
     <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Ledelse</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Endringsledelse - utviklet i samarbeid med Metier</feed_name>
+      <internal_label>Endringsledelse - utviklet i samarbeid med Metier</internal_label>
+      <g:id>kurs/endringsledelse-metier</g:id>
+      <g:title>Endringsledelse - utviklet i samarbeid med Metier − kurs i ledelse</g:title>
+      <g:description>Kurs i endringsledelse for ledere og prosjektledere, utviklet med Metier. Lær ADKAR, interessentanalyse og å håndtere motstand. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/endringsledelse-metier</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/89a4c5671c7682c510630d6bc298dec70cb9e1bd-2400x1605.jpg?rect=0,173,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>kurs/endringsledelse-metier</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>3900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
+      <g:product_type>Ledelse</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/endringsledelse-metier?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fendringsledelse-metier</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Ledelse</nki:category>
+      <nki:price_numeric>3900</nki:price_numeric>
+    </item>
+    <item>
       <custom_label_0>Yrkesfag</custom_label_0>
       <custom_label_1>Yrkesfag</custom_label_1>
       <custom_label_2>kort</custom_label_2>

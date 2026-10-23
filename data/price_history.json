@@ -915,6 +915,10 @@
     "baseline": 8300.0,
     "drop_since": null
   },
+  "kurs/endringsledelse-metier": {
+    "baseline": 3900.0,
+    "drop_since": null
+  },
   "kurs/entreprenorskap-innovasjon-og-forretningsplan": {
     "baseline": 8300.0,
     "drop_since": null
