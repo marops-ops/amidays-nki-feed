@@ -72,7 +72,7 @@
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-pabygging</g:ads_redirect>
@@ -374,7 +374,7 @@
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-for-elektro-og-datateknologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-for-elektro-og-datateknologi</g:ads_redirect>
@@ -577,7 +577,7 @@
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/norsk-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnorsk-pabygging</g:ads_redirect>
@@ -596,7 +596,7 @@
       <internal_label>Løyve for person- og godstransport - teorikurs</internal_label>
       <g:id>kurs/loyvekurs-for-person-og-godstransport</g:id>
       <g:title>Løyve for person- og godstransport - teorikurs − kurs i transport</g:title>
-      <g:description>Løyvekurset gir deg fagstoffet du trenger for å bestå løyveeksamen hos Statens vegvesen og søke løyve for person- og godstransport. Start i dag!</g:description>
+      <g:description>Løyvekompetansekurset for person- og godstransport gir deg den nødvendige opplæringen for å bestå løyveeksamen hos Statens vegvesen. Les mer og meld deg på her!</g:description>
       <g:link>https://www.nki.no/kurs/loyvekurs-for-person-og-godstransport</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/071f06cc509c272ef8c8bf8f898abfe92c84224a-1600x1048.jpg?rect=0,104,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/loyvekurs-for-person-og-godstransport</g:item_group_id>
@@ -930,7 +930,7 @@
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/norsk-for-yrkesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnorsk-for-yrkesfag</g:ads_redirect>
@@ -999,7 +999,7 @@
       <internal_label>Drosjeløyve teorikurs</internal_label>
       <g:id>kurs/drosjeloyve-teorikurs</g:id>
       <g:title>Drosjeløyve teorikurs − kurs i transport</g:title>
-      <g:description>Teorikurs for drosjeløyve, utviklet med Norges Taxiforbund. Trener deg på oppgavetypen i løyveeksamen hos Statens vegvesen. Start i dag!</g:description>
+      <g:description>Ønsker du å drive taxivirksomhet og mangler drosjeløyve? Dette kurset forbereder deg til løyveeksamen hos Statens vegvesen. Les mer og meld deg på her!</g:description>
       <g:link>https://www.nki.no/kurs/drosjeloyve-teorikurs</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/53a8b28ae058d94a130291b2ec4c561c191c355d-1600x800.jpg?rect=38,0,1524,800&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/drosjeloyve-teorikurs</g:item_group_id>
@@ -1033,7 +1033,7 @@
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-1p-y-for-helse-og-oppvekstfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-1p-y-for-helse-og-oppvekstfag</g:ads_redirect>
@@ -1136,7 +1136,7 @@
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/engelsk-for-yrkesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fengelsk-for-yrkesfag</g:ads_redirect>
@@ -1214,7 +1214,7 @@
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-1p-y-for-elektro-og-datateknologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-1p-y-for-elektro-og-datateknologi</g:ads_redirect>
@@ -2220,7 +2220,7 @@
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/historie-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fhistorie-pabygging</g:ads_redirect>
@@ -2248,7 +2248,7 @@
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-for-helse-og-oppvekstfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-for-helse-og-oppvekstfag</g:ads_redirect>
@@ -2326,7 +2326,7 @@
       <g:brand>NKI</g:brand>
       <g:price>7500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/kroppsoving-vg1-og-vg2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fkroppsoving-vg1-og-vg2</g:ads_redirect>
@@ -2595,7 +2595,7 @@
       <internal_label>Praktisk HR-ledelse</internal_label>
       <g:id>kurs/praktisk-hr-ledelse</g:id>
       <g:title>Praktisk HR-ledelse − kurs i hr</g:title>
-      <g:description>Praktisk HR-ledelse er et nettkurs i HR og ledelse med strategisk HR, rekruttering og arbeidsmiljø. Start i dag!</g:description>
+      <g:description>Kurs i praktisk HR-ledelse passer for deg som jobber med HR, eller ønsker å utvikle kompetanse innen HR i en bedrift eller organisasjon. Les mer og søk her!</g:description>
       <g:link>https://www.nki.no/kurs/praktisk-hr-ledelse</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/8aede1500957ebecff849b65890cc127832b72b8-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/praktisk-hr-ledelse</g:item_group_id>
@@ -2645,7 +2645,7 @@
       <internal_label>Innføring i ledelse</internal_label>
       <g:id>kurs/innforing-i-ledelse</g:id>
       <g:title>Innføring i ledelse − kurs i ledelse</g:title>
-      <g:description>Innføring i ledelse er et lederkurs på nett for deg som er eller vil bli arbeidsleder, mellomleder eller teamleder. Start i dag!</g:description>
+      <g:description>Praktisk nettkurs i ledelse som gir deg kunnskapen du trenger for å bli en god leder og skape resultater gjennom trivsel og effektivt samarbeid. Søk i dag!</g:description>
       <g:link>https://www.nki.no/kurs/innforing-i-ledelse</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/31b344510e6a39b78486e6ac8c343af1003c09c4-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/innforing-i-ledelse</g:item_group_id>
@@ -2729,7 +2729,7 @@
       <g:brand>NKI</g:brand>
       <g:price>6500.00 NOK</g:price>
       <g:sale_price>5950.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-2p-y?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-2p-y</g:ads_redirect>
@@ -3142,7 +3142,7 @@
       <internal_label>Teknisk tegner - Bygg</internal_label>
       <g:id>PG-0001643</g:id>
       <g:title>Teknisk tegner - Bygg − kurs i bygg og eiendom</g:title>
-      <g:description>Teknisk tegner bygg gir deg Autodesk Revit, BIM og byggeteknikk. Skolelisens inkludert. Start i dag!</g:description>
+      <g:description>Kurset Teknisk tegner for bygg er for deg som ønsker å jobbe med teknisk tegning i byggenæringen ved bruk av Autodesk Revit. Les mer og meld deg på kurset her!</g:description>
       <g:link>https://www.nki.no/kurs/teknisk-tegner-bygg</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/9826610695eb91b71c1360b6560446bf66f828ea-1600x1068.jpg?rect=0,114,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0001643</g:item_group_id>
@@ -3286,7 +3286,7 @@
       <internal_label>Kontormedarbeider</internal_label>
       <g:id>PG-0001668</g:id>
       <g:title>Kontormedarbeider − kurs i jus, hms &amp; administrasjon</g:title>
-      <g:description>Kontormedarbeider er et nettkurs som kvalifiserer deg til moderne kontorarbeid, uansett bransje. Ingen forkunnskaper. Start i dag!</g:description>
+      <g:description>Vårt nettkurs i kontormedarbeider øker din kompetanse som kontormedarbeider og gir deg oppdatert kunnskap om digitale arbeidsverktøy og bruk av AI. Søk i dag!</g:description>
       <g:link>https://www.nki.no/kurs/kontormedarbeider</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/640b8244e68549eea85365b95cdd4ad2fb35bdc7-1600x800.jpg?rect=38,0,1524,800&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0001668</g:item_group_id>
@@ -3574,7 +3574,7 @@
       <internal_label>Interiørdesigner</internal_label>
       <g:id>PG-0001645</g:id>
       <g:title>Interiørdesigner − kurs i kreativitet og design</g:title>
-      <g:description>Interiørdesigner er et praktisk nettkurs med styling, Archicad og både privat og offentlig interiør. Start i dag!</g:description>
+      <g:description>Kurs i interiørdesign er perfekt for deg som er opptatt av interiør og drømmer om å jobbe som interiørdesigner. Les mer og søk på interiørkurs i dag!</g:description>
       <g:link>https://www.nki.no/kurs/interiordesigner</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/b141f7329c5626fba5c99b47b239e5a8778776d5-1600x800.jpg?rect=38,0,1524,800&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0001645</g:item_group_id>
@@ -3646,7 +3646,7 @@
       <internal_label>Medisinsk sekretær</internal_label>
       <g:id>PG-0001644</g:id>
       <g:title>Medisinsk sekretær − kurs i helse og livsstil</g:title>
-      <g:description>Medisinsk sekretær er et yrkesrettet kurs på nett med medisinsk terminologi, journalsystemer og praktisk laboratoriearbeid. Start i dag!</g:description>
+      <g:description>Medisinsk sekretær er et kort, yrkesrettet kurs som gir deg kunnskapen du trenger for å jobbe på sykehus, klinikker og private legekontorer. Les mer og søk her!</g:description>
       <g:link>https://www.nki.no/kurs/medisinsk-sekretaer</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/456ae6fe2bb5870921b8dd03dddb91c489328f97-1600x800.jpg?rect=38,0,1524,800&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0001644</g:item_group_id>
@@ -3655,7 +3655,7 @@
       <g:brand>NKI</g:brand>
       <g:price>54900.00 NOK</g:price>
       <g:sale_price>53500.00 NOK</g:sale_price>
-      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-25T23:59+0100</g:sale_price_effective_date>
+      <g:sale_price_effective_date>2026-09-29T00:00+0100/2026-11-26T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/medisinsk-sekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001644</g:ads_redirect>
