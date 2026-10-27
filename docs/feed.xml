@@ -621,7 +621,7 @@
       <internal_label>Ernæring og bærekraftig kosthold</internal_label>
       <g:id>kurs/ernaering-og-baerekraftig-kosthold</g:id>
       <g:title>Ernæring og bærekraftig kosthold − kurs i helse og livsstil</g:title>
-      <g:description>Faglig oppdatert kurs i ernæring, kosthold og bærekraft, utviklet med klinisk ernæringsfysiolog Tine Sundfør. Ingen forkunnskaper. Start i dag!</g:description>
+      <g:description>Ernæring og bærekraftig kosthold er et fleksibelt, relevant og faglig oppdatert kurs utviklet i samarbeid med Tine Sundfør. Les mer om kurset og søk her!</g:description>
       <g:link>https://www.nki.no/kurs/ernaering-og-baerekraftig-kosthold</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/a1e5dad47c2a0bb0de25bbcffb3234674dd33da6-1600x1048.png?rect=0,104,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/ernaering-og-baerekraftig-kosthold</g:item_group_id>
@@ -746,7 +746,7 @@
       <internal_label>AutoCad</internal_label>
       <g:id>kurs/autocad</g:id>
       <g:title>AutoCad − kurs i bygg og eiendom</g:title>
-      <g:description>Kurs i AutoCAD gir deg en grunnleggende innføring i dataassistert tegning, med lag, målsetting og isometrisk tegning. Start i dag!</g:description>
+      <g:description>Med kurs i AutoCAD får du en grunnleggende innføring i programmets viktigste funksjoner og verktøy for 2D- og 3D-tegninger.</g:description>
       <g:link>https://www.nki.no/kurs/autocad</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/8b450366030d23c978e656f950e08c62dc3e9e3b-1600x1200.jpg?rect=0,180,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/autocad</g:item_group_id>
@@ -1308,7 +1308,7 @@
       <internal_label>Målrettet prosjektstyring</internal_label>
       <g:id>kurs/malrettet-prosjektstyring</g:id>
       <g:title>Målrettet prosjektstyring − kurs i ledelse</g:title>
-      <g:description>Målrettet prosjektstyring gir deg en helhetlig metode for planlegging, organisering og oppfølging av prosjekter. Start i dag!</g:description>
+      <g:description>Kurset Målrettet prosjektstyring gir deg en helhetlig fremgangsmåte for planlegging, organisering og oppfølging av prosjekter i alle størrelser. Les mer og søk!</g:description>
       <g:link>https://www.nki.no/kurs/malrettet-prosjektstyring</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/37eaa75912b528a568619dc9308a5670f5096b5a-1600x1048.jpg?rect=0,104,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/malrettet-prosjektstyring</g:item_group_id>
@@ -2186,7 +2186,7 @@
       <internal_label>Konflikter på jobb</internal_label>
       <g:id>kurs/konflikter-pa-jobb</g:id>
       <g:title>Konflikter på jobb − kurs i hr</g:title>
-      <g:description>Konflikter på jobb gir deg praktiske metoder for konflikthåndtering du kan ta i bruk med en gang. Start i dag!</g:description>
+      <g:description>Med et kurs i konflikthåndtering lærer du å bli en aktiv konfliktløser gjennom praktiske metoder du kan ta i bruk med en gang. Ta kurset i dag.</g:description>
       <g:link>https://www.nki.no/kurs/konflikter-pa-jobb</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/9ef5779b90dbc1a3f612869258310aef00b14221-1600x1048.jpg?rect=0,104,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/konflikter-pa-jobb</g:item_group_id>
@@ -2897,7 +2897,7 @@
       <internal_label>Entreprenørskap, innovasjon og forretningsplan</internal_label>
       <g:id>kurs/entreprenorskap-innovasjon-og-forretningsplan</g:id>
       <g:title>Entreprenørskap, innovasjon og forretningsplan − kurs i ledelse</g:title>
-      <g:description>Entreprenørskap, innovasjon og forretningsplan er for deg som vil starte egen bedrift eller drive innovasjon. Start i dag!</g:description>
+      <g:description>Kurset Entreprenørskap, innovasjon og forretningsplan passer for deg som drømmer om å starte egen bedrift eller vil drive med innovasjon. Les mer og søk her!</g:description>
       <g:link>https://www.nki.no/kurs/entreprenorskap-innovasjon-og-forretningsplan</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/def055508d7fbf16c90fbd4ad3e8640da297a91e-1600x843.jpg?rect=0,2,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/entreprenorskap-innovasjon-og-forretningsplan</g:item_group_id>
@@ -3166,7 +3166,7 @@
       <internal_label>Medisinpakke Norge</internal_label>
       <g:id>PG-0001552</g:id>
       <g:title>Medisinpakke Norge − videregående i fagpakker</g:title>
-      <g:description>Matematikk R1, Kjemi 1, Kjemi 2 og Fysikk 1 — realfagene som kreves for opptak til medisin i Norge. Ta dem som privatist. Start i dag!</g:description>
+      <g:description>Ta realfagene du trenger for å søke medisin i Norge. Fleksibel nettundervisning, privatisteksamen og veiledning hos NKI Nettstudier. Les mer og meld deg på her!</g:description>
       <g:link>https://www.nki.no/videregaende/realfag/medisinpakke-norge</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/e682bd9979471dce385ac3a6b24e0c6dee1fdbfa-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0001552</g:item_group_id>
@@ -3406,7 +3406,7 @@
       <internal_label>Medisinpakke utland</internal_label>
       <g:id>PG-0001551</g:id>
       <g:title>Medisinpakke utland − videregående i fagpakker</g:title>
-      <g:description>Kjemi 1, Kjemi 2, Biologi 1 og Biologi 2 — realfagene du trenger for opptak til medisinstudier i utlandet. Ta dem som privatist. Start i dag!</g:description>
+      <g:description>Ønsker du å studere medisin i utlandet? Hos NKI kan du ta realfagkurs for å kvalifisere deg til opptak og lykkes med eksamen. Les mer og meld deg på her!</g:description>
       <g:link>https://www.nki.no/videregaende/realfag/medisinpakke-utland</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/3006f43d7b61862d579dd0cd378382118f9fe2ea-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0001551</g:item_group_id>
@@ -3622,7 +3622,7 @@
       <internal_label>Boligstylist</internal_label>
       <g:id>PG-0000231</g:id>
       <g:title>Boligstylist − kurs i kreativitet og design</g:title>
-      <g:description>Kurs i boligstyling for deg med lidenskap for interiør, med kundehåndtering, moodboard og prosjektstyring. Start i dag!</g:description>
+      <g:description>Boligstylist er nettkurset for deg som har en lidenskap for interiør og drømmer om å jobbe profesjonelt med boligstyling.</g:description>
       <g:link>https://www.nki.no/kurs/boligstylist</g:link>
       <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/f3b78ed9f76215e61028f51023db1e13d788a021-1600x853.jpg?rect=0,7,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>PG-0000231</g:item_group_id>
