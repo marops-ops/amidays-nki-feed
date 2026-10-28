@@ -1509,7 +1509,7 @@
       <g:title>Arbeidsrett - Personalansvar − kurs i hr</g:title>
       <g:description>Arbeidsrett – Personalansvar gir ledere uten juridisk bakgrunn et forståelig grunnlag i regelverket rundt personalsaker. Start i dag!</g:description>
       <g:link>https://www.nki.no/kurs/arbeidsrett-personalansvar</g:link>
-      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/4c62fed5a29c1bda06a8b055fb5981ecafb097de-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/791a91a4835f21137f7dfbf1952dcaad2d133377-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
       <g:item_group_id>kurs/arbeidsrett-personalansvar</g:item_group_id>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -3540,6 +3540,174 @@
       <nki:entity_type>yrkesfag</nki:entity_type>
       <nki:category>Yrkesfag</nki:category>
       <nki:price_numeric>17900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Jus, HMS &amp; administrasjon</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Møt lovkravene – arbeidsrett for ledere</feed_name>
+      <internal_label>Møt lovkravene – arbeidsrett for ledere</internal_label>
+      <g:id>PG-90000</g:id>
+      <g:title>Møt lovkravene – arbeidsrett for ledere − kurs i jus, hms &amp; administrasjon</g:title>
+      <g:description>Personalansvar uten opplæring i loven? Kurspakken gir deg arbeidsrett for ledere: personalansvar, rekruttering og sykefravær. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/arbeidsrett-for-ledere</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/1ff91e4b49c792236a7a3a7b6adb89401e79bf39-2400x1600.jpg?rect=0,170,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-90000</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>9900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
+      <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/arbeidsrett-for-ledere?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90000</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Jus, HMS &amp; administrasjon</nki:category>
+      <nki:price_numeric>9900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Økonomi og bærekraft</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Bærekraft – fra krav til konkurransefortrinn</feed_name>
+      <internal_label>Bærekraft – fra krav til konkurransefortrinn</internal_label>
+      <g:id>PG-90001</g:id>
+      <g:title>Bærekraft – fra krav til konkurransefortrinn − kurs i økonomi og bærekraft</g:title>
+      <g:description>Fra bærekraftskrav til konkurransefortrinn. Kurspakken gir deg rapportering, sertifisering, ESG, klimaregnskap og sirkulærøkonomi. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/baerekraft-krav-til-konkurransefortrinn</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/c7997b20973c14b7987a2fc4d7bd12ee687c9d4f-1600x1066.jpg?rect=0,113,1600,840&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-90001</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>15900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
+      <g:product_type>Økonomi og bærekraft</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/baerekraft-krav-til-konkurransefortrinn?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90001</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Økonomi og bærekraft</nki:category>
+      <nki:price_numeric>15900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Digitalisering og teknologi</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Digitalt rustet</feed_name>
+      <internal_label>Digitalt rustet</internal_label>
+      <g:id>PG-90002</g:id>
+      <g:title>Digitalt rustet − kurs i digitalisering og teknologi</g:title>
+      <g:description>Bruk KI og digitale verktøy trygt. Kurspakken gir deg AI i arbeidslivet, digital sikkerhet for alle ansatte og for ledere. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/digitalt-rustet</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/3b51eaee1fc12706311c2a89b8d25c4020977501-480x320.jpg?rect=0,34,480,252&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-90002</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>9900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; digitalisering og teknologi</g:google_product_category>
+      <g:product_type>Digitalisering og teknologi</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/digitalt-rustet?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90002</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Digitalisering og teknologi</nki:category>
+      <nki:price_numeric>9900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Ledelse</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Rydd opp i prosjektene</feed_name>
+      <internal_label>Rydd opp i prosjektene</internal_label>
+      <g:id>PG-90003</g:id>
+      <g:title>Rydd opp i prosjektene − kurs i ledelse</g:title>
+      <g:description>Få kontroll i prosjektene. Kurspakken gir deg prosjektledelse fra idé til levert prosjekt, økonomistyring og gevinstrealisering. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/rydd-i-prosjektene</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/53e9add7b52a63ceca47e86ea07eccd8833c0d69-2400x1350.jpg?rect=0,45,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-90003</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>12400.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
+      <g:product_type>Ledelse</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/rydd-i-prosjektene?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90003</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Ledelse</nki:category>
+      <nki:price_numeric>12400</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Ledelse</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Styret og toppledelsen - ta bedre beslutninger</feed_name>
+      <internal_label>Styret og toppledelsen - ta bedre beslutninger</internal_label>
+      <g:id>PG-90005</g:id>
+      <g:title>Styret og toppledelsen - ta bedre beslutninger − kurs i ledelse</g:title>
+      <g:description>Kurspakke for styret og toppledelsen. Lær styreansvaret, økonomiforståelse og gevinstrealisering, utviklet med Aider. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/styret-toppledelsen-bedre-beslutninger</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/40ae971d0bf6dfd40b8990cf800c513de241d89d-756x504.jpg?rect=0,54,756,397&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-90005</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>16400.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
+      <g:product_type>Ledelse</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/styret-toppledelsen-bedre-beslutninger?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90005</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Ledelse</nki:category>
+      <nki:price_numeric>16400</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>HR</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Få ned sykefraværet</feed_name>
+      <internal_label>Få ned sykefraværet</internal_label>
+      <g:id>PG-90007</g:id>
+      <g:title>Få ned sykefraværet − kurs i hr</g:title>
+      <g:description>Følg opp sykefravær strukturert og forutsigbart. Kurspakken gir deg regelverket, stressmestring og konflikthåndtering. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/faa-ned-sykefravaeret</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/f834e70616cc93988b1da953fc05160dfa94ae1c-2400x1603.jpg?rect=0,172,2400,1260&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-90007</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>18900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
+      <g:product_type>HR</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/faa-ned-sykefravaeret?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90007</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>HR</nki:category>
+      <nki:price_numeric>18900</nki:price_numeric>
+    </item>
+    <item>
+      <custom_label_0>Kurs</custom_label_0>
+      <custom_label_1>Ledelse</custom_label_1>
+      <custom_label_2>kort</custom_label_2>
+      <fb_product_category>Interests &gt; Education &gt; Distance education</fb_product_category>
+      <feed_name>Bli tryggere som leder</feed_name>
+      <internal_label>Bli tryggere som leder</internal_label>
+      <g:id>PG-90008</g:id>
+      <g:title>Bli tryggere som leder − kurs i ledelse</g:title>
+      <g:description>Blitt leder uten opplæring? Kurspakken gir deg innføring i ledelse, relasjonsledelse og selvledelse. Start i dag!</g:description>
+      <g:link>https://www.nki.no/kurs/bli-tryggere-som-leder</g:link>
+      <g:image_link>https://cdn.sanity.io/images/hx9tb65h/production/94ef46ae11ea38544f06b1527ac7439ad111213c-1605x2400.jpg?rect=0,779,1605,843&amp;w=1200&amp;h=630&amp;fm=jpg&amp;fit=crop</g:image_link>
+      <g:item_group_id>PG-90008</g:item_group_id>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>NKI</g:brand>
+      <g:price>22900.00 NOK</g:price>
+      <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
+      <g:product_type>Ledelse</g:product_type>
+      <g:ads_redirect>https://www.nki.no/kurs/bli-tryggere-som-leder?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90008</g:ads_redirect>
+      <nki:entity_type>kurs</nki:entity_type>
+      <nki:category>Ledelse</nki:category>
+      <nki:price_numeric>22900</nki:price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>

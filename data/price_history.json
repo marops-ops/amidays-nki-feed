@@ -847,6 +847,34 @@
     "baseline": 3900.0,
     "drop_since": null
   },
+  "PG-90000": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "PG-90001": {
+    "baseline": 15900.0,
+    "drop_since": null
+  },
+  "PG-90002": {
+    "baseline": 9900.0,
+    "drop_since": null
+  },
+  "PG-90003": {
+    "baseline": 12400.0,
+    "drop_since": null
+  },
+  "PG-90005": {
+    "baseline": 16400.0,
+    "drop_since": null
+  },
+  "PG-90007": {
+    "baseline": 18900.0,
+    "drop_since": null
+  },
+  "PG-90008": {
+    "baseline": 22900.0,
+    "drop_since": null
+  },
   "enkeltemner/fysikk-forkurs": {
     "baseline": 9500.0,
     "drop_since": null
