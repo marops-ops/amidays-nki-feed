@@ -772,8 +772,8 @@
     "drop_since": null
   },
   "PG-0001644": {
-    "baseline": 54900.0,
-    "drop_since": "2026-09-29"
+    "baseline": 53500.0,
+    "drop_since": null
   },
   "PG-0001645": {
     "baseline": 36900.0,
@@ -1140,8 +1140,8 @@
     "drop_since": null
   },
   "videregaende/enkeltfag/engelsk-for-yrkesfag": {
-    "baseline": 7500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/engelsk-studieforberedende": {
     "baseline": 5950.0,
@@ -1176,8 +1176,8 @@
     "drop_since": null
   },
   "videregaende/enkeltfag/historie-pabygging": {
-    "baseline": 6500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/historie-studieforberedende": {
     "baseline": 5950.0,
@@ -1220,8 +1220,8 @@
     "drop_since": null
   },
   "videregaende/enkeltfag/kroppsoving-vg1-og-vg2": {
-    "baseline": 7500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/kroppsoving-vg3": {
     "baseline": 5950.0,
@@ -1232,12 +1232,12 @@
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-1p-y-for-elektro-og-datateknologi": {
-    "baseline": 6500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-1p-y-for-helse-og-oppvekstfag": {
-    "baseline": 6500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-1t": {
     "baseline": 5950.0,
@@ -1248,8 +1248,8 @@
     "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-2p-y": {
-    "baseline": 6500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/matematikk-r1": {
     "baseline": 5950.0,
@@ -1268,28 +1268,28 @@
     "drop_since": null
   },
   "videregaende/enkeltfag/naturfag-for-elektro-og-datateknologi": {
-    "baseline": 7500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/naturfag-for-helse-og-oppvekstfag": {
-    "baseline": 7500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/naturfag-pabygging": {
-    "baseline": 6500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/naturfag-studieforberedende": {
     "baseline": 5950.0,
     "drop_since": null
   },
   "videregaende/enkeltfag/norsk-for-yrkesfag": {
-    "baseline": 7500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/norsk-pabygging": {
-    "baseline": 6500.0,
-    "drop_since": "2026-09-29"
+    "baseline": 5950.0,
+    "drop_since": null
   },
   "videregaende/enkeltfag/norsk-studieforberedende": {
     "baseline": 5950.0,
