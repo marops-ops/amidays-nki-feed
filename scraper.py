@@ -11,11 +11,11 @@ writes an RSS 2.0 feed to docs/feed.xml.
 CMS). Data now comes from schema.org JSON-LD (<script type="application/ld+json">):
   - @type "Course"  -- plain kurs/enkeltfag/yrkesfag pages. name, description,
                        offers.price, hasCourseInstance.courseWorkload (ISO 8601
-                       duration). NO sku, NO image.
+                       duration = STUDY HOURS). NO sku, NO image.
   - @type "Product" -- fagskole/"pakke" pages. Same PLUS sku (old PG-xxxx ID)
                        and a direct image URL.
   - BreadcrumbList  -- 2nd item URL query (?level=X&subject=Y) is the
-                       classification signal (replaces old Utdanningsniva text).
+                       classification signal.
   - og:image is reliable as an image fallback on the new site.
 ID strategy: Product-type pages keep sku (PG-xxxx); Course-type pages use the
 URL path as id (e.g. "kurs/trening-som-medisin").
@@ -24,28 +24,36 @@ URL path as id (e.g. "kurs/trening-som-medisin").
 widget with Foer/Naa prices for 2-3 UNRELATED products BEFORE the <h1>. The
 Foer/Naa search is therefore scoped to text AFTER the <h1> (_text_after_h1).
 
-2026-11-10 FIX -- permanent price cuts were treated as sales: the old logic
-flagged ANY price below the stored baseline as a sale. NKI also lowers prices
-permanently (e.g. Norsk paabygging 6500 -> 5950, no campaign shown on the
-page), which must NOT produce sale_price. New rule (resolve_price): a sale
-exists ONLY while the product page itself shows a Foer/Naa pair
+2026-11-10 FIX -- permanent price cuts were treated as sales. A sale exists
+ONLY while the product page itself shows a Foer/Naa pair
 (regular_hint > current price). Otherwise the current price IS the regular
-price. price_history.json now only remembers when an active sale started
-(drop_since) so the effective-date window start stays stable.
+price. price_history.json only remembers when an active sale started.
+
+2026-11-10 DURATION + LANEKASSEN: the key-facts bar on every page (verified on
+all 163 candidate pages) has <span class="type-small ..."> items such as
+"12 måneders tilgang" / "4 ukers tilgang" (singular forms "1 måneds tilgang",
+"1 ukes tilgang") and, for some courses, a "Lånekassen" item. Duration in the
+feed is now ACCESS time ("12 måneder", "1 måned", "4 uker"), NOT study hours
+(JSON-LD courseWorkload is only a fallback). custom_label_2 (kort/medium/lang)
+is derived from access time. custom_label_3 = lanekassen / ikke_lanekassen.
+Only spans with class "type-small" count: the same word also appears in a
+button variant (class "type-button") and the footer link, which are not
+course facts.
 =============================================================================
 
 Field schema note: feed shaped to match a Hunch/Meta reference feed -- bare
-custom_label_0/1/2, fb_product_category, feed_name, internal_label, plus
+custom_label_0/1/2/3, fb_product_category, feed_name, internal_label, plus
 g:-namespaced item_group_id, text google_product_category, single-value
-product_type.
+product_type (category only -- hierarchical product_type was rejected: it is
+hard to filter on in Hunch/Meta).
 
 fb_product_category: Meta taxonomy value (separate from Google's). Default text
 "Interests > Education > Distance education"; Robin also has a numeric
 override rule on the Hunch side.
 
 Other design notes:
-- Lanekassen eligibility intentionally NOT scraped/emitted (Robin's call).
 - Availability derived from HTTP status of the page GET.
+- Images used as delivered by NKI/Sanity (no resizing params).
 """
 
 from __future__ import annotations
@@ -84,7 +92,7 @@ SALE_WINDOW_DAYS = 30  # rolling window while a sale is active
 FEED_TITLE = "NKI Nettstudier — Kurs og utdanning"
 FEED_LINK = "https://www.nki.no"
 FEED_DESCRIPTION = "Produktfeed for NKI Nettstudier. Nettstudier med fleksibel oppstart."
-BRAND = "NKI"
+BRAND = "NKI Nettstudier"
 DEFAULT_IMAGE = f"{BASE_URL}/assets/images/og-default.jpg"
 
 FB_PRODUCT_CATEGORY = "Interests > Education > Distance education"
@@ -142,7 +150,9 @@ URL_FALLBACK_ENTITY_TYPE = (
     ("/enkeltemner/", "enkeltemner"),
 )
 
-LANEKASSEN_TEXT = "Lånekassegodkjent"  # not wired up, see module docstring
+LANEKASSEN_LABEL = "Lånekassen"
+LANEKASSEN_YES = "lanekassen"
+LANEKASSEN_NO = "ikke_lanekassen"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -173,6 +183,7 @@ class Product:
     duration_months: Optional[int]
     duration_text: Optional[str]
     notes: list[str] = field(default_factory=list)
+    lanekassen: bool = False
 
 
 # --------------------------------------------------------------------------- #
@@ -221,7 +232,6 @@ def get_candidate_urls() -> list[str]:
 # Page parsing
 # --------------------------------------------------------------------------- #
 
-_FACT_RE_TEMPLATE = r"{label}:\s*\n?\s*([^\n]+)"
 # "Før" and "Nå" appear in either order, format "5 490 kr". Matched
 # independently so order doesn't matter.
 _PRICE_FOER_RE = re.compile(r"Før\s*\n?\s*([\d\s]+)\s*kr", re.IGNORECASE)
@@ -230,6 +240,18 @@ _ISO8601_DURATION_RE = re.compile(
     r"^P(?:(?P<years>\d+)Y)?(?:(?P<months>\d+)M)?(?:(?P<weeks>\d+)W)?(?:(?P<days>\d+)D)?"
     r"(?:T(?:(?P<hours>\d+)H)?(?:(?P<minutes>\d+)M)?(?:(?P<seconds>\d+)S)?)?$"
 )
+# Key-facts access time: "12 måneders tilgang", "1 måneds tilgang", "4 ukers tilgang", ...
+_ACCESS_RE = re.compile(r"^\s*(\d+)\s+(måneds|måneders|ukes|ukers|dags|dagers|års)\s+tilgang\s*$", re.IGNORECASE)
+# unit -> (singular, plural, months per unit)
+_ACCESS_UNITS = {
+    "måneds": ("måned", "måneder", 1.0),
+    "måneders": ("måned", "måneder", 1.0),
+    "ukes": ("uke", "uker", 1 / 4.345),
+    "ukers": ("uke", "uker", 1 / 4.345),
+    "dags": ("dag", "dager", 1 / 30.4),
+    "dagers": ("dag", "dager", 1 / 30.4),
+    "års": ("år", "år", 12.0),
+}
 
 
 def _extract_ld_json_blocks(soup: BeautifulSoup) -> list[dict]:
@@ -274,15 +296,42 @@ def _is_discontinued(text: str) -> bool:
     return any(marker in lowered for marker in DISCONTINUED_MARKERS)
 
 
-def _extract_fact(text: str, label: str) -> Optional[str]:
-    pattern = _FACT_RE_TEMPLATE.format(label=re.escape(label))
-    match = re.search(pattern, text)
-    return match.group(1).strip() if match else None
-
-
 def _parse_price_nok(text: str) -> Optional[float]:
     digits = re.sub(r"[^\d]", "", text)
     return float(digits) if digits else None
+
+
+def _key_fact_spans(soup: BeautifulSoup) -> list[str]:
+    """Texts of the key-facts items (<span class="type-small ...">)."""
+    texts = []
+    for span in soup.find_all("span"):
+        classes = span.get("class") or []
+        if "type-small" in classes:
+            texts.append(span.get_text(strip=True))
+    return texts
+
+
+def _extract_access(soup: BeautifulSoup) -> tuple[Optional[int], Optional[str]]:
+    """
+    Access time from the key-facts bar -> (months for tiering, display text).
+    "12 måneders tilgang" -> (12, "12 måneder"); "1 måneds tilgang" ->
+    (1, "1 måned"); "4 ukers tilgang" -> (1, "4 uker").
+    """
+    for text in _key_fact_spans(soup):
+        match = _ACCESS_RE.match(text)
+        if not match:
+            continue
+        count = int(match.group(1))
+        singular, plural, months_per_unit = _ACCESS_UNITS[match.group(2).lower()]
+        label = f"{count} {singular if count == 1 else plural}"
+        months = max(1, round(count * months_per_unit))
+        return months, label
+    return None, None
+
+
+def _has_lanekassen(soup: BeautifulSoup) -> bool:
+    """True if the key-facts bar lists Lånekassen (class type-small only)."""
+    return any(text == LANEKASSEN_LABEL for text in _key_fact_spans(soup))
 
 
 def _text_after_h1(soup: BeautifulSoup) -> str:
@@ -321,7 +370,7 @@ def _extract_price_info(text: str) -> dict:
 
 
 def _parse_iso8601_duration(value: Optional[str]) -> tuple[Optional[int], Optional[str]]:
-    """'PT250H' -> (months≈1, "250 timer")."""
+    """Fallback only: 'PT250H' -> (months≈1, "250 timer") = study hours."""
     if not value:
         return None, None
     match = _ISO8601_DURATION_RE.match(value.strip())
@@ -421,9 +470,14 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
     if not description:
         notes.append("No description in structured data, used generated fallback")
 
-    duration_months, duration_text = _parse_iso8601_duration(
-        (product.get("hasCourseInstance") or {}).get("courseWorkload")
-    )
+    # Duration = ACCESS time from the key-facts bar; JSON-LD study hours only
+    # as a fallback.
+    duration_months, duration_text = _extract_access(soup)
+    if duration_text is None:
+        duration_months, duration_text = _parse_iso8601_duration(
+            (product.get("hasCourseInstance") or {}).get("courseWorkload")
+        )
+        notes.append("No access time in key facts, used JSON-LD workload fallback")
 
     return {
         "id": item_id,
@@ -437,6 +491,7 @@ def parse_product_page(url: str, html: str) -> Optional[dict]:
         "subject": subject,
         "duration_text": duration_text,
         "duration_months": duration_months,
+        "lanekassen": _has_lanekassen(soup),
         "notes": notes,
     }
 
@@ -569,6 +624,7 @@ def crawl() -> list[Product]:
                 duration_months=raw["duration_months"],
                 duration_text=raw["duration_text"],
                 notes=raw["notes"],
+                lanekassen=raw["lanekassen"],
             )
         )
 
@@ -642,6 +698,7 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         _sub(item, "custom_label_0", display_type)
         _sub(item, "custom_label_1", p.category)
         _sub(item, "custom_label_2", duration_tier(p.duration_months))
+        _sub(item, "custom_label_3", LANEKASSEN_YES if p.lanekassen else LANEKASSEN_NO)
         _sub(item, "fb_product_category", FB_PRODUCT_CATEGORY)
         _sub(item, "feed_name", p.title)
         _sub(item, "internal_label", p.title)

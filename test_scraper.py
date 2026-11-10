@@ -1,17 +1,28 @@
 """
 Sanity checks against real page structure captured from nki.no (new site,
-2026-09). Extended 2026-09-14 (header-widget fix) and 2026-11-10 (permanent
-price cuts must not become sale_price).
+2026-09). Extended 2026-09-14 (header-widget fix), 2026-11-10 (permanent price
+cuts must not become sale_price; access-time duration; Lanekassen label).
 """
 
 import json
 from datetime import date, timedelta
+
+from bs4 import BeautifulSoup
 
 import scraper
 
 
 def _script(payload_dict) -> str:
     return f'<script type="application/ld+json">{json.dumps(payload_dict)}</script>'
+
+
+def facts(*items) -> str:
+    """Key-facts bar like the real site: <li><svg/><span class="type-small ...">text</span></li>"""
+    lis = "".join(
+        f'<li><svg></svg><span class="type-small type-weight-medium text-fg-primary lg:whitespace-nowrap">{t}</span></li>'
+        for t in items
+    )
+    return f"<ul>{lis}</ul>"
 
 
 def _page(ld_blocks, before_h1_extra="", after_h1_extra="", h1_text=None):
@@ -101,11 +112,13 @@ NO_DESC_LD = {
 DISCONTINUED_HTML = "<html><body><h1>Tannlegeassistent</h1><div>Dette studiet er ikke lengre aktivt.</div></body></html>"
 
 # --- Course / Product parsing ---
-raw = scraper.parse_product_page("https://www.nki.no/kurs/trening-som-medisin", _page([COURSE_LD, COURSE_BREADCRUMB]))
+raw = scraper.parse_product_page(
+    "https://www.nki.no/kurs/trening-som-medisin",
+    _page([COURSE_LD, COURSE_BREADCRUMB], after_h1_extra=facts("12 måneders tilgang", "250 studietimer")),
+)
 check("Course: id falls back to URL path", raw["id"] == "kurs/trening-som-medisin")
 check("Course: price from offers.price", raw["price"] == 9900)
 check("Course: no regular_hint without sale markup", raw["regular_hint"] is None)
-check("Course: duration PT250H -> 250 timer", raw["duration_text"] == "250 timer")
 check("Course: category from breadcrumb", raw["category"] == "Helse og livsstil")
 
 raw2 = scraper.parse_product_page("https://www.nki.no/fagskole/medisinsk-sekretaer", _page([PRODUCT_LD, PRODUCT_BREADCRUMB]))
@@ -122,7 +135,43 @@ check("Discontinued page skipped", scraper.parse_product_page("https://www.nki.n
 
 raw_nd = scraper.parse_product_page("https://www.nki.no/fagskole/saksbehandler", _page([NO_DESC_LD]))
 check("Empty description -> empty raw + note", raw_nd["description"] == "" and any("fallback" in n for n in raw_nd["notes"]))
-check("Fallback description non-empty and mentions NKI", "NKI" in scraper._fallback_description("X", "kurs", "Y"))
+check("Fallback description mentions NKI", "NKI" in scraper._fallback_description("X", "kurs", "Y"))
+
+# --- Duration = ACCESS time from key facts ---
+check("12 måneders tilgang -> '12 måneder'", raw["duration_text"] == "12 måneder" and raw["duration_months"] == 12)
+
+
+def access_of(text, **kw):
+    page = _page([COURSE_LD, COURSE_BREADCRUMB], after_h1_extra=facts(text))
+    r = scraper.parse_product_page("https://www.nki.no/kurs/x", page)
+    return r["duration_text"], r["duration_months"]
+
+
+check("1 måneds tilgang -> '1 måned' (not 'måneder')", access_of("1 måneds tilgang") == ("1 måned", 1))
+check("3 måneders tilgang -> '3 måneder'", access_of("3 måneders tilgang") == ("3 måneder", 3))
+check("4 ukers tilgang -> '4 uker', 1 month for tiering", access_of("4 ukers tilgang") == ("4 uker", 1))
+check("1 ukes tilgang -> '1 uke'", access_of("1 ukes tilgang")[0] == "1 uke")
+check("14 dagers tilgang -> '14 dager'", access_of("14 dagers tilgang")[0] == "14 dager")
+check("18 måneders tilgang -> tier lang", scraper.duration_tier(access_of("18 måneders tilgang")[1]) == "lang")
+check("studietimer in facts is NOT mistaken for access", access_of("250 studietimer")[0] == "250 timer")
+
+raw_fb = scraper.parse_product_page("https://www.nki.no/kurs/x", _page([COURSE_LD, COURSE_BREADCRUMB]))
+check("No access fact -> falls back to JSON-LD hours", raw_fb["duration_text"] == "250 timer")
+check("Fallback is noted", any("fallback" in n.lower() for n in raw_fb["notes"]))
+
+# FAQ text that mentions tilgang must not count (only type-small spans do)
+faq_page = _page([COURSE_LD, COURSE_BREADCRUMB], after_h1_extra="<div>Du får 99 måneders tilgang til lærer</div>")
+check("Non-fact text ignored", scraper.parse_product_page("https://www.nki.no/kurs/x", faq_page)["duration_text"] == "250 timer")
+
+# --- Lanekassen ---
+lan_page = _page([COURSE_LD, COURSE_BREADCRUMB], after_h1_extra=facts("12 måneders tilgang", "Lånekassen"))
+check("Lånekassen in key facts -> True", scraper.parse_product_page("https://www.nki.no/kurs/x", lan_page)["lanekassen"] is True)
+check("No Lånekassen fact -> False", raw["lanekassen"] is False)
+footer_only = _page(
+    [COURSE_LD, COURSE_BREADCRUMB],
+    after_h1_extra='<a href="/x">Lånekassen</a><span class="type-button">Lånekassen</span>',
+)
+check("Footer link / button variant of 'Lånekassen' ignored", scraper.parse_product_page("https://www.nki.no/kurs/x", footer_only)["lanekassen"] is False)
 
 # --- Header widget must not be mistaken for the product's own sale ---
 HEADER_WIDGET_HTML = """
@@ -160,7 +209,6 @@ p, s, e = scraper.resolve_price("a", 5490, history, later, regular_hint=None)
 check("Sale over (markup gone): back to plain price", p == 5490 and s is None)
 check("drop_since cleared", history["a"]["drop_since"] is None)
 
-# THE BUG (2026-11-10): permanent price cut with no campaign markup
 perm = {"naturfag": {"baseline": 6500.0, "drop_since": "2026-09-29"}}
 p, s, e = scraper.resolve_price("naturfag", 5950, perm, today, regular_hint=None)
 check("Permanent price cut (no Foer/Naa): NO sale_price", s is None and e is None)
@@ -171,6 +219,7 @@ check("Stale drop_since cleared", perm["naturfag"]["drop_since"] is None and per
 check("price_tier", scraper.price_tier(7900) == "5000_15000" and scraper.price_tier(3900) == "under_5000")
 check("duration_tier", scraper.duration_tier(3) == "kort" and scraper.duration_tier(12) == "medium" and scraper.duration_tier(24) == "lang")
 check("smart_title", scraper.smart_title("T", "kurs", "HR og ledelse") == "T − kurs i hr og ledelse")
+check("brand is NKI Nettstudier", scraper.BRAND == "NKI Nettstudier")
 
 # --- XML spot-check ---
 p1 = scraper.Product(
@@ -179,11 +228,23 @@ p1 = scraper.Product(
     in_stock=True, price=81500.0, sale_price=61125.0,
     sale_price_effective_date="2026-11-10T00:00+0100/2026-12-10T23:59+0100",
     category="Jus og administrasjon", entity_type="fagskole", duration_months=24, duration_text="24 måneder",
+    lanekassen=True,
 )
-item = scraper.build_feed_xml([p1]).getroot().find("channel/item")
-NS = {"g": scraper.NS_G}
-check("g:price", item.find("g:price", NS).text == "81500.00 NOK")
-check("g:sale_price", item.find("g:sale_price", NS).text == "61125.00 NOK")
-check("fb_product_category fixed value", item.find("fb_product_category").text == "Interests > Education > Distance education")
+p2 = scraper.Product(
+    id="kurs/x", title="X", description="d", link="https://www.nki.no/kurs/x", image_link="i",
+    in_stock=True, price=3900.0, sale_price=None, sale_price_effective_date=None,
+    category="HR", entity_type="kurs", duration_months=1, duration_text="1 måned",
+)
+items = scraper.build_feed_xml([p1, p2]).getroot().findall("channel/item")
+NS = {"g": scraper.NS_G, "nki": scraper.NS_NKI}
+check("g:price", items[0].find("g:price", NS).text == "81500.00 NOK")
+check("g:sale_price", items[0].find("g:sale_price", NS).text == "61125.00 NOK")
+check("g:brand NKI Nettstudier", items[0].find("g:brand", NS).text == "NKI Nettstudier")
+check("custom_label_3 lanekassen", items[0].find("custom_label_3").text == "lanekassen")
+check("custom_label_3 ikke_lanekassen", items[1].find("custom_label_3").text == "ikke_lanekassen")
+check("nki:duration '1 måned'", items[1].find("nki:duration", NS).text == "1 måned")
+check("custom_label_2 unchanged position (duration tier)", items[0].find("custom_label_2").text == "lang")
+check("product_type is category only", items[0].find("g:product_type", NS).text == "Jus og administrasjon")
+check("fb_product_category fixed value", items[0].find("fb_product_category").text == "Interests > Education > Distance education")
 
 print("\nAll checks passed.")
