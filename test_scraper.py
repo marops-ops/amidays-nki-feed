@@ -1,13 +1,12 @@
 """
 Sanity checks against real page structure captured from nki.no (new site,
 2026-09). Extended 2026-09-14 (header-widget fix), 2026-11-10 (permanent price
-cuts must not become sale_price; access-time duration; Lanekassen label).
+cuts must not become sale_price; access-time duration; Lanekassen label) and
+2026-11-11 (sale fields always present, empty without sale).
 """
 
 import json
 from datetime import date, timedelta
-
-from bs4 import BeautifulSoup
 
 import scraper
 
@@ -17,7 +16,6 @@ def _script(payload_dict) -> str:
 
 
 def facts(*items) -> str:
-    """Key-facts bar like the real site: <li><svg/><span class="type-small ...">text</span></li>"""
     lis = "".join(
         f'<li><svg></svg><span class="type-small type-weight-medium text-fg-primary lg:whitespace-nowrap">{t}</span></li>'
         for t in items
@@ -141,13 +139,13 @@ check("Fallback description mentions NKI", "NKI" in scraper._fallback_descriptio
 check("12 måneders tilgang -> '12 måneder'", raw["duration_text"] == "12 måneder" and raw["duration_months"] == 12)
 
 
-def access_of(text, **kw):
+def access_of(text):
     page = _page([COURSE_LD, COURSE_BREADCRUMB], after_h1_extra=facts(text))
     r = scraper.parse_product_page("https://www.nki.no/kurs/x", page)
     return r["duration_text"], r["duration_months"]
 
 
-check("1 måneds tilgang -> '1 måned' (not 'måneder')", access_of("1 måneds tilgang") == ("1 måned", 1))
+check("1 måneds tilgang -> '1 måned'", access_of("1 måneds tilgang") == ("1 måned", 1))
 check("3 måneders tilgang -> '3 måneder'", access_of("3 måneders tilgang") == ("3 måneder", 3))
 check("4 ukers tilgang -> '4 uker', 1 month for tiering", access_of("4 ukers tilgang") == ("4 uker", 1))
 check("1 ukes tilgang -> '1 uke'", access_of("1 ukes tilgang")[0] == "1 uke")
@@ -159,7 +157,6 @@ raw_fb = scraper.parse_product_page("https://www.nki.no/kurs/x", _page([COURSE_L
 check("No access fact -> falls back to JSON-LD hours", raw_fb["duration_text"] == "250 timer")
 check("Fallback is noted", any("fallback" in n.lower() for n in raw_fb["notes"]))
 
-# FAQ text that mentions tilgang must not count (only type-small spans do)
 faq_page = _page([COURSE_LD, COURSE_BREADCRUMB], after_h1_extra="<div>Du får 99 måneders tilgang til lærer</div>")
 check("Non-fact text ignored", scraper.parse_product_page("https://www.nki.no/kurs/x", faq_page)["duration_text"] == "250 timer")
 
@@ -171,7 +168,7 @@ footer_only = _page(
     [COURSE_LD, COURSE_BREADCRUMB],
     after_h1_extra='<a href="/x">Lånekassen</a><span class="type-button">Lånekassen</span>',
 )
-check("Footer link / button variant of 'Lånekassen' ignored", scraper.parse_product_page("https://www.nki.no/kurs/x", footer_only)["lanekassen"] is False)
+check("Footer link / button variant ignored", scraper.parse_product_page("https://www.nki.no/kurs/x", footer_only)["lanekassen"] is False)
 
 # --- Header widget must not be mistaken for the product's own sale ---
 HEADER_WIDGET_HTML = """
@@ -221,7 +218,7 @@ check("duration_tier", scraper.duration_tier(3) == "kort" and scraper.duration_t
 check("smart_title", scraper.smart_title("T", "kurs", "HR og ledelse") == "T − kurs i hr og ledelse")
 check("brand is NKI Nettstudier", scraper.BRAND == "NKI Nettstudier")
 
-# --- XML spot-check ---
+# --- XML ---
 p1 = scraper.Product(
     id="PG-0001534", title="Advokatsekretær", description="Bli advokatsekretær.",
     link="https://www.nki.no/fagskole/advokatsekretaer", image_link="https://www.nki.no/img.jpg",
@@ -238,13 +235,27 @@ p2 = scraper.Product(
 items = scraper.build_feed_xml([p1, p2]).getroot().findall("channel/item")
 NS = {"g": scraper.NS_G, "nki": scraper.NS_NKI}
 check("g:price", items[0].find("g:price", NS).text == "81500.00 NOK")
-check("g:sale_price", items[0].find("g:sale_price", NS).text == "61125.00 NOK")
+check("g:sale_price with sale", items[0].find("g:sale_price", NS).text == "61125.00 NOK")
+check("g:sale_price_effective_date with sale", items[0].find("g:sale_price_effective_date", NS).text.startswith("2026-11-10"))
+check("nki:sale_price_numeric with sale", items[0].find("nki:sale_price_numeric", NS).text == "61125")
 check("g:brand NKI Nettstudier", items[0].find("g:brand", NS).text == "NKI Nettstudier")
-check("custom_label_3 lanekassen", items[0].find("custom_label_3").text == "lanekassen")
-check("custom_label_3 ikke_lanekassen", items[1].find("custom_label_3").text == "ikke_lanekassen")
+check("custom_label_3 lanekassen / ikke_lanekassen",
+      items[0].find("custom_label_3").text == "lanekassen" and items[1].find("custom_label_3").text == "ikke_lanekassen")
 check("nki:duration '1 måned'", items[1].find("nki:duration", NS).text == "1 måned")
-check("custom_label_2 unchanged position (duration tier)", items[0].find("custom_label_2").text == "lang")
+check("custom_label_2 position unchanged", items[0].find("custom_label_2").text == "lang")
 check("product_type is category only", items[0].find("g:product_type", NS).text == "Jus og administrasjon")
 check("fb_product_category fixed value", items[0].find("fb_product_category").text == "Interests > Education > Distance education")
+
+# Always-present sale fields (empty when no sale)
+for tag in ("g:sale_price", "g:sale_price_effective_date", "nki:sale_price_numeric"):
+    el = items[1].find(tag, NS)
+    check(f"{tag} present but EMPTY without sale", el is not None and (el.text is None or el.text == ""))
+
+# Rollback switch
+scraper.EMIT_EMPTY_SALE_FIELDS = False
+off = scraper.build_feed_xml([p2]).getroot().find("channel/item")
+check("EMIT_EMPTY_SALE_FIELDS=False removes the empty elements",
+      off.find("g:sale_price", NS) is None and off.find("nki:sale_price_numeric", NS) is None)
+scraper.EMIT_EMPTY_SALE_FIELDS = True
 
 print("\nAll checks passed.")

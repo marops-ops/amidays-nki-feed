@@ -33,12 +33,18 @@ price. price_history.json only remembers when an active sale started.
 all 163 candidate pages) has <span class="type-small ..."> items such as
 "12 måneders tilgang" / "4 ukers tilgang" (singular forms "1 måneds tilgang",
 "1 ukes tilgang") and, for some courses, a "Lånekassen" item. Duration in the
-feed is now ACCESS time ("12 måneder", "1 måned", "4 uker"), NOT study hours
+feed is ACCESS time ("12 måneder", "1 måned", "4 uker"), NOT study hours
 (JSON-LD courseWorkload is only a fallback). custom_label_2 (kort/medium/lang)
 is derived from access time. custom_label_3 = lanekassen / ikke_lanekassen.
 Only spans with class "type-small" count: the same word also appears in a
-button variant (class "type-button") and the footer link, which are not
-course facts.
+button variant (class "type-button") and the footer link.
+
+2026-11-11 ALWAYS-PRESENT SALE FIELDS: Hunch templates are locked to the feed
+and Hunch only lists fields it sees, so a designer cannot build a strikethrough
+price template while no product is on sale. g:sale_price,
+g:sale_price_effective_date and nki:sale_price_numeric are therefore ALWAYS
+emitted -- as EMPTY elements for products without an active sale. Rollback if
+Hunch/Meta rejects empty elements: set EMIT_EMPTY_SALE_FIELDS = False.
 =============================================================================
 
 Field schema note: feed shaped to match a Hunch/Meta reference feed -- bare
@@ -88,6 +94,9 @@ OUTPUT_FEED_PATH = Path("docs/feed.xml")
 PRICE_HISTORY_PATH = Path("data/price_history.json")
 
 SALE_WINDOW_DAYS = 30  # rolling window while a sale is active
+
+# Emit sale fields as empty elements when there is no sale (see 2026-11-11 note).
+EMIT_EMPTY_SALE_FIELDS = True
 
 FEED_TITLE = "NKI Nettstudier — Kurs og utdanning"
 FEED_LINK = "https://www.nki.no"
@@ -667,6 +676,17 @@ def _sub(parent: ET.Element, tag: str, text: Optional[str]) -> None:
     el.text = str(text)
 
 
+def _sub_sale(parent: ET.Element, tag: str, text: Optional[str]) -> None:
+    """Sale fields: a value when there is a sale; otherwise an EMPTY element
+    (when EMIT_EMPTY_SALE_FIELDS) so Hunch always sees the field."""
+    if text is None or text == "":
+        if EMIT_EMPTY_SALE_FIELDS:
+            ET.SubElement(parent, tag)
+        return
+    el = ET.SubElement(parent, tag)
+    el.text = str(text)
+
+
 def entity_display(entity_type: str) -> str:
     return ENTITY_TYPE_DISPLAY.get(entity_type, entity_type.replace("_", " ").title())
 
@@ -713,9 +733,8 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         _sub(item, _g("condition"), "new")
         _sub(item, _g("brand"), BRAND)
         _sub(item, _g("price"), f"{p.price:.2f} NOK")
-        if p.sale_price is not None:
-            _sub(item, _g("sale_price"), f"{p.sale_price:.2f} NOK")
-            _sub(item, _g("sale_price_effective_date"), p.sale_price_effective_date)
+        _sub_sale(item, _g("sale_price"), f"{p.sale_price:.2f} NOK" if p.sale_price is not None else None)
+        _sub_sale(item, _g("sale_price_effective_date"), p.sale_price_effective_date if p.sale_price is not None else None)
         _sub(item, _g("google_product_category"), google_product_category_path(p.entity_type, p.category))
         _sub(item, _g("product_type"), p.category)
 
@@ -731,8 +750,7 @@ def build_feed_xml(products: list[Product]) -> ET.ElementTree:
         _sub(item, _nki("category"), p.category)
         _sub(item, _nki("duration"), p.duration_text)
         _sub(item, _nki("price_numeric"), str(int(p.price)))
-        if p.sale_price is not None:
-            _sub(item, _nki("sale_price_numeric"), str(int(p.sale_price)))
+        _sub_sale(item, _nki("sale_price_numeric"), str(int(p.sale_price)) if p.sale_price is not None else None)
 
     return ET.ElementTree(rss)
 
