@@ -80,8 +80,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-pabygging</g:ads_redirect>
@@ -89,7 +89,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -109,8 +109,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>16900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>15210.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helsesekretaerfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helsesekretaerfag</g:ads_redirect>
@@ -118,7 +118,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>16900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>15210</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -167,8 +167,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/biologi-1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fbiologi-1</g:ads_redirect>
@@ -176,7 +176,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -225,8 +225,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-studieforberedende?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-studieforberedende</g:ads_redirect>
@@ -234,7 +234,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -254,8 +254,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>17900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>17005.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helsearbeiderfaget?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fyrkesfag%2Fhelsearbeiderfaget</g:ads_redirect>
@@ -263,7 +263,7 @@
       <nki:category>Praksiskandidat</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>17900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>17005</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -341,8 +341,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/norsk-studieforberedende?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnorsk-studieforberedende</g:ads_redirect>
@@ -350,7 +350,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -428,8 +428,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-for-elektro-og-datateknologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-for-elektro-og-datateknologi</g:ads_redirect>
@@ -437,7 +437,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -457,8 +457,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/sirkulaerokonomi-pa-1-2-3?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsirkulaerokonomi-pa-1-2-3</g:ads_redirect>
@@ -466,7 +466,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -515,8 +515,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/religion-og-etikk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Freligion-og-etikk</g:ads_redirect>
@@ -524,7 +524,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -573,8 +573,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/biologi-2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fbiologi-2</g:ads_redirect>
@@ -582,7 +582,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -631,8 +631,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/ambulansemedisin?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fambulansemedisin</g:ads_redirect>
@@ -640,7 +640,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -660,8 +660,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/norsk-pabygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fnorsk-pabygging</g:ads_redirect>
@@ -669,7 +669,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -689,8 +689,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>14500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>13050.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; transport</g:google_product_category>
       <g:product_type>Transport</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/loyvekurs-for-person-og-godstransport?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Floyvekurs-for-person-og-godstransport</g:ads_redirect>
@@ -698,7 +698,7 @@
       <nki:category>Transport</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>14500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>13050</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -718,8 +718,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/ernaering-og-baerekraftig-kosthold?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fernaering-og-baerekraftig-kosthold</g:ads_redirect>
@@ -727,7 +727,7 @@
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -747,8 +747,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helsearbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helsearbeiderfag</g:ads_redirect>
@@ -756,7 +756,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -805,8 +805,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/relasjonsledelse-i-praksis?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Frelasjonsledelse-i-praksis</g:ads_redirect>
@@ -814,7 +814,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -834,8 +834,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; markedsføring og salg</g:google_product_category>
       <g:product_type>Markedsføring og salg</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/innforing-i-digital-markedsforing?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Finnforing-i-digital-markedsforing</g:ads_redirect>
@@ -843,7 +843,7 @@
       <nki:category>Markedsføring og salg</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -863,8 +863,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>10400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5200.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; bygg og eiendom</g:google_product_category>
       <g:product_type>Bygg og eiendom</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/autocad?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fautocad</g:ads_redirect>
@@ -872,7 +872,7 @@
       <nki:category>Bygg og eiendom</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>10400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5200</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -921,8 +921,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>8010.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/energi-og-styresystemer-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fenergi-og-styresystemer-vg1</g:ads_redirect>
@@ -930,7 +930,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>8010</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -950,8 +950,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/pedagogisk-arbeid?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fpedagogisk-arbeid</g:ads_redirect>
@@ -959,7 +959,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -979,8 +979,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>10400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>9360.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/innforing-i-organisasjon-og-ledelse?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Finnforing-i-organisasjon-og-ledelse</g:ads_redirect>
@@ -988,7 +988,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>10400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>9360</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1008,8 +1008,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>6225.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/grunnleggende-regnskap?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fgrunnleggende-regnskap</g:ads_redirect>
@@ -1017,7 +1017,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>6225</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1095,8 +1095,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/hvordan-takle-hersketeknikker?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fhvordan-takle-hersketeknikker</g:ads_redirect>
@@ -1104,7 +1104,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1124,8 +1124,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>31900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>28710.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; bygg og eiendom</g:google_product_category>
       <g:product_type>Bygg og eiendom</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/revit-architecture?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Frevit-architecture</g:ads_redirect>
@@ -1133,7 +1133,7 @@
       <nki:category>Bygg og eiendom</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>31900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>28710</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1153,8 +1153,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; transport</g:google_product_category>
       <g:product_type>Transport</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/drosjeloyve-teorikurs?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fdrosjeloyve-teorikurs</g:ads_redirect>
@@ -1162,7 +1162,7 @@
       <nki:category>Transport</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1211,8 +1211,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>10400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>9360.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/innforing-i-okonomistyring?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Finnforing-i-okonomistyring</g:ads_redirect>
@@ -1220,7 +1220,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>10400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>9360</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -1269,8 +1269,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helse-og-oppvekstfag-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helse-og-oppvekstfag-vg1</g:ads_redirect>
@@ -1278,7 +1278,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1298,8 +1298,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/engelsk-for-yrkesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fengelsk-for-yrkesfag</g:ads_redirect>
@@ -1307,7 +1307,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -1327,8 +1327,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/sosiologi-og-sosialantropologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fsosiologi-og-sosialantropologi</g:ads_redirect>
@@ -1336,7 +1336,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1356,8 +1356,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>17900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>17005.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/barne-og-ungdomsarbeiderfaget?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fyrkesfag%2Fbarne-og-ungdomsarbeiderfaget</g:ads_redirect>
@@ -1365,7 +1365,7 @@
       <nki:category>Praksiskandidat</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>17900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>17005</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1443,8 +1443,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/elektroniske-kretser-og-nettverk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Felektroniske-kretser-og-nettverk</g:ads_redirect>
@@ -1452,7 +1452,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1472,8 +1472,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/innforing-i-baerekraftig-handel?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Finnforing-i-baerekraftig-handel</g:ads_redirect>
@@ -1481,7 +1481,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1501,8 +1501,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>10400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5200.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/malrettet-prosjektstyring?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fmalrettet-prosjektstyring</g:ads_redirect>
@@ -1510,7 +1510,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>10400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5200</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1559,8 +1559,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-helseservicefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-helseservicefag</g:ads_redirect>
@@ -1568,7 +1568,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1617,8 +1617,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>14500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>13050.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/pleieassistent?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fpleieassistent</g:ads_redirect>
@@ -1626,7 +1626,7 @@
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>14500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>13050</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -1675,8 +1675,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/sosialkunnskap?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fsosialkunnskap</g:ads_redirect>
@@ -1684,7 +1684,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1704,8 +1704,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/arbeidsrett-rekruttering-og-onboarding?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Farbeidsrett-rekruttering-og-onboarding</g:ads_redirect>
@@ -1713,7 +1713,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1733,8 +1733,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/arbeidsrett-personalansvar?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Farbeidsrett-personalansvar</g:ads_redirect>
@@ -1742,7 +1742,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1762,8 +1762,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/arbeidsrett-sykefravaer-og-oppfolging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Farbeidsrett-sykefravaer-og-oppfolging</g:ads_redirect>
@@ -1771,7 +1771,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1791,8 +1791,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; digitalisering og teknologi</g:google_product_category>
       <g:product_type>Digitalisering og teknologi</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/ai-i-arbeidslivet?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fai-i-arbeidslivet</g:ads_redirect>
@@ -1800,7 +1800,7 @@
       <nki:category>Digitalisering og teknologi</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1820,8 +1820,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>10400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5200.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/selvledelse-i-praksis--utviklet-i-samarbeid-med-metier?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fselvledelse-i-praksis--utviklet-i-samarbeid-med-metier</g:ads_redirect>
@@ -1829,7 +1829,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>2 måneder</nki:duration>
       <nki:price_numeric>10400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5200</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1849,8 +1849,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>7900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>3950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/okonomi-pa-1-2-3?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fokonomi-pa-1-2-3</g:ads_redirect>
@@ -1858,7 +1858,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>7900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>3950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1878,8 +1878,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>7900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>3950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/styrearbeid-i-praksis?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fstyrearbeid-i-praksis</g:ads_redirect>
@@ -1887,7 +1887,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>7900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>3950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -1907,8 +1907,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>9900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; bygg og eiendom</g:google_product_category>
       <g:product_type>Bygg og eiendom</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/systematisk-ferdigstillelse?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsystematisk-ferdigstillelse</g:ads_redirect>
@@ -1916,7 +1916,7 @@
       <nki:category>Bygg og eiendom</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>9900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2052,8 +2052,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; digitalisering og teknologi</g:google_product_category>
       <g:product_type>Digitalisering og teknologi</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/tjenestedesign-forbedre-kundeopplevelsen?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Ftjenestedesign-forbedre-kundeopplevelsen</g:ads_redirect>
@@ -2061,7 +2061,7 @@
       <nki:category>Digitalisering og teknologi</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2081,8 +2081,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/baerekraftsrapportering?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fbaerekraftsrapportering</g:ads_redirect>
@@ -2090,7 +2090,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2110,8 +2110,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/baerekraftssertifisering-og-samfunnsansvar?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fbaerekraftssertifisering-og-samfunnsansvar</g:ads_redirect>
@@ -2119,7 +2119,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2168,8 +2168,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/okonomistyring-i-prosjekter?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fokonomistyring-i-prosjekter</g:ads_redirect>
@@ -2177,7 +2177,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2197,8 +2197,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/gevinstrealisering-i-prosjekter?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fgevinstrealisering-i-prosjekter</g:ads_redirect>
@@ -2206,7 +2206,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2226,8 +2226,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/prosjektledelse-fra-ide-til-plan?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fprosjektledelse-fra-ide-til-plan</g:ads_redirect>
@@ -2235,7 +2235,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2255,8 +2255,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/prosjektledelse-fra-plan-til-levert-prosjekt?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fprosjektledelse-fra-plan-til-levert-prosjekt</g:ads_redirect>
@@ -2264,7 +2264,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2284,8 +2284,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
       <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/kurs-i-brannvern-introduksjon?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkurs-i-brannvern-introduksjon</g:ads_redirect>
@@ -2293,7 +2293,7 @@
       <nki:category>Jus, HMS &amp; administrasjon</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2313,8 +2313,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
       <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/kurs-i-brannvern-risiko-og-forebygging?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkurs-i-brannvern-risiko-og-forebygging</g:ads_redirect>
@@ -2322,7 +2322,7 @@
       <nki:category>Jus, HMS &amp; administrasjon</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2342,8 +2342,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/baerekraftig-logistikk-og-sirkulaerokonomi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fbaerekraftig-logistikk-og-sirkulaerokonomi</g:ads_redirect>
@@ -2351,7 +2351,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2371,8 +2371,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/supply-chain-management-og-helhetlig-logistikk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsupply-chain-management-og-helhetlig-logistikk</g:ads_redirect>
@@ -2380,7 +2380,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2400,8 +2400,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/introduksjon-til-logistikk?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fintroduksjon-til-logistikk</g:ads_redirect>
@@ -2409,7 +2409,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2458,8 +2458,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>3900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>1950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; digitalisering og teknologi</g:google_product_category>
       <g:product_type>Digitalisering og teknologi</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/kritisk-tenkning-ai?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkritisk-tenkning-ai</g:ads_redirect>
@@ -2467,7 +2467,7 @@
       <nki:category>Digitalisering og teknologi</nki:category>
       <nki:duration>4 uker</nki:duration>
       <nki:price_numeric>3900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>1950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2545,8 +2545,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/psykologi-1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fpsykologi-1</g:ads_redirect>
@@ -2554,7 +2554,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2574,8 +2574,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/konflikter-pa-jobb?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fkonflikter-pa-jobb</g:ads_redirect>
@@ -2583,7 +2583,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2632,8 +2632,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/naturfag-for-helse-og-oppvekstfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fnaturfag-for-helse-og-oppvekstfag</g:ads_redirect>
@@ -2641,7 +2641,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2777,8 +2777,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>10400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5200.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/stress-og-stressmestring?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fstress-og-stressmestring</g:ads_redirect>
@@ -2786,7 +2786,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>10400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5200</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -2835,8 +2835,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-ambulansefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-ambulansefag</g:ads_redirect>
@@ -2844,7 +2844,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2864,8 +2864,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/samfunnskunnskap-for-studieforberedende-og-yrkesfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fsamfunnskunnskap-for-studieforberedende-og-yrkesfag</g:ads_redirect>
@@ -2873,7 +2873,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -2893,8 +2893,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>14500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>13050.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/saksbehandling-i-helse-og-omsorgssektoren?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsaksbehandling-i-helse-og-omsorgssektoren</g:ads_redirect>
@@ -2902,7 +2902,7 @@
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>14500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>13050</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -2951,8 +2951,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>12900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>11610.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; forkurs</g:google_product_category>
       <g:product_type>Forkurs</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/matematikk-forkurs?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=enkeltemner%2Fmatematikk-forkurs</g:ads_redirect>
@@ -2960,7 +2960,7 @@
       <nki:category>Forkurs</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>12900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>11610</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3038,8 +3038,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>14500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>13050.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/praktisk-hr-ledelse?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fpraktisk-hr-ledelse</g:ads_redirect>
@@ -3047,7 +3047,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>14500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>13050</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3067,8 +3067,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>5950.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>5355.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; enkeltfag</g:google_product_category>
       <g:product_type>Enkeltfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/matematikk-r2?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=videregaende%2Fenkeltfag%2Fmatematikk-r2</g:ads_redirect>
@@ -3076,7 +3076,7 @@
       <nki:category>Enkeltfag</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>5950</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>5355</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3096,8 +3096,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/innforing-i-ledelse?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Finnforing-i-ledelse</g:ads_redirect>
@@ -3105,7 +3105,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3241,8 +3241,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; markedsføring og salg</g:google_product_category>
       <g:product_type>Markedsføring og salg</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/sosiale-medier-og-innholdsmarkedsforing?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fsosiale-medier-og-innholdsmarkedsforing</g:ads_redirect>
@@ -3250,7 +3250,7 @@
       <nki:category>Markedsføring og salg</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3270,8 +3270,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>19500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>17550.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-tannhelsesekretaerfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-tannhelsesekretaerfag</g:ads_redirect>
@@ -3279,7 +3279,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>19500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>17550</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3328,8 +3328,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>10400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>9360.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/enkeltemner/innforing-i-markedsforing?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=enkeltemner%2Finnforing-i-markedsforing</g:ads_redirect>
@@ -3337,7 +3337,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>10400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>9360</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3386,8 +3386,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/entreprenorskap-innovasjon-og-forretningsplan?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fentreprenorskap-innovasjon-og-forretningsplan</g:ads_redirect>
@@ -3395,7 +3395,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3415,8 +3415,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7470.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/yrkesliv-i-barne-og-ungdomsarbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fyrkesliv-i-barne-og-ungdomsarbeiderfag</g:ads_redirect>
@@ -3424,7 +3424,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7470</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3444,8 +3444,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>11500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>10350.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/enkeltfag/smittevern-tannanatomi-og-fysiologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=videregaende%2Fenkeltfag%2Fsmittevern-tannanatomi-og-fysiologi</g:ads_redirect>
@@ -3453,7 +3453,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>11500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>10350</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3502,8 +3502,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>8300.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4150.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; markedsføring og salg</g:google_product_category>
       <g:product_type>Markedsføring og salg</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/radgivende-salg?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=kurs%2Fradgivende-salg</g:ads_redirect>
@@ -3511,7 +3511,7 @@
       <nki:category>Markedsføring og salg</nki:category>
       <nki:duration>3 måneder</nki:duration>
       <nki:price_numeric>8300</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4150</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3560,8 +3560,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>17900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>13425.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elenergi-og-ekom-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000221</g:ads_redirect>
@@ -3569,7 +3569,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>17900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>13425</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3618,8 +3618,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>17900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>16110.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/ambulansefag-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000227</g:ads_redirect>
@@ -3627,7 +3627,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>17900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>16110</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3647,8 +3647,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>24900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>18675.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/studiekompetanse/pabygg-vg4?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001557</g:ads_redirect>
@@ -3656,7 +3656,7 @@
       <nki:category>Fagpakker</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>24900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>18675</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3676,8 +3676,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>51900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>46710.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; bygg og eiendom</g:google_product_category>
       <g:product_type>Bygg og eiendom</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/teknisk-tegner-bygg?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001643</g:ads_redirect>
@@ -3685,7 +3685,7 @@
       <nki:category>Bygg og eiendom</nki:category>
       <nki:duration>9 måneder</nki:duration>
       <nki:price_numeric>51900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>46710</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3705,8 +3705,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>18900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>14175.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/realfag/medisinpakke-norge?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001552</g:ads_redirect>
@@ -3714,7 +3714,7 @@
       <nki:category>Fagpakker</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>18900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>14175</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3734,8 +3734,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>52500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>49875.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; praksiskandidat</g:google_product_category>
       <g:product_type>Praksiskandidat</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/energimontorfaget-for-praksiskandidater?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001700</g:ads_redirect>
@@ -3743,7 +3743,7 @@
       <nki:category>Praksiskandidat</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>52500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>49875</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3763,8 +3763,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>41900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>37710.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helseservicefag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000187</g:ads_redirect>
@@ -3772,7 +3772,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>41900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>37710</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3792,8 +3792,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>41900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>37710.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helse-og-oppvekstfag-vg1?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001635</g:ads_redirect>
@@ -3801,7 +3801,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>41900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>37710</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3821,8 +3821,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>15900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>11925.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/realfag/realfagskurs-til-ingeniorutdanning?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001553</g:ads_redirect>
@@ -3830,7 +3830,7 @@
       <nki:category>Fagpakker</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>15900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>11925</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -3850,8 +3850,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>28500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>25650.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
       <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/kontormedarbeider?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001668</g:ads_redirect>
@@ -3859,7 +3859,7 @@
       <nki:category>Jus, HMS &amp; administrasjon</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>28500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>25650</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3879,8 +3879,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>39900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>35910.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/barne-og-ungdomsarbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000215</g:ads_redirect>
@@ -3888,7 +3888,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>39900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>35910</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3937,8 +3937,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>39500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>29625.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/studiekompetanse/generell-studiekompetanse-23-5-regelen?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001641</g:ads_redirect>
@@ -3946,7 +3946,7 @@
       <nki:category>Fagpakker</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>39500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>29625</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -3966,8 +3966,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>41900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>31425.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elenergi-og-ekom?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000222</g:ads_redirect>
@@ -3975,7 +3975,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>41900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>31425</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -3995,8 +3995,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>20900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>15675.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/realfag/medisinpakke-utland?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001551</g:ads_redirect>
@@ -4004,7 +4004,7 @@
       <nki:category>Fagpakker</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>20900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>15675</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -4024,8 +4024,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>17900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>16110.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/barne-og-ungdomsarbeiderfag-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000216</g:ads_redirect>
@@ -4033,7 +4033,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>17900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>16110</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -4140,8 +4140,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>17900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>13425.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elektro-og-datateknologi-programfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000053</g:ads_redirect>
@@ -4149,7 +4149,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>17900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>13425</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4169,8 +4169,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>25900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>23310.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; hr</g:google_product_category>
       <g:product_type>HR</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/bedriftsleder-ai-i-arbeidslivet?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001729</g:ads_redirect>
@@ -4178,7 +4178,7 @@
       <nki:category>HR</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>25900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>23310</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4198,8 +4198,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>9900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; jus, hms &amp; administrasjon</g:google_product_category>
       <g:product_type>Jus, HMS &amp; administrasjon</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/arbeidsrett-for-ledere?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90000</g:ads_redirect>
@@ -4207,7 +4207,7 @@
       <nki:category>Jus, HMS &amp; administrasjon</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>9900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4227,8 +4227,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>15900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>7950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; økonomi og bærekraft</g:google_product_category>
       <g:product_type>Økonomi og bærekraft</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/baerekraft-krav-til-konkurransefortrinn?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90001</g:ads_redirect>
@@ -4236,7 +4236,7 @@
       <nki:category>Økonomi og bærekraft</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>15900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>7950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4256,8 +4256,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>9900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>4950.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; digitalisering og teknologi</g:google_product_category>
       <g:product_type>Digitalisering og teknologi</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/digitalt-rustet?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90002</g:ads_redirect>
@@ -4265,7 +4265,7 @@
       <nki:category>Digitalisering og teknologi</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>9900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>4950</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4285,8 +4285,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>12400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>6200.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/rydd-i-prosjektene?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90003</g:ads_redirect>
@@ -4294,7 +4294,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>12400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>6200</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4314,8 +4314,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>16400.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>8200.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/styret-toppledelsen-bedre-beslutninger?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90005</g:ads_redirect>
@@ -4323,7 +4323,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>16400</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>8200</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4372,8 +4372,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>22900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>11450.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/bli-tryggere-som-leder?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-90008</g:ads_redirect>
@@ -4381,7 +4381,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>9 måneder</nki:duration>
       <nki:price_numeric>22900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>11450</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -4401,8 +4401,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>39900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>35910.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/tannhelsesekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001562</g:ads_redirect>
@@ -4410,7 +4410,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>39900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>35910</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4430,8 +4430,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>36900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>27675.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; kreativitet og design</g:google_product_category>
       <g:product_type>Kreativitet og design</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/interiordesigner?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001645</g:ads_redirect>
@@ -4439,7 +4439,7 @@
       <nki:category>Kreativitet og design</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>36900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>27675</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -4459,8 +4459,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>39900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>35910.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helsearbeiderfag?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0000214</g:ads_redirect>
@@ -4468,7 +4468,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>39900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>35910</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4488,8 +4488,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>28500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>25650.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; kreativitet og design</g:google_product_category>
       <g:product_type>Kreativitet og design</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/boligstylist?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0000231</g:ads_redirect>
@@ -4497,7 +4497,7 @@
       <nki:category>Kreativitet og design</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>28500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>25650</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4517,8 +4517,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>53500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>40125.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; helse og livsstil</g:google_product_category>
       <g:product_type>Helse og livsstil</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/medisinsk-sekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001644</g:ads_redirect>
@@ -4526,7 +4526,7 @@
       <nki:category>Helse og livsstil</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>53500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>40125</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Videregående</custom_label_0>
@@ -4546,8 +4546,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>39500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>29625.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; videregående &gt; fagpakker</g:google_product_category>
       <g:product_type>Fagpakker</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/studiekompetanse/pabygg-vg3?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=vgo_teori&amp;utm_content=PG-0001592</g:ads_redirect>
@@ -4555,7 +4555,7 @@
       <nki:category>Fagpakker</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>39500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>29625</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -4575,8 +4575,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>39900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>35910.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/helsesekretaer?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001533</g:ads_redirect>
@@ -4584,7 +4584,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>39900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>35910</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Yrkesfag</custom_label_0>
@@ -4604,8 +4604,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>41900.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>31425.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; yrkesfag &gt; yrkesfag</g:google_product_category>
       <g:product_type>Yrkesfag</g:product_type>
       <g:ads_redirect>https://www.nki.no/videregaende/yrkesfag/elektro-og-datateknologi?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=yrkesfag&amp;utm_content=PG-0001591</g:ads_redirect>
@@ -4613,7 +4613,7 @@
       <nki:category>Yrkesfag</nki:category>
       <nki:duration>12 måneder</nki:duration>
       <nki:price_numeric>41900</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>31425</nki:sale_price_numeric>
     </item>
     <item>
       <custom_label_0>Kurs</custom_label_0>
@@ -4633,8 +4633,8 @@
       <g:condition>new</g:condition>
       <g:brand>NKI Nettstudier</g:brand>
       <g:price>28500.00 NOK</g:price>
-      <g:sale_price />
-      <g:sale_price_effective_date />
+      <g:sale_price>25650.00 NOK</g:sale_price>
+      <g:sale_price_effective_date>2026-11-12T00:00+0100/2026-12-12T23:59+0100</g:sale_price_effective_date>
       <g:google_product_category>utdanning &gt; kurs &gt; ledelse</g:google_product_category>
       <g:product_type>Ledelse</g:product_type>
       <g:ads_redirect>https://www.nki.no/kurs/bedriftsleder?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=kurs&amp;utm_content=PG-0001670</g:ads_redirect>
@@ -4642,7 +4642,7 @@
       <nki:category>Ledelse</nki:category>
       <nki:duration>6 måneder</nki:duration>
       <nki:price_numeric>28500</nki:price_numeric>
-      <nki:sale_price_numeric />
+      <nki:sale_price_numeric>25650</nki:sale_price_numeric>
     </item>
   </channel>
 </rss>
